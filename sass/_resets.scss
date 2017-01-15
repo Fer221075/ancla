@@ -1,0 +1,60 @@
+/********************************************************/
+/************** Basic Styling (resets) ******************/
+/********************************************************/
+
+a, input[type=submit] {
+  transition: color 0.15s ease-out,border 0.15s ease-out,opacity 0.15s ease-out,background-color 0.15s ease-out;
+  -webkit-transition: color 0.15s ease-out,border 0.15s ease-out,opacity 0.15s ease-out,background-color 0.15s ease-out;
+  -moz-transition: color 0.15s ease-out,border 0.15s ease-out,opacity 0.15s ease-out,background-color 0.15s ease-out;
+  outline: none;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.no-pad-l {
+  padding-left: 0;
+}
+
+.no-pad-r {
+  padding-right: 0;
+}
+
+.no-pad-t {
+  padding-top: 0;
+}
+
+.no-pad-b {
+  padding-bottom: 0;
+}
+
+.full-h {
+  height: 100%;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.bg-img{
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+input {
+  border: 1px solid #55565a;
+  padding: 10px;
+}
+
+input:focus {
+  outline: none;
+}
