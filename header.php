@@ -22,24 +22,30 @@
 <body <?php body_class(); ?>>
 
 	<header>
-        <div class="wrapper">
-            <div class="col-md-1">
-                <div class="site-branding">
-                    <?php
-                    if ( is_front_page() && is_home() ) : ?>
-                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                    <?php else : ?>
-                        <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                        <?php
-                    endif; ?>
-                </div><!-- .site-branding -->
-            </div>
+        <div class="wrapper clearfix">
+            <!-- TODO: logo -->
+<!--            <div class="site-branding">-->
+<!--                --><?php
+//                if ( is_front_page() && is_home() ) : ?>
+<!--                    <h1 class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></h1>-->
+<!--                --><?php //else : ?>
+<!--                    <p class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></p>-->
+<!--                    --><?php
+//                endif; ?>
+<!--            </div>-->
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <ul>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+                <?php get_search_form(); ?>
+            </nav>
         </div>
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ancla' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<section id="content" class="site-content">
+

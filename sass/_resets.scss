@@ -9,8 +9,13 @@ a, input[type=submit] {
   outline: none;
 }
 
+a {
+  color: #fff;
+}
+
 a:hover, a:focus, a:active {
   text-decoration: none;
+  color: #fff;
 }
 
 p {
@@ -50,10 +55,10 @@ p {
   background-size: cover;
 }
 
-input {
-  border: 1px solid #55565a;
-  padding: 10px;
-}
+//input {
+//  border: 1px solid #55565a;
+//  padding: 10px;
+//}
 
 input:focus {
   outline: none;

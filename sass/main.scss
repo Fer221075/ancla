@@ -3,6 +3,9 @@
 /************* VARIABLES *************/
 /*************************************/
 
+$headerFontColor: #BBBFC2;
+$headerAndFooterBg: #3F4042;
+
 /*************************************/
 /*************** MIXINS **************/
 /*************************************/
@@ -22,4 +25,122 @@
   margin: 0 auto;
   max-width: 1600px;
   width: 92.5%;
+}
+
+header {
+  background-color: $headerAndFooterBg;
+
+  .search-form {
+    margin-left: 15px;
+  }
+}
+
+.main-navigation {
+  float: right;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+    }
+
+    li a {
+      color: $headerFontColor;
+      display: block;
+      padding: 45px 20px;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.search-form {
+
+  .fa {
+    color: $headerFontColor;
+  }
+}
+
+footer {
+  background-color: $headerAndFooterBg;
+
+  .certs {
+    h4 {
+      color: #ebebeb;
+      font-size: 26px;
+    }
+  }
+}
+
+.newsletter {
+
+  form {
+    border: 1px solid #fff;
+  }
+
+  input {
+    float: left;
+    border: none;
+    padding: 8px 6px;
+    color: #fff;
+
+    &[type="text"] {
+      width: 75%;
+      background: transparent;
+    }
+
+    &[type="submit"] {
+      width: 25%;
+      background-color: #c02630;
+    }
+  }
+}
+
+.widget {
+  float: left;
+  padding: 0 15px;
+
+  h2.widget-title {
+    font-size: 22px;
+    color: #fdfdfd;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+
+    a {
+      color: #e5e5e5;
+      @include hover_transition;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.footer-widgets{
+  padding-bottom: 25px;
+
+  .widget {
+    width: 25%;
+  }
+}
+
+.legal {
+  color: #8e8e8e;
+  text-align: center;
+  font-style: italic;
+  padding: 15px 0;
 }
