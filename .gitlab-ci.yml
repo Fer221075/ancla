@@ -1,0 +1,8 @@
+Deploy to production:
+  when: manual
+  stage: deploy
+  script: 
+  - apt-get update
+  - apt-get install lftp
+  - lftp -c "set sftp:auto-confirm yes; open -u $FTP_USER,$FTP_PASS sftp://$FTP_HOST; mirror --exclude sass/ -c -e -R -L $LOCAL_DIR $FTP_THEME_PATH"
+  environment: production
