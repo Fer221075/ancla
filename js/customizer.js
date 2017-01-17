@@ -39,4 +39,12 @@
 			}
 		} );
 	} );
+
+	wp.customize( 'banner_title', function (value) {
+		value.bind(function (to) {
+			console.log(to);
+			$('.cover-title').html(to);
+        })
+    } )
+
 } )( jQuery );

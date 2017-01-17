@@ -4,8 +4,33 @@
 /*************************************/
 
 $headerFontColor: #BBBFC2;
-$headerAndFooterBg: #3F4042;
+$headerAndFooterBg: #2b2b2a;
+$headerAndFooterBgWTransparency: rgba(43,43,42,0.8);
 
+/*************************************/
+/*************** FONTS ***************/
+/*************************************/
+
+@font-face {
+  font-family: ProximaNova;
+  src: url('../fonts/ProximaNova-Regular.otf') format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url('../fonts/ProximaNova-Light_0.otf') format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url('../fonts/ProximaNova-Semibold.otf') format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url('../fonts/ProximaNova-bold.otf') format("truetype");
+  font-weight: 600;
+}
 /*************************************/
 /*************** MIXINS **************/
 /*************************************/
@@ -20,6 +45,10 @@ $headerAndFooterBg: #3F4042;
 /**************** MAIN ***************/
 /*************************************/
 
+body {
+  font-family: 'ProximaNova', sans-serif;
+}
+
 .wrapper {
   position: relative;
   margin: 0 auto;
@@ -29,9 +58,58 @@ $headerAndFooterBg: #3F4042;
 
 header {
   background-color: $headerAndFooterBg;
+  width: 100%;
 
   .search-form {
     margin-left: 15px;
+  }
+}
+
+.home header {
+  position: absolute;
+  background-color: $headerAndFooterBgWTransparency;
+  z-index: 1;
+}
+
+.top-bar {
+  background-color: #fff;
+  text-align: right;
+  padding: 5px 0;
+  text-transform: uppercase;
+
+  a {
+    color: #838383;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    padding: 0 5px;
+
+    li {
+      display: inline-block;
+      padding: 0 4px;
+    }
+  }
+
+  .flags img {
+    width: 18px;
+  }
+}
+
+.site-branding {
+  width: 150px;
+  float: left;
+  position: absolute;
+  background-color: #c1282d;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom-right-radius: 35px;
+
+  img {
+    width: 70%;
   }
 }
 
@@ -40,6 +118,8 @@ header {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  font-weight: 500;
+  letter-spacing: 1px;
 
   ul {
     list-style-type: none;
@@ -71,6 +151,7 @@ header {
 
 footer {
   background-color: $headerAndFooterBg;
+  padding: 40px 0 0;
 
   .certs {
     h4 {
@@ -99,7 +180,7 @@ footer {
 
     &[type="submit"] {
       width: 25%;
-      background-color: #c02630;
+      background-color: #c1282d;
     }
   }
 }
@@ -111,6 +192,7 @@ footer {
   h2.widget-title {
     font-size: 22px;
     color: #fdfdfd;
+    font-weight: 500;
   }
 
   ul {
@@ -118,6 +200,11 @@ footer {
     padding: 0;
     margin: 0;
     font-size: 18px;
+    font-weight: 300;
+
+    li {
+      padding: 5px 0;
+    }
 
     a {
       color: #e5e5e5;
@@ -143,4 +230,122 @@ footer {
   text-align: center;
   font-style: italic;
   padding: 15px 0;
+}
+
+.cover {
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+
+  video {
+    width: 100%;
+    transform: translateY(-30%);
+  }
+
+  .cover-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 110px 0 0;
+    text-align: right;
+
+    .cover-title {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #c1282d;
+      font-size: 60px;
+    }
+
+    p.cover-desc {
+      width: 70%;
+      float: right;
+      text-align: left;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
+
+.info-banner {
+  padding: 40px 0;
+
+  .banner-title {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .banner-text {
+    font-size: 18px;
+  }
+}
+
+span.red {
+  color: #c1282d;
+}
+
+.home-products-header {
+  background-color: #c1282d;
+  padding: 20px 0;
+  position: relative;
+
+  h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+
+  &::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 22px solid #c1282d;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.products-container {
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.prod {
+  text-align: center;
+  color: #3c4142;
+  margin-bottom: 15px;
+
+  a {
+    color: #3c4142;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .product-name {
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+
+  .price {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .add-to-cart {
+    display: block;
+    font-style: italic;
+    color: #929596;
+
+    .fa {
+      margin-left: 15px;
+      color: #c1282d;
+    }
+  }
 }

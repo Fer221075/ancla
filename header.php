@@ -21,31 +21,34 @@
 
 <body <?php body_class(); ?>>
 
-	<header>
-        <div class="wrapper clearfix">
-            <!-- TODO: logo -->
-<!--            <div class="site-branding">-->
-<!--                --><?php
-//                if ( is_front_page() && is_home() ) : ?>
-<!--                    <h1 class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></h1>-->
-<!--                --><?php //else : ?>
-<!--                    <p class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></p>-->
-<!--                    --><?php
-//                endif; ?>
-<!--            </div>-->
-            <nav id="site-navigation" class="main-navigation" role="navigation">
-                <ul>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Contacto</a></li>
+
+        <div class="container top-bar">
+            <ul class="top-links">
+                <ul class="flags">
+                    <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/svg/pa.svg" alt=""></a></li>
+                    <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/svg/co.svg" alt=""></a></li>
                 </ul>
-                <?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-                <?php get_search_form(); ?>
-            </nav>
+                <li>
+                    <a href="#">Login / Registro</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </li>
+            </ul>
         </div>
-	</header><!-- #masthead -->
+        <header>
+            <div class="container clearfix">
+                <div class="site-branding">
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri();?>/img/logo_ancla_blanco.png" alt="">
+                    </a>
+                </div>
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+                    <?php get_search_form(); ?>
+                </nav>
+            </div>
+        </header><!-- #masthead -->
 
 	<section id="content" class="site-content">
 
