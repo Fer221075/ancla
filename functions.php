@@ -144,6 +144,14 @@ add_filter('get_the_archive_title', function ($title) {
     return preg_replace('/^\w+: /', '', $title);
 });
 
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+// Remove breadcrumbs
+remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
 /**
  * Implement custom comments mark up
  */

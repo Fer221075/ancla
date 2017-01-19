@@ -38,8 +38,9 @@
         </div>
         <header>
             <div class="container clearfix">
+                <div class="row">
                 <div class="site-branding">
-                    <a href="#">
+                    <a href="<?php echo get_home_url(); ?>">
                         <img src="<?php echo get_template_directory_uri();?>/img/logo_ancla_blanco.png" alt="">
                     </a>
                 </div>
@@ -47,6 +48,7 @@
                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
                     <?php get_search_form(); ?>
                 </nav>
+                </div>
             </div>
         </header><!-- #masthead -->
 

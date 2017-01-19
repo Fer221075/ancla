@@ -5,6 +5,8 @@
 
 $headerFontColor: #BBBFC2;
 $headerAndFooterBg: #2b2b2a;
+$anclaRed: #c1282d;
+$anclaRedTranslucid: rgba(193,40,45,0.8);
 $headerAndFooterBgWTransparency: rgba(43,43,42,0.8);
 
 /*************************************/
@@ -45,8 +47,34 @@ $headerAndFooterBgWTransparency: rgba(43,43,42,0.8);
 /**************** MAIN ***************/
 /*************************************/
 
+
+.ancla-btn {
+  color: #ffffff;
+  background-color: $anclaRed;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 16px;
+  margin-top: 15px;
+
+  &.rounded {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+
+  &.translucid {
+    background-color: $anclaRedTranslucid;
+  }
+}
+
 body {
   font-family: 'ProximaNova', sans-serif;
+}
+
+.bg-img {
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+  background-size:cover;
 }
 
 .wrapper {
@@ -103,7 +131,7 @@ header {
   width: 150px;
   float: left;
   position: absolute;
-  background-color: #c1282d;
+  background-color: $anclaRed;
   text-align: center;
   padding: 10px 0;
   border-bottom-right-radius: 35px;
@@ -180,7 +208,7 @@ footer {
 
     &[type="submit"] {
       width: 25%;
-      background-color: #c1282d;
+      background-color: $anclaRed;
     }
   }
 }
@@ -252,7 +280,7 @@ footer {
     .cover-title {
       text-transform: uppercase;
       font-weight: 600;
-      color: #c1282d;
+      color: $anclaRed;
       font-size: 60px;
     }
 
@@ -280,11 +308,11 @@ footer {
 }
 
 span.red {
-  color: #c1282d;
+  color: $anclaRed;
 }
 
 .home-products-header {
-  background-color: #c1282d;
+  background-color: $anclaRed;
   padding: 20px 0;
   position: relative;
 
@@ -301,7 +329,7 @@ span.red {
     height: 0;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
-    border-top: 22px solid #c1282d;
+    border-top: 22px solid $anclaRed;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -345,7 +373,39 @@ span.red {
 
     .fa {
       margin-left: 15px;
-      color: #c1282d;
+      color: $anclaRed;
     }
   }
+}
+
+.cat-info-box {
+  width: 50%;
+  float: right;
+
+  h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $anclaRed;
+    font-size: 70px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 15%;
+  }
+}
+
+.site-content {
+  padding: 40px 0;
+}
+
+.product-category {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.woocommerce div.product.product-category:not(:last-child) {
+  margin-bottom: 25px;
 }
