@@ -261,13 +261,13 @@ footer {
 }
 
 .cover {
-  height: 70vh;
+  height: 77vh;
   overflow: hidden;
   position: relative;
 
   video {
     width: 100%;
-    transform: translateY(-30%);
+    transform: translateY(-15%);
   }
 
   .cover-text {
@@ -279,17 +279,19 @@ footer {
 
     .cover-title {
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: bolder;
+      line-height: 0.9;
+      text-align: left;
       color: $anclaRed;
       font-size: 60px;
     }
 
     p.cover-desc {
       width: 70%;
-      float: right;
+      float: left;
       text-align: left;
       font-size: 18px;
-      font-weight: 300;
+      line-height: 1;
     }
   }
 }
