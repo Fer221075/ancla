@@ -416,3 +416,53 @@ body.home .site-content {
 .woocommerce div.product.product-category:not(:last-child) {
   margin-bottom: 25px;
 }
+
+.iso-cats {
+  position: relative;
+  height: 500px;
+}
+
+.category-name{
+  color: $anclaRed;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+p.category-description {
+  font-size: 18px;
+}
+
+ul.category-actions {
+  list-style-type: none;
+  margin: 25px 0 0;
+  padding: 0;
+
+  li.category-action {
+    display: inline-block;
+    max-width: 132px;
+    text-align: center;
+
+    &:not(:first-child) {
+      margin-left: 25px;
+    }
+
+    span {
+      font-size: 20px;
+      line-height: 0.8;
+      display: block;
+      padding: 8px 12px;
+    }
+
+    a {
+      border-top-right-radius: 35px;
+      background-color: $anclaRed;
+      display: block;
+      padding: 20px 20px;
+    }
+
+    img {
+      width: 90px;
+    }
+  }
+}

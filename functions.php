@@ -149,6 +149,14 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
+// Display empty product categories
+add_filter( 'woocommerce_product_subcategories_hide_empty', 'show_empty_categories', 10, 1 );
+function show_empty_categories ( $show_empty ) {
+    $show_empty  =  true;
+    // You can add other logic here too
+    return $show_empty;
+}
+
 // Remove breadcrumbs
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
@@ -192,3 +200,103 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+//// Add term page
+//function ancla_taxonomy_add_image_field() {
+//    // this will add the custom meta field to the add new term page
+//    ?>
+<!--    <div class="form-field">-->
+<!--        <label for="landing_image">Landing image</label>-->
+<!--        <input type="text" name="landing_image[image]" id="landing_image[image]" class="landing_image" value="--><?php //echo $landingimage; ?><!--">-->
+<!--        <input class="upload_image_button button" name="_add_landing_image" id="_add_landing_image" type="button" value="Select/Upload Image" />-->
+<!--        <script>-->
+<!--            jQuery(document).ready(function() {-->
+<!--                jQuery('#_add_landing_image').click(function() {-->
+<!--                    wp.media.editor.send.attachment = function(props, attachment) {-->
+<!--                        jQuery('.landing-image').val(attachment.url);-->
+<!--                    }-->
+<!--                    wp.media.editor.open(this);-->
+<!--                    return false;-->
+<!--                });-->
+<!--            });-->
+<!--        </script>-->
+<!--    </div>-->
+<!--    --><?php
+//}
+//add_action( 'product_cat_add_form_fields', 'ancla_taxonomy_add_image_field', 10, 2 );
+//
+//// Add Upload fields to "Edit Taxonomy" form
+//function ancla_taxonomy_edit_image_field($term) {
+//
+//    // put the term ID into a variable
+//    $t_id = $term->term_id;
+//
+//    // retrieve the existing value(s) for this meta field. This returns an array
+//    $term_meta = get_option( "product_cat_$t_id" ); ?>
+<!---->
+<!--    <tr class="form-field">-->
+<!--        <th scope="row" valign="top"><label for="_landing_image">Landing Image</label></th>-->
+<!--        <td>-->
+<!--            --><?php
+//            $landingimage = esc_attr( $term_meta['image'] ) ? esc_attr( $term_meta['image'] ) : '';
+//            ?>
+<!--            <input type="text" name="landing-image[image]" id="landing-image[image]" class="landing-image" value="--><?php //echo $landingimage; ?><!--">-->
+<!--            <input class="upload_image_button button" name="_landing-image" id="_landing-image" type="button" value="Select/Upload Image" />-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr class="form-field">-->
+<!--        <th scope="row" valign="top"></th>-->
+<!--        <td style="height: 150px;">-->
+<!--            <style>-->
+<!--                div.img-wrap {-->
+<!--                    background: url('http://placehold.it/900x900') no-repeat center;-->
+<!--                    background-size:contain;-->
+<!--                    max-width: 450px;-->
+<!--                    max-height: 150px;-->
+<!--                    width: 100%;-->
+<!--                    height: 100%;-->
+<!--                    overflow:hidden;-->
+<!--                }-->
+<!--                div.img-wrap img {-->
+<!--                    max-width: 450px;-->
+<!--                }-->
+<!--            </style>-->
+<!--            <div class="img-wrap">-->
+<!--                <img src="--><?php //echo $landingimage; ?><!--" id="landing-img">-->
+<!--            </div>-->
+<!--            <script>-->
+<!--                jQuery(document).ready(function() {-->
+<!--                    jQuery('#_landing_image').click(function() {-->
+<!--                        wp.media.editor.send.attachment = function(props, attachment) {-->
+<!--//                            jQuery('#landing-img').attr("src",attachment.url)-->
+<!--                            jQuery('.landing-image').val(attachment.url)-->
+<!--                        }-->
+<!--                        wp.media.editor.open(this);-->
+<!--                        return false;-->
+<!--                    });-->
+<!--                });-->
+<!--            </script>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    --><?php
+//}
+//add_action( 'product_cat_edit_form_fields', 'ancla_taxonomy_edit_image_field', 10, 2 );
+//
+//// Save Taxonomy Image fields callback function.
+//function save_product_cat_custom_meta( $term_id ) {
+//    if ( isset( $_POST['landing_image'] ) ) {
+//        $t_id = $term_id;
+//        $term_meta = get_option( "product_cat_$t_id" );
+//        $cat_keys = array_keys( $_POST['landing_image'] );
+//        foreach ( $cat_keys as $key ) {
+//            if ( isset ( $_POST['landing_image'][$key] ) ) {
+//                $term_meta[$key] = $_POST['landing_image'][$key];
+//            }
+//        }
+//        // Save the option array.
+//        update_option( "product_cat_$t_id", $term_meta );
+//    }
+//}
+//add_action( 'edited_product_cat', 'save_product_cat_custom_meta', 10, 2 );
+//add_action( 'create_product_cat', 'save_product_cat_custom_meta', 10, 2 );

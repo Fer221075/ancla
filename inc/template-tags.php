@@ -78,6 +78,31 @@ function ancla_entry_footer() {
 }
 endif;
 
+if ( ! function_exists('ancla_category_actions') ) :
+
+function ancla_category_actions($term) {
+    ?>
+
+    <div class="category-data">
+        <h3 class="category-name"><?php echo $term->name; ?></h3>
+        <p class="category-description"><?php echo $term->description; ?></p>
+    </div>
+    <ul class="category-actions">
+        <li class="category-action">
+            <a href="#"><img src="<?php echo get_template_directory_uri() . '/img/icono_asesor.png' ?>" alt=""></a>
+            <span><strong>Contacte</strong> un asesor</span>
+        </li>
+        <li class="category-action">
+            <a href="#"><img src="<?php echo get_template_directory_uri() . '/img/icono_cotizacion.png' ?>" alt=""></a>
+            <span><strong>Solicite</strong> cotización</span>
+        </li>
+    </ul>
+
+    <?php
+}
+
+endif;
+
 /**
  * Returns true if a blog has more than 1 category.
  *
