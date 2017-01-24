@@ -25,8 +25,79 @@
 
         customIsotope();
 
+        var distanceOff = $('.banner-trigger-off').offset().top,
+            distanceOn = $('.banner-trigger-on').offset().top,
+            $window = $(window);
+
+        var banner = $('.cc-info-banner');
+
+        $window.scroll(function() {
+            if ( $window.scrollTop() >= distanceOn ) {
+                banner.removeClass('parallax');
+                $('.abs-fix').css('opacity', 1);
+            } else if ( $window.scrollTop() <= distanceOn ) {
+                banner.addClass('parallax');
+            }
+        });
+
+
+        recalculateCCParallaxItems();
+
+        $window.scroll(function () {
+           if ($window.scrollTop() > 0) {
+               $('.cash-control-content .cc-item').fadeOut('fast');
+               $('.cc-title').addClass('cc-title-big');
+           } else {
+               $('.cash-control-content .cc-item').fadeIn('fast');
+               $('.cc-title').removeClass('cc-title-big');
+           }
+        });
     });
 }));
+
+function recalculateCCParallaxItems() {
+
+    var image = { width: 1903, height: 974 };
+
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+
+    // Get largest dimension increase
+    var xScale = windowWidth / image.width;
+    var yScale = windowHeight / image.height;
+    var scale;
+    var yOffset = 0;
+    var xOffset = 0;
+
+    if (xScale > yScale) {
+        // The image fits perfectly in x axis, stretched in y
+        scale = xScale;
+        yOffset = (windowHeight - (image.height * scale)) / 2;
+    } else {
+        // The image fits perfectly in y axis, stretched in x
+        scale = yScale;
+        xOffset = (windowWidth - (image.width * scale)) / 2;
+    }
+
+    $('.cc-item').each(function () {
+
+
+        var target = { x: $(this).data('x'), y: $(this).data('y'), w: 50 };
+
+        var newW = target.w * scale;
+        //
+        // console.log(scale);
+        // console.log(target.w * scale);
+
+        var hDiff = target.w - newW;
+
+        $(this).css('top', ((target.y) * scale) + yOffset + hDiff);
+        $(this).css('left', (target.x) * scale + xOffset);
+        $(this).css('width', newW);
+    });
+
+
+}
 
 function customIsotope() {
 
