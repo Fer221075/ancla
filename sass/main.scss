@@ -386,17 +386,17 @@ span.red {
   float: right;
 
   h3 {
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 600;
     color: $anclaRed;
-    font-size: 70px;
+    font-size: 55px;
+    font-weight: 600;
+    margin: 0;
   }
 
   p {
     font-size: 18px;
     font-weight: 500;
     padding-right: 15%;
+    line-height: 1;
   }
 }
 
@@ -419,7 +419,10 @@ body.home .site-content {
 
 .iso-cats {
   position: relative;
-  height: 500px;
+
+  .subcat-item img {
+    width: 100%;
+  }
 }
 
 .category-name{
@@ -466,3 +469,51 @@ ul.category-actions {
     }
   }
 }
+
+.subcat-item {
+  opacity: 0;
+
+  .item-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $anclaRed;
+    background-blend-mode: multiply;
+
+    @include hover_transition;
+
+    h4.item-title {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 400;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      padding: 0 20px;
+      text-align: center;
+    }
+  }
+
+  &:hover .item-hover {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

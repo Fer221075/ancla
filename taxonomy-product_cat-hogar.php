@@ -15,36 +15,40 @@ get_header( 'shop' ); ?>
 <?php woocommerce_product_loop_start(); ?>
 
 <?php
-//$term = get_queried_object();
-//
-//$parent_id 		= empty( $term->term_id ) ? 0 : $term->term_id;
-//
-//$args = array('child_of' => $parent_id);
-//
-//$categories = get_terms('product_cat', $args);
-//foreach($categories as $category) {
-//
-//    $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true  );
-//
-//    if ( $thumbnail_id ) {
-//        $image = wp_get_attachment_image_src( $thumbnail_id, array('1170','200') );
-//        $image = $image[0];
-//    } else {
-//        $image = wc_placeholder_img_src();
-//    }
-//
-//    ?>
-<!--    -->
-<!--    <div class="subcat-item">-->
-<!--        <a href="#">-->
-<!--            <img src="--><?php //echo $image; ?><!--" alt="">-->
-<!--        </a>-->
-<!--    </div>-->
-<!--    -->
-<!--    --><?php //
-//}
-//
-//?>
+$term = get_queried_object();
+
+$parent_id 		= empty( $term->term_id ) ? 0 : $term->term_id;
+
+$args = array('child_of' => $parent_id);
+
+$categories = get_terms('product_cat', $args);
+foreach($categories as $category) {
+
+    $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true  );
+
+    if ( $thumbnail_id ) {
+        $image = wp_get_attachment_image_src( $thumbnail_id, array('1170','200') );
+        $image = $image[0];
+    } else {
+        $image = wc_placeholder_img_src();
+    }
+
+    ?>
+
+    <div class="subcat-item">
+        <a href="#">
+            <img src="<?php echo $image; ?>" alt="">
+            <div class="item-hover bg-img">
+                <img src="<?php echo $image; ?>" alt="">
+                <h4 class="item-title"><?php echo $category->name;?></h4>
+            </div>
+        </a>
+    </div>
+
+    <?php
+}
+
+?>
 
 <?php woocommerce_product_loop_end(); ?>
 
