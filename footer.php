@@ -11,6 +11,11 @@
 
 ?>
 
+
+    <div class="go-up fixed">
+        <a class="smooth-anchor" href="#top"><i class="fa fa-angle-up"></i></a>
+    </div>
+
 	</section><!-- #content -->
 
 	<footer>

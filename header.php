@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 
 
-        <div class="container top-bar">
+        <div id="top" class="container top-bar">
             <ul class="top-links">
                 <ul class="flags">
                     <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/svg/pa.svg" alt=""></a></li>
@@ -51,6 +51,9 @@
                 </div>
             </div>
         </header><!-- #masthead -->
+        <div class="loader-container">
+            <div class="pre-loader"></div>
+        </div>
 
 	<section id="content" class="site-content">
 
