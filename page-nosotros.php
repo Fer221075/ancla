@@ -25,31 +25,76 @@ get_header(); ?>
     </div>
 </div>
 
-<section class="container">
+<section class="container no-pad">    
+  <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
 
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-        <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-    </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav col-md-12">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li class="col-md-4 text-center">
+                        <a class="page-scroll" href="#mision">Misión</a>
+                    </li>
+                    <li class="col-md-4 text-center">
+                        <a class="page-scroll" href="#vision">Visión</a>
+                    </li>
+                    <li class="col-md-4 text-center">
+                        <a class="page-scroll" href="#historia">Historia</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+</section>
 
-    <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-          <h3>HOME</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<section id="mision" class="about-section container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 title">
+                <h3>Misión</h1>
+            </div>
+            <div class="text">
+              <p>Cajas Fuertes Ancla S.A. fabrica y comercializa equipos; proporciona asesoría y soluciones en seguridad física y electrónica para el sector financiero, residencial y empresarial con responsabilidad social y sostenibilidad.</p>
+            </div>
         </div>
-        <div id="menu1" class="tab-pane fade">
-          <h3>Menu 1</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</section>
+<section id="vision" class="about-section container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 title">
+                <h3>Visión</h1>
+            </div>
+            <div class="text">
+              <p>Buscamos ser competitivos en el mercado de la seguridad física y electrónica en el apoyo y aprendizaje continuo de nuestro personal; la tecnología, el cumplimiento y apertura de nuevos mercados son aliados seguros para nuestros clientes.</p>
+            </div>
         </div>
-        <div id="menu2" class="tab-pane fade">
-          <h3>Menu 2</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        </div>
-        <div id="menu3" class="tab-pane fade">
-          <h3>Menu 3</h3>
-          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+</section>
+<section id="historia" class="about-section container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 title">
+                <h3>Historia</h1>
+            </div>
+            <div class="text">
+              <p>Cajas Fuertes Ancla S.A. inicia labores el 8 de Octubre de 1964, en la ciudad de Medellín bajo la razón social JAVI SAFE LTDA. Posteriormente la empresa se traslada a la ciudad de Bogotá para convertirse en 1995 en la sociedad Cajas Fuertes Ancla S.A. y después de un proceso de transformación y cobertura del mercado, se estructura en una completa planta de producción, para abastecer el mercado colombiano y atender la demanda de otros países.</p>
+<p>Es así como en la actualidad contamos con un personal idóneo y una infraestructura técnica, administrativa y comercial que nos acredita como empresa líder en el mercado de la seguridad, con el aval de una amplia red de clientes a nivel nacional e Internacional.</p>
+            </div>
         </div>
     </div>
 </section>
