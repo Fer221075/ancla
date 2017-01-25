@@ -1,5 +1,5 @@
 <section class="home-products">
-    <div class="home-products-header">
+    <div class="red-section-header">
         <div class="container">
             <h3>Encuentra tu producto</h3>
         </div>

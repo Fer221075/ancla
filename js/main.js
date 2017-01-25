@@ -25,35 +25,44 @@
 
         customIsotope();
 
+        initParallaxCashControl()
+
+        recalculateCCParallaxItems();
+
+        if ($(window).scrollTop() == 0){
+            $('.cash-control-content .cc-item').css('opacity', 100);
+        }
+
+        $(window).scroll(function () {
+
+            var scrollTop = $(window).scrollTop(),
+                ccCover = $('.cover.cash-control'),
+                offsetBottom = ccCover.offset().top + ccCover.height();
+
+            $('.cash-control-content').css('opacity', 1 - (($(window).scrollTop()) / 250));
+        });
+    });
+}));
+
+function initParallaxCashControl() {
+
+    if ($('.banner-trigger-off').length > 0 && $('.banner-trigger-on').length > 0) {
         var distanceOff = $('.banner-trigger-off').offset().top,
             distanceOn = $('.banner-trigger-on').offset().top,
             $window = $(window);
 
         var banner = $('.cc-info-banner');
 
-        $window.scroll(function() {
-            if ( $window.scrollTop() >= distanceOn ) {
+        $(window).scroll(function() {
+            if ( $(window).scrollTop() >= distanceOn ) {
                 banner.removeClass('parallax');
                 $('.abs-fix').css('opacity', 1);
-            } else if ( $window.scrollTop() <= distanceOn ) {
+            } else if ( $(window).scrollTop() <= distanceOn ) {
                 banner.addClass('parallax');
             }
         });
-
-
-        recalculateCCParallaxItems();
-
-        $window.scroll(function () {
-           if ($window.scrollTop() > 0) {
-               $('.cash-control-content .cc-item').fadeOut('fast');
-               $('.cc-title').addClass('cc-title-big');
-           } else {
-               $('.cash-control-content .cc-item').fadeIn('fast');
-               $('.cc-title').removeClass('cc-title-big');
-           }
-        });
-    });
-}));
+    }
+}
 
 function recalculateCCParallaxItems() {
 
@@ -82,7 +91,7 @@ function recalculateCCParallaxItems() {
     $('.cc-item').each(function () {
 
 
-        var target = { x: $(this).data('x'), y: $(this).data('y'), w: 50 };
+        var target = { x: $(this).data('x'), y: $(this).data('y'), w: 52 };
 
         var newW = target.w * scale;
         //
