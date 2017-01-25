@@ -9,6 +9,7 @@ function ancla_scripts(){
 	wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), null, true );
     wp_enqueue_script( 'isotope', 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', array('jquery'), null, true );
     wp_enqueue_script( 'masonry-horizontal', get_template_directory_uri() . '/js/packery-mode.pkgd.min.js', array('jquery', 'isotope'), null, true );
+    wp_enqueue_script( 'slick', 'https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js', array('jquery'), null, true );
 
     wp_enqueue_script( 'ancla-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	wp_enqueue_script( 'ancla-scripts', get_template_directory_uri() . '/js/main.js', array('jquery', 'bootstrap'), null, true );
