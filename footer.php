@@ -22,9 +22,17 @@
         <!-- TODO: banner soporte técnico -->
         <div class="container">
             <div class="col-md-6">
-                <div class="certs">
-                    <h4>Certificaciones</h4>
-                    <!-- TODO: logos certificaciones -->
+                <div class="certs col-md-12 no-pad">
+                  <div class="col-md-4 no-pad">
+                        <h4>Certificaciones</h4>
+                  </div>
+                  <div class="col-md-6">
+                    <ul>
+                        <li><img src="http://localhost:8888/ancla_wp/wp-content/themes/ancla/img/iso_9001.png" alt="iso_9001"></li>
+                        <li><img src="http://localhost:8888/ancla_wp/wp-content/themes/ancla/img/iso_14001.png" alt="iso_14001"></li>
+                        <li><img src="http://localhost:8888/ancla_wp/wp-content/themes/ancla/img/oshsas_18001.png" alt="oshsas_18001"></li>
+                    </ul>
+                  </div>
                 </div>
             </div>
             <div class="col-md-6">
