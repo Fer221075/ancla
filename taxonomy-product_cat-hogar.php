@@ -24,10 +24,10 @@ $args = array('child_of' => $parent_id);
 $categories = get_terms('product_cat', $args);
 foreach($categories as $category) {
 
-    $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true  );
+    $thumbnail_id = get_woocommerce_term_meta($category->term_id, 'thumbnail_id', true);
 
-    if ( $thumbnail_id ) {
-        $image = wp_get_attachment_image_src( $thumbnail_id, array('1170','200') );
+    if ($thumbnail_id) {
+        $image = wp_get_attachment_image_src($thumbnail_id, array('1170', '200'));
         $image = $image[0];
     } else {
         $image = wc_placeholder_img_src();
@@ -36,7 +36,7 @@ foreach($categories as $category) {
     ?>
 
     <div class="subcat-item">
-        <a href="#">
+        <a href="<?php echo get_term_link( $category->slug , 'product_cat' ) ?>">
             <img src="<?php echo $image; ?>" alt="">
             <div class="item-hover bg-img">
                 <img src="<?php echo $image; ?>" alt="">

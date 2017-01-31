@@ -60,6 +60,35 @@
                 }
             });
         }
+
+        $('.cover-slides').slick({
+            autoplay: true,
+            autoplaySpeed: 4000,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+
+
+        $('.product-main-gallery').slick({
+            arrows: false,
+            infinite: true,
+            asNavFor: '.product-thumbnails',
+            slidesToScroll: 1,
+            slidesToShow: 1
+        });
+
+        $('.product-thumbnails').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            centerMode: true,
+            focusOnSelect: true,
+            asNavFor: '.product-main-gallery'
+
+        });
+
     });
 }));
 

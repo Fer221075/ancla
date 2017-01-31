@@ -167,7 +167,7 @@ function growdev_custom_woocommerce_placeholder( $image_url ) {
 }
 
 // Remove breadcrumbs
-remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+//remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
 /**
  * Implement custom comments mark up

@@ -1141,6 +1141,51 @@ body.page .cover.slide {
   }
 }
 
+.woocommerce div.product div.images .product-thumbnails img {
+    width: (100% / 5);
+}
+
+.woocommerce .product {
+
+  .prod-title {
+    text-transform: uppercase;
+    color: $anclaRed;
+  }
+
+  .summary p, .product-description {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .product-description h3 {
+    text-transform: uppercase;
+    color: $anclaRed;
+  }
+  
+  .prices {
+    margin-top: 15px;
+    
+    .price {
+      color: $anclaRed;
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+
+  form.cart {
+    margin-top: 15px;
+
+    .button {
+      background-color: $anclaRed;
+
+      &::before {
+        content: '\f07a';
+        font-family: 'FontAwesome';
+        margin-right: 12px;
+      }
+    }
+  }
+}
 
 
 

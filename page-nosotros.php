@@ -75,15 +75,3 @@ get_header(); ?>
 <?php
 get_footer();
 ?>
-
-<script>
-    $('.cover-slides').slick({
-        autoplay: true,
-        autoplaySpeed: 4000,
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-    });
-</script>
