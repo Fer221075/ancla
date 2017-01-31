@@ -83,7 +83,6 @@ global $post, $product, $woocommerce;
         <?php
         /**
          * woocommerce_single_product_summary hook.
-         *
          * @hooked woocommerce_template_single_title - 5
          * @hooked woocommerce_template_single_rating - 10
          * @hooked woocommerce_template_single_price - 10
