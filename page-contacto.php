@@ -1,6 +1,9 @@
 <?php
 get_header(); ?>
 
+<?php
+while ( have_posts() ) : the_post(); ?>
+
 <section class="cover bg-img">
     <?php the_post_thumbnail(); ?>
 </section>
@@ -18,9 +21,7 @@ get_header(); ?>
             <div class="col-md-6">
                 <?php
 
-                if ( function_exists( 'ccf_output_form' ) ) {
-                    ccf_output_form( 113 );
-                }
+                the_content();
 
                 ?>
 <!--                <form action="#" class="form-circle-box">-->
@@ -73,5 +74,8 @@ $coords = explode(":", $lat_long);
 
 
 <?php
+
+endwhile; // End of the loop.
+
 get_footer();
 ?>
