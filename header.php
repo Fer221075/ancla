@@ -29,7 +29,11 @@
                     <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/svg/co.svg" alt=""></a></li>
                 </ul>
                 <li>
-                    <a href="#">Login / Registro</a>
+                    <?php if ( is_user_logged_in() ): ?>
+                        <a href="<?php echo esc_url( wc_get_account_endpoint_url( 'orders' ) ); ?>"><?php esc_attr_e( 'My Account', 'woocommerce' ); ?></a>
+                    <?php else: ?>
+                        <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>">Login / Registro</a>
+                    <?php endif; ?>
                 </li>
                 <li>
                     <a href="javascript:;" class="open-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>

@@ -169,6 +169,7 @@ function growdev_custom_woocommerce_placeholder( $image_url ) {
 // Remove breadcrumbs
 //remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
+require get_template_directory() . '/inc/woocommerce-register-fields.php';
 /**
  * Implement custom comments mark up
  */
