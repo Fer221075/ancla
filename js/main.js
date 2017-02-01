@@ -98,6 +98,26 @@
            $(this).slideUp();
         });
 
+        $('.search-form .fa.submit').click(function (e) {
+
+            e.preventDefault();
+
+            if ( $(this).closest('.search-form').hasClass('search-open') ){
+                $(this).closest('form').submit();
+            } else {
+                $('.search-form input').animate({
+                    width: '80%',
+                    padding: '5px'
+                }, 600 );
+
+                $('.search-form input').focus();
+
+                $(this).closest('.search-form').addClass('search-open');
+
+            }
+
+        });
+
     });
 }));
 

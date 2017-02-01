@@ -389,6 +389,7 @@ span.red {
 
   img {
     width: 85%;
+    height: auto;
   }
 
   .product-name {
@@ -1483,6 +1484,31 @@ p.cart-empty {
   color: $anclaRed;
   font-weight: 500;
 }
+
+.search-form {
+
+  text-align: right;
+
+  input.query {
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+    background-color: $headerAndFooterBg;
+    color: #fff;
+    width: 0;
+    margin-right: 10px;
+  }
+
+  .fa.submit {
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
 
 
 

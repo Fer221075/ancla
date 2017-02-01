@@ -9,15 +9,17 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+    <div class="container">
 
 		<?php
 		if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'ancla' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+
+			<div class="row">
+                <h1 class="page-title"><?php printf( esc_html__( 'Búsqueda: %s', 'ancla' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+            </div>
+
+            <div class="row">
 
 			<?php
 			/* Start the Loop */
@@ -31,6 +33,9 @@ get_header(); ?>
 				get_template_part( 'template-parts/content', 'search' );
 
 			endwhile;
+			?>
+            </div>
+            <?php
 
 			the_posts_navigation();
 
@@ -40,9 +45,7 @@ get_header(); ?>
 
 		endif; ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+    </div>
 
 <?php
-get_sidebar();
 get_footer();
