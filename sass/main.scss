@@ -884,6 +884,11 @@ button.btn-red {
 
   a {
     display: inline-block;
+    color: #fff;
+    
+    &:hover {
+      color: #fff;
+    }
   }
 
   h5 {
@@ -1042,11 +1047,13 @@ button.btn-red {
   display: inline-block;
   text-align: center;
   padding: 20px 0;
+  color: #fff;
 
   @include hover_transition;
 
   &.current, &:hover {
     background-color: $anclaRed;
+    color: #fff;
   }
 }
 
