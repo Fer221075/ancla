@@ -435,7 +435,7 @@ span.red {
 }
 
 .site-content {
-  padding: 40px 0;
+  padding: 40px 0 0;
   position: relative;
 }
 
@@ -816,14 +816,20 @@ a.cc-button {
 /*********** FORM STYLES *************/
 /*************************************/
 
-.form-circle-box .form-control {
+.form-circle-box .form-control,
+.ccf-form .form-control{
   background: #ececec none repeat scroll 0 0;
   border: medium none;
   border-radius: 10px;
   color: #999999;
 }
 
-button.btn-red {
+.ccf-form .ccf-submit-button {
+  float: right;
+}
+
+button.btn-red,
+.ccf-submit-button {
   background: $anclaRed none repeat scroll 0 0;
   border-radius: 25px;
   color: #ffffff;
@@ -831,26 +837,23 @@ button.btn-red {
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 18px;
-  border: 2px solid transparent;
+  border: none;
 
   @include hover_transition;
 
-  &:hover {
-    color: $anclaRed;
-    background: #fff;
-    border: 2px solid $anclaRed;
+  &:hover, &:active, &:focus {
+    color: #fff;
+    background: $headerAndFooterBg;
   }
 }
 
 .border-box {
   border: 4px solid #ececec;
   border-radius: 25px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   padding: 20px 0;
   width: 80%;
   text-align: center;
+  margin: 0 auto;
 
   h4 {
     font-size: 30px;
