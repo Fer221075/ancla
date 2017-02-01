@@ -11,19 +11,19 @@
 
 ?>
 
-    <section>
-        <div class="support-banner" style="background-image: url('<?php echo get_template_directory_uri();?>/img/soporte_widget_banner.jpg');">
-            <div class="container">
-                <a href="#"><h5>Contacto con soporte técnico</h5></a>
-            </div>
-        </div>
-    </section>
-
     <div class="go-up fixed">
         <a class="smooth-anchor" href="#top"><i class="fa fa-angle-up"></i></a>
     </div>
 
 	</section><!-- #content -->
+
+    <section>
+        <div class="support-banner" style="background-image: url('<?php echo get_template_directory_uri();?>/img/soporte_widget_banner.jpg');">
+            <div class="container">
+                <a href="<?php echo get_home_url(); ?>/soporte/"><h5>Contacto con soporte técnico</h5></a>
+            </div>
+        </div>
+    </section>
 
 	<footer>
         <div class="container">
