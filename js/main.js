@@ -89,6 +89,15 @@
 
         });
 
+        $('.open-cart').click(function (e) {
+            e.preventDefault();
+            $('.floating-cart').slideDown();
+        });
+
+        $('.floating-cart').mouseleave(function () {
+           $(this).slideUp();
+        });
+
     });
 }));
 
@@ -99,6 +108,10 @@ $(window).on("load", function() {
     }, 200);
 
 });
+
+function showFloatingCart() {
+    $('.floating-cart').slideDown();
+}
 
 function scrollTo(target) {
     $('html, body').animate({

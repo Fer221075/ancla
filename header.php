@@ -32,7 +32,8 @@
                     <a href="#">Login / Registro</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <a href="javascript:;" class="open-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <?php get_template_part('template-parts/floating-cart'); ?>
                 </li>
             </ul>
         </div>
