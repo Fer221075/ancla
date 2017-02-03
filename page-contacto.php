@@ -24,23 +24,6 @@ while ( have_posts() ) : the_post(); ?>
                 the_content();
 
                 ?>
-<!--                <form action="#" class="form-circle-box">-->
-<!--                    <div class="form-group">-->
-<!--                         <label>Nombre:</label>-->
-<!--                         <input type="text" class="form-control" placeholder="Nombres y apellidos" name="fullName" required />-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <label>Email:</label>-->
-<!--                        <input type="email" class="form-control" placeholder="Email" name="email" required />-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <label>Mensaje:</label>-->
-<!--                        <textarea rows="3" name="message" class="form-control input-md">Mensaje</textarea>-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <button type="submit" class="btn btn-red pull-right">Enviar</button>-->
-<!--                    </div>-->
-<!--                </form>-->
             </div>
             <div class="col-md-6">
                <div id="map"></div>

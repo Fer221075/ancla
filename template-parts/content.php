@@ -10,38 +10,31 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_single() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php ancla_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
-	</header><!-- .entry-header -->
+    <div class="row">
+        <div class="col-md-4 post-image">
+            <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
+        </div>
+        <div class="col-md-8">
 
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'ancla' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
+            <div class="post-title">
+                <a href="<?php the_permalink(); ?>" rel="bookmark"><h2><?php the_title(); ?></h2></a>
+            </div>
+            <div class="post-meta">
+                <?php ancla_posted_on(); ?>
+            </div>
+            <div class="post-excerpt">
+                <?php the_excerpt(); ?>
+            </div>
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ancla' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+            <div class="post-footer">
+                <a href="<?php the_permalink(); ?>#comments">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                    <?php comments_number( '0', '1', '%' ); ?>
+                </a>
+            </div>
 
-	<footer class="entry-footer">
-		<?php ancla_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+        </div>
+    </div>
 </article><!-- #post-## -->
+

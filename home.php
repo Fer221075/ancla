@@ -1,31 +1,62 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: David
+ * Date: 2/02/2017
+ * Time: 14:16
+ */
+
 get_header(); ?>
 
-<section class="cover">
-    <video playsinline="" autoplay="" muted="" loop="" id="bgvid">
-        <source src="<?php echo get_template_directory_uri();?>/vid/slide1_ancla_2.mp4" type="video/mp4">
-    </video>
-    <div class="cover-text">
-        <div class="container">
-            <div class="col-md-6 col-md-offset-6">
-                <h2 class="cover-title"><?php echo get_theme_mod('banner_title'); ?></h2>
-                <p class="cover-desc"><?php echo get_theme_mod('banner_description'); ?></p>
-                <div class="white-shadow"></div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="info-banner">
     <div class="container">
-        <h3 class="banner-title"><?php echo get_theme_mod('info_banner_home_title'); ?></h3>
-        <p class="banner-text"><?php echo get_theme_mod('info_banner_home_text'); ?></p>
-    </div>
-</section>
 
-<?php get_template_part('/template-parts/encuentra-tu-producto'); ?>
+        <div class="row">
 
+            <div class="col-xs-12 row">
 
+                <?php
+                if ( have_posts() ) :
+
+                    if ( is_home() && ! is_front_page() ) : ?>
+                            <div class="col-xs-12 row">
+                                <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                            </div>
+
+                        <?php
+                    endif;
+
+                    ?>
+                    <div class="col-xs-12 row blog-posts">
+                    <?php
+
+                    /* Start the Loop */
+                    while ( have_posts() ) : the_post();
+
+                        /*
+                         * Include the Post-Format-specific template for the content.
+                         * If you want to override this in a child theme, then include a file
+                         * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                         */
+                        get_template_part( 'template-parts/content', get_post_format() );
+
+                    endwhile;
+                    ?>
+                    </div>
+                    <?php
+
+                    the_posts_navigation();
+
+                else :
+
+                    get_template_part( 'template-parts/content', 'none' );
+
+                endif; ?>
+
+                </div>
+
+            </div>
+
+        </div>
 
 <?php
 get_footer();
-?>
