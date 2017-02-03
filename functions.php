@@ -177,6 +177,12 @@ function growdev_custom_woocommerce_placeholder( $image_url ) {
     return $image_url;
 }
 
+function ancla_disable_comment_url($fields) {
+    unset($fields['url']);
+    return $fields;
+}
+add_filter('comment_form_default_fields','ancla_disable_comment_url');
+
 // Remove breadcrumbs
 //remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
@@ -221,3 +227,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+add_filter( 'jetpack_development_mode', '__return_true' );
+//add_filter( 'jetpack_is_staging_site', '__return_true' );

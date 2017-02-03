@@ -98,24 +98,29 @@
            $(this).slideUp();
         });
 
-        $('.search-form .fa.submit').click(function (e) {
+        $('header .search-form .fa.submit').click(function (e) {
 
             e.preventDefault();
 
             if ( $(this).closest('.search-form').hasClass('search-open') ){
                 $(this).closest('form').submit();
             } else {
-                $('.search-form input').animate({
+                $('header .search-form input').animate({
                     width: '80%',
                     padding: '5px'
                 }, 600 );
 
-                $('.search-form input').focus();
+                $('header .search-form input').focus();
 
                 $(this).closest('.search-form').addClass('search-open');
 
             }
 
+        });
+
+        $('.blog-sidebar .search-form .fa.submit').click(function (e) {
+            e.preventDefault();
+            $(this).closest('form').submit();
         });
 
     });

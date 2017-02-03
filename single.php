@@ -31,6 +31,11 @@ while ( have_posts() ) : the_post(); ?>
                 <div class="container full-h pos-r">
                     <div class="cover-post-text row">
                         <h1><?php the_title(); ?></h1>
+                        <?php
+                        $categories = get_the_category();
+                        if ( ! empty( $categories ) ) :?>
+                            <a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>" class="post-category category-<?php echo $categories[0]->term_id;?> category-<?php echo $categories[0]->slug;?>"><?php echo esc_html( $categories[0]->name ); ?></a>
+                        <?php endif; ?>
                         <div class="post-meta">
                             <?php ancla_posted_on(); ?>
                         </div>
@@ -59,6 +64,11 @@ while ( have_posts() ) : the_post(); ?>
                         <div class="post-title">
                             <h2><?php the_title(); ?></h2>
                         </div>
+                        <?php
+                        $categories = get_the_category();
+                        if ( ! empty( $categories ) ) :?>
+                            <a style="margin-top: 10px" href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>" class="post-category category-<?php echo $categories[0]->term_id;?> category-<?php echo $categories[0]->slug;?>"><?php echo esc_html( $categories[0]->name ); ?></a>
+                        <?php endif; ?>
                         <div class="post-meta">
                             <?php ancla_posted_on(); ?>
                         </div>
