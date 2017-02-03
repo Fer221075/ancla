@@ -322,6 +322,10 @@ body.page .cover {
   height: 60vh;
 }
 
+body.home .cover {
+  height: 90vh;
+}
+
 body.single.single .cover {
   background-attachment: fixed;
   height: 70vh;
@@ -465,8 +469,52 @@ body.page.woocommerce-page .site-content {
 }
 
 .product-category {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  height: 680px;
+  position: relative;
+  background-size: 100%;
+  background-color: transparent;
+  background-blend-mode: multiply;
+  overflow: hidden;
+
+  @include hover_transition;
+
+  &:hover, &:active {
+    background-color: $anclaRed;
+    background-size: 105%;
+    .category-hover {
+      opacity: 1;
+    }
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+
+  .category-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    padding: 0 15px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    @include hover_transition;
+
+    h3 {
+      color: #ececec;
+      text-transform: uppercase;
+      z-index:1;
+    }
+  }
 }
 
 .woocommerce div.product.product-category:not(:last-child) {
@@ -1886,4 +1934,57 @@ a.post-category {
     transform: translateY(-50%);
   }
 
+}
+
+.prod-cat-banner {
+  max-height: 280px;
+  overflow: hidden;
+  padding: 50px 0;
+  position: relative;
+
+   img {
+    width: 100%;
+  }
+
+  .banner-shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .25);
+  }
+
+  .category-title {
+    display: block;
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    &::before,
+    &::after {
+      content: '';
+      background: rgba(43,43,42,0.9);
+      width: 60%;
+      height: 4px;
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      left: 100%;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      background-color: rgba(43,43,42,0.9);
+      color: #fdfdfd;
+      padding: 25px 20px;
+      font-size: 30px;
+    }
+  }
 }

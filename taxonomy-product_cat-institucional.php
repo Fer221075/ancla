@@ -29,7 +29,7 @@ get_header( 'shop' ); ?>
 
     </div>
 
-    <?php get_template_part('/template-parts/encuentra-tu-producto'); ?>
+    <?php //get_template_part('/template-parts/encuentra-tu-producto'); ?>
 
 <?php
 get_footer( 'shop' ); ?>

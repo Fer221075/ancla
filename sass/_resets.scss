@@ -54,9 +54,13 @@ p {
   position: relative;
 }
 
-.bg-img{
+.bg-img {
   background-position: 50% 50%;
   background-size: cover;
+
+  &.force-display {
+    display: block !important;
+  }
 }
 
 //input {
