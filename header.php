@@ -102,11 +102,11 @@
                                         <a href="<?php echo $link; ?>" class="title"><?php echo $title; ?></a>
                                     </li>
                                 <?php endif; ?>
-                                <?php if ( $menuitems[ $count + 1 ] && $menuitems[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ): ?>
+                                <?php if ( isset($menuitems[ $count + 1 ]) && $menuitems[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ): ?>
                                     </ul>
                                 <?php $submenu = false; endif; ?>
                             <?php endif; ?>
-                            <?php if ( $menuitems[ $count + 1 ] && $menuitems[ $count + 1 ]->menu_item_parent != $parent_id ): ?>
+                            <?php if ( isset($menuitems[ $count + 1 ]) && $menuitems[ $count + 1 ]->menu_item_parent != $parent_id ): ?>
                             </li>
                             <?php $submenu = false; endif; ?>
                             <?php $count++; endforeach; endif; ?>
