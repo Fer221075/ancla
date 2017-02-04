@@ -50,7 +50,65 @@
                     </a>
                 </div>
                 <nav id="site-navigation" class="main-navigation" role="navigation">
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+                    <div class="menu-container">
+                    <?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+                    <?php
+                    $menu_name = 'primary';
+                    $locations = get_nav_menu_locations();
+                    $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+                    $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
+                    ?>
+                    <ul id="primary-menu" class="menu">
+                        <?php
+                        $count = 0;
+                        $submenu = false;
+                        foreach( $menuitems as $item ):
+                            $link = $item->url;
+                            $title = $item->title;
+                            // item does not have a parent so menu_item_parent equals 0 (false)
+                            if ( !$item->menu_item_parent ):
+                                // save this id for later comparison with sub-menu items
+                                $parent_id = $item->ID;
+                                ?>
+                                <li id="menu-item-<?php echo $item->ID; ?>" class="">
+                                <a href="<?php echo $link; ?>">
+                                    <?php echo $title; ?>
+                                </a>
+                            <?php endif; ?>
+                            <?php if ( $parent_id == $item->menu_item_parent ): ?>
+                                <?php if ( !$submenu ): $submenu = true; ?>
+
+
+                                    <ul class="sub-menu <?php if ($item->object == 'product_cat'):?>submenu-grid<?php endif;?>">
+
+                                <?php endif; ?>
+                                <?php if ($item->object == 'product_cat'):
+                                    $meta = get_term_meta( $item->object_id );
+                                    $thumb_id = $meta['thumbnail_id'][0];
+                                    ?>
+                                    <li class="bg-img submenu-item">
+                                      <?php echo wp_get_attachment_image( $thumb_id, array('200','200') ); ?>
+                                      <a href="<?php echo $item->url;?>">
+                                        <div class="menu-txt">
+                                          <span class="title"><?php echo $item->title;?></span>
+                                        </div>
+                                      </a>
+                                    </li>
+                                <?php else: ?>
+                                    <li class="item">
+                                        <a href="<?php echo $link; ?>" class="title"><?php echo $title; ?></a>
+                                    </li>
+                                <?php endif; ?>
+                                <?php if ( $menuitems[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ): ?>
+                                    </ul>
+                                <?php $submenu = false; endif; ?>
+                            <?php endif; ?>
+                            <?php if ( $menuitems[ $count + 1 ]->menu_item_parent != $parent_id ): ?>
+                            </li>
+                            <?php $submenu = false; endif; ?>
+                            <?php $count++; endforeach; ?>
+
+                    </div>
                     <?php get_search_form(); ?>
                 </nav>
                 </div>

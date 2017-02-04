@@ -169,6 +169,11 @@ body.page.woocommerce-page header {
 
     li {
       display: inline-block;
+
+      &:hover ul.sub-menu,
+      &:hover .submenu-cont {
+        display: block;
+      }
     }
 
     li a {
@@ -1987,5 +1992,58 @@ a.post-category {
       padding: 25px 20px;
       font-size: 30px;
     }
+  }
+}
+
+
+ul.sub-menu {
+  position: absolute;
+  background: #2b2b2a;
+  z-index: 1;
+  display: none;
+
+  @include hover_transition;
+
+  li {
+    display: block;
+
+    @include hover_transition;
+
+    &:hover {
+      background-color: $anclaRed;
+    }
+  }
+
+  li a {
+    padding: 12px 10px;
+  }
+}
+
+.submenu-grid {
+  border: 2px solid $headerAndFooterBg;
+  border-top: none;
+
+  li {
+    background-color: $headerAndFooterBg;
+    background-blend-mode: multiply;
+    width: 180px;
+    float: left;
+
+    @include hover_transition;
+
+    &:hover {
+      background-color: $anclaRed !important;
+    }
+  }
+}
+
+ul.sub-menu.submenu-grid li a {
+  padding: 45px 20px;
+}
+
+.home header, body.page header, body.term-cash-control header {
+  .submenu-grid li,
+   ul.sub-menu {
+    background-color: $headerAndFooterBgWTransparency;
   }
 }

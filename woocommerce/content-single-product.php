@@ -49,7 +49,7 @@ global $post, $product, $woocommerce;
                     foreach ( $gallery as $attachment_id ) {
 
                         $props = wc_get_product_attachment_props( $attachment_id, $post );
-                        echo wp_get_attachment_image( $attachment_id, apply_filters( 'single_product_large_thumbnail_size', 'shop_thumbnail' ), 0, $props );
+                        echo wp_get_attachment_image( $attachment_id, array('540','540'), 0, $props );
                     }
 
                     ?>
