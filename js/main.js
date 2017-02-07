@@ -26,6 +26,10 @@
         initParallaxCashControl();
         recalculateCCParallaxItems();
 
+        $(window).resize(function () {
+            recalculateCCParallaxItems();
+        });
+
         $('.smooth-anchor').click(function (e) {
             e.preventDefault();
 

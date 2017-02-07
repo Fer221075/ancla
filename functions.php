@@ -214,6 +214,11 @@ require get_template_directory() . '/inc/enqueue-css.php';
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
+ * Custom types
+ */
+require get_template_directory() . '/inc/custom-types.php';
+
+/**
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';

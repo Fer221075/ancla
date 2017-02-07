@@ -46,7 +46,7 @@ $coords = explode(",", $lat_long);
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: <?php echo $coords[0]; ?>, lng: <?php echo $coords[1]; ?>},
           scrollwheel: false,
-          zoom: 8
+          zoom: 13
         });
       }
 </script>
