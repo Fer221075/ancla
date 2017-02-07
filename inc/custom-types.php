@@ -36,7 +36,7 @@ function cptui_register_my_cpts_cash_control_feat() {
         "query_var" => true,
         "menu_position" => 80,
         "menu_icon" => "dashicons-chart-area",
-        "supports" => array( "title", "thumbnail", "excerpt" ),
+        "supports" => array( "title", "thumbnail" ),
     );
 
     register_post_type( "cash_control_feat", $args );
