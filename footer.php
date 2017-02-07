@@ -20,7 +20,7 @@
     <section>
         <div class="support-banner" style="background-image: url('<?php echo get_template_directory_uri();?>/img/soporte_widget_banner.jpg');">
             <div class="container">
-                <a href="<?php echo get_home_url(); ?>/soporte/"><h5>Contacto con soporte técnico</h5></a>
+                <a href="<?php echo get_home_url(); ?>/servicios/"><h5>Contacto con soporte técnico</h5></a>
             </div>
         </div>
     </section>

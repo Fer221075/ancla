@@ -81,7 +81,6 @@ function ancla_category_actions($term) {
     ?>
 
     <div class="category-data">
-        <h3 class="category-name"><?php echo $term->name; ?></h3>
         <p class="category-description"><?php echo $term->description; ?></p>
     </div>
     <ul class="category-actions">

@@ -10,6 +10,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 get_header( 'shop' ); ?>
 
+<?php get_template_part('template-parts/category_banner', 'big'); ?>
+
     <div class="container" style="margin-bottom: 40px;">
 
         <?php woocommerce_product_loop_start(); ?>

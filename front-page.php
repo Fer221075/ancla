@@ -10,7 +10,7 @@ get_header(); ?>
     </video>
     <div class="cover-text">
         <div class="container">
-            <div class="col-md-6 col-md-offset-6">
+            <div class="col-md-5 col-md-offset-7">
                 <h2 class="cover-title"><?php echo get_theme_mod('banner_title'); ?></h2>
                 <p class="cover-desc"><?php echo get_theme_mod('banner_description'); ?></p>
                 <div class="white-shadow"></div>

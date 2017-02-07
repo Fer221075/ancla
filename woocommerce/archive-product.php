@@ -13,22 +13,9 @@ get_header( 'shop' ); ?>
  * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
  * @hooked woocommerce_breadcrumb - 20
  */
-do_action( 'woocommerce_before_main_content' );
+do_action( 'woocommerce_before_main_content' ); ?>
 
-global $post;
-$category = get_term_by('slug', get_query_var('product_cat'), 'product_cat'); //get_the_category(get_query_var( 'product_cat' ) );
-
-    if ( $category ): ?>
-    <div class="row">
-        <div class="col-xs-12 prod-cat-banner bg-img force-display">
-            <img src="<?php echo get_template_directory_uri() . '/img/cat_hogar_' . $category->slug . '.jpg'; ?>" alt="">
-            <div class="banner-shadow"></div>
-            <div class="category-title">
-                <h1><?php echo $category->name ?></h1>
-            </div>
-        </div>
-    </div>
-    <?php endif; ?>
+<?php get_template_part('template-parts/category_banner', 'small'); ?>
 
 <?php if ( have_posts() ) : ?>
 

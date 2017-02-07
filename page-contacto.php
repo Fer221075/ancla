@@ -36,7 +36,7 @@ while ( have_posts() ) : the_post(); ?>
 <?php
 
 $lat_long = CFS()->get('lat_long');
-$coords = explode(":", $lat_long);
+$coords = explode(",", $lat_long);
 
 ?>
 
