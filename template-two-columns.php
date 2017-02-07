@@ -1,4 +1,7 @@
 <?php
+
+/* Template Name: Content 2 columns */
+
 get_header(); ?>
 
 <?php
@@ -19,22 +22,10 @@ while ( have_posts() ) : the_post(); ?>
     <div class="container products-container">
         <div class="row">
             <div class="col-md-6">
-                <?php
-
-                the_content();
-
-                ?>
+                <?php echo CFS()->get('left_col'); ?>
             </div>
             <div class="col-md-6">
-                <div class="border-box">
-                    <h4><span class="red">CHAT</span> EN LÍNEA</h4>
-                    <div class="box-icon">
-                        <img src="<?php echo get_template_directory_uri();?>/img/icono_chat.png" alt="chat">
-                    </div>
-                    <div class="text-center">
-                        <a href="javascript:;" class="btn btn-border-red">Iniciar</a>
-                     </div>
-                </div>
+                <?php echo CFS()->get('right_col'); ?>
             </div>
         </div>
     </div>

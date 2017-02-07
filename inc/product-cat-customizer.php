@@ -35,95 +35,53 @@ function ancla_product_cat_customizer( $wp_customize ){
     $all_categories = get_categories( $args );
     foreach ($all_categories as $cat) {
 
-            $wp_customize->add_section( 'category_' . $cat->term_id . '_section' , array(
-                'title'    => __( $cat->name, 'ancla' ),
-                'priority' => 30,
-                'panel'    => 'product_cat_panel'
-            ) );
+        if ( $cat->slug != 'cash-control' ) {
 
-            $wp_customize->add_setting( 'category_' . $cat->term_id .'_banner' , array(
+            $wp_customize->add_section('category_' . $cat->term_id . '_section', array(
+                'title' => __($cat->name, 'ancla'),
+                'priority' => 30,
+                'panel' => 'product_cat_panel'
+            ));
+
+            $wp_customize->add_setting('category_' . $cat->term_id . '_banner', array(
                 'transport' => 'postMessage',
-            ) );
+            ));
 
             $wp_customize->add_control(
                 new WP_Customize_Image_Control(
                     $wp_customize,
                     'category_' . $cat->term_id . '_banner',
                     array(
-                        'label'      => __( 'Imagen Banner', 'ancla' ),
-                        'section'    => 'category_' . $cat->term_id . '_section',
-                        'settings'   => 'category_' . $cat->term_id . '_banner'
+                        'label' => __('Imagen Banner', 'ancla'),
+                        'section' => 'category_' . $cat->term_id . '_section',
+                        'settings' => 'category_' . $cat->term_id . '_banner'
                     )
                 )
             );
 
-            $wp_customize->add_setting( 'category' . $cat->term_id . '_title' , array(
+            $wp_customize->add_setting('category' . $cat->term_id . '_title', array(
                 'transport' => 'postMessage',
-            ) );
+            ));
 
-            $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'category' . $cat->term_id . '_title', array(
-                'label'    => __( 'Título', 'ancla' ),
-                'section'  => 'category_' . $cat->term_id . '_section',
+            $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'category' . $cat->term_id . '_title', array(
+                'label' => __('Título', 'ancla'),
+                'section' => 'category_' . $cat->term_id . '_section',
                 'settings' => 'category' . $cat->term_id . '_title',
                 'description' => 'Por defecto se usará el nombre de la categoría si este campo está vacío'
-            ) ) );
+            )));
 
-            $wp_customize->add_setting( 'category' . $cat->term_id . '_subtitle' , array(
+            $wp_customize->add_setting('category' . $cat->term_id . '_subtitle', array(
                 'transport' => 'postMessage',
-            ) );
+            ));
 
-            $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'category' . $cat->term_id . '_subtitle', array(
-                'label'    => __( 'Subtítulo', 'ancla' ),
-                'section'  => 'category_' . $cat->term_id . '_section',
+            $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'category' . $cat->term_id . '_subtitle', array(
+                'label' => __('Subtítulo', 'ancla'),
+                'section' => 'category_' . $cat->term_id . '_section',
                 'settings' => 'category' . $cat->term_id . '_subtitle',
                 'description' => 'Solo aplica en banner pequeño'
-            ) ) );
-
-//            $category_id = $cat->term_id;
-//            echo '<br /><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>';
-//
-//            $args2 = array(
-//                'taxonomy'     => $taxonomy,
-//                'child_of'     => 0,
-//                'parent'       => $category_id,
-//                'orderby'      => $orderby,
-//                'show_count'   => $show_count,
-//                'pad_counts'   => $pad_counts,
-//                'hierarchical' => $hierarchical,
-//                'title_li'     => $title,
-//                'hide_empty'   => $empty
-//            );
-//            $sub_cats = get_categories( $args2 );
-//            if($sub_cats) {
-//                foreach($sub_cats as $sub_category) {
-//                    echo  $sub_category->name ;
-//                }
-//            }
+            )));
+        }
     }
-
-//    $wp_customize->add_section( 'test_category' , array(
-//        'title'    => __( 'Test category', 'ancla' ),
-//        'priority' => 30,
-//        'panel'    => 'product_cat_panel'
-//    ) );
-//
-//    $wp_customize->add_setting( 'category_banner_settings' , array(
-//        'transport' => 'postMessage',
-//    ) );
-//
-//    $wp_customize->add_control(
-//        new WP_Customize_Image_Control(
-//            $wp_customize,
-//            'category_banner',
-//            array(
-//                'label'      => __( 'Seleccionar imagen', 'theme_name' ),
-//                'section'    => 'test_category',
-//                'settings'   => 'category_banner_settings'
-//            )
-//        )
-//    );
-
-
 }
 
 add_action( 'customize_register', 'ancla_product_cat_customizer' );
