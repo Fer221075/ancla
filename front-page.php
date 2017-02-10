@@ -27,7 +27,7 @@ get_header(); ?>
 
 <?php get_template_part('/template-parts/encuentra-tu-producto'); ?>
 
-
+<?php get_template_part('/template-parts/nuestros-clientes'); ?>
 
 <?php
 get_footer();

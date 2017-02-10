@@ -43,3 +43,42 @@ function cptui_register_my_cpts_cash_control_feat() {
 }
 
 add_action( 'init', 'cptui_register_my_cpts_cash_control_feat' );
+
+function cptui_register_my_cpts_nuestros_clientes() {
+
+    /**
+     * Post Type: Nuestros Clientes.
+     */
+
+    $labels = array(
+        "name" => __( 'Nuestros Clientes', 'ancla' ),
+        "singular_name" => __( 'Cliente', 'ancla' ),
+    );
+
+    $args = array(
+        "label" => __( 'Nuestros Clientes', 'ancla' ),
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "publicly_queryable" => true,
+        "show_ui" => true,
+        "show_in_rest" => false,
+        "rest_base" => "",
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "exclude_from_search" => true,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array( "slug" => "nuestros_clientes", "with_front" => true ),
+        "query_var" => true,
+        "menu_position" => 80,
+        "menu_icon" => "dashicons-businessman",
+        "supports" => array( "title", "thumbnail" ),
+    );
+
+    register_post_type( "nuestros_clientes", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts_nuestros_clientes' );
+
