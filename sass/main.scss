@@ -43,6 +43,7 @@ $headerAndFooterBgWTransparency: rgba(43,43,42,0.8);
   transition: all 0.3s ease-in-out;
 }
 
+@import "media_queries";
 /*************************************/
 /**************** MAIN ***************/
 /*************************************/
@@ -90,6 +91,14 @@ header {
 
   .search-form {
     margin-left: 15px;
+
+    @include media("<=desktop") {
+      padding: 40px 0;
+    }
+
+    @include media("<=phone") {
+      padding: 25px 0;
+    }
   }
 }
 
@@ -152,6 +161,21 @@ body.page.woocommerce-page header {
   img {
     width: 70%;
   }
+
+  @include media("<=phone") {
+    width: 100px;
+  }
+}
+
+a.open-menu {
+  padding: 10px 15px;
+  color: $headerFontColor;
+  font-size: 24px;
+  margin-left: 20px;
+
+  @include media(">desktop") {
+    display: none;
+  }
 }
 
 .main-navigation {
@@ -161,6 +185,17 @@ body.page.woocommerce-page header {
   align-items: center;
   font-weight: 500;
   letter-spacing: 1px;
+
+  a.close-menu {
+    display: none;
+    padding: 20px 0 20px 20px;
+    color: #fff;
+    font-size: 32px;
+
+    @include media("<=desktop") {
+      display: inline-block;
+    }
+  }
 
   ul {
     list-style-type: none;
@@ -174,6 +209,16 @@ body.page.woocommerce-page header {
       &:hover .submenu-cont {
         display: block;
       }
+
+      @include media("<=desktop") {
+        display: block;
+        text-align: right;
+
+        ul.sub-menu,
+        .submenu-cont {
+          display: none !important;
+        }
+      }
     }
 
     li a {
@@ -184,6 +229,31 @@ body.page.woocommerce-page header {
       &:hover {
         color: #ffffff;
       }
+
+      @include media("<=desktop") {
+        display: inline-block;
+        color: #fff;
+        padding: 20px;
+      }
+    }
+  }
+
+  .menu-container {
+    @include media("<=desktop") {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.9);;
+      width: 100%;
+      height: 100%;
+      padding: 40px 15px 40px 40px;
+      font-size: 26px;
+      text-align: right;
+      display: none;
+    }
+
+    @include media(">desktop") {
+      display: block !important;
     }
   }
 }
@@ -192,6 +262,10 @@ body.page.woocommerce-page header {
 
   .fa {
     color: $headerFontColor;
+
+    @include media("<=desktop") {
+      font-size: 24px;
+    }
   }
 }
 
@@ -210,6 +284,14 @@ footer {
       img {
         width: 44px;
       }
+      @include media("<=tablet") {
+        float: none;
+        display: inline-block;
+      }
+    }
+
+    @include media("<=tablet") {
+      text-align: center;
     }
   }
 }
@@ -235,6 +317,11 @@ footer {
       width: 25%;
       background-color: $anclaRed;
     }
+  }
+
+  @include media("<=tablet") {
+    width: 80%;
+    margin: 15px auto 0;
   }
 }
 
@@ -293,6 +380,10 @@ footer {
   video {
     width: 100%;
     transform: translateY(-15%);
+
+    @include media("<=tablet") {
+      display: none !important;
+    }
   }
 
   .cover-text {
@@ -310,6 +401,19 @@ footer {
       text-align: left;
       color: $anclaRed;
       font-size: 60px;
+
+      @include media("<desktop") {
+        font-size: 40px;
+      }
+
+      @include media("<=tablet") {
+        text-align: right;
+      }
+
+      @include media("<=425px") {
+        font-size: 30px;
+      }
+
     }
 
     p.cover-desc {
@@ -318,6 +422,18 @@ footer {
       text-align: left;
       font-size: 18px;
       line-height: 1;
+
+      @include media("<desktop") {
+        width: 100%;
+      }
+
+      @include media("<=tablet") {
+        text-align: right;
+      }
+
+      @include media("<=425px") {
+        display: none;
+      }
     }
   }
 }
@@ -330,6 +446,23 @@ body.tax-product_cat .cover {
 
 body.home .cover {
   height: 90vh;
+
+  @include media("<=1200px") {
+    height: 60vh;
+  }
+
+  @include media("height>=700px") {
+    height: 60vh;
+  }
+
+  @include media(">tablet") {
+    background-image: none !important;
+  }
+
+  @include media("<=tablet") {
+    height: 90vh;
+  }
+
 }
 
 body.single.single .cover {
@@ -347,6 +480,16 @@ body.single.single .cover {
 
   .banner-text {
     font-size: 18px;
+
+    @include media("<=phone") {
+      font-size: 16px;
+      text-align: center;
+    }
+
+  }
+
+  @include media("<=desktop") {
+    padding: 25px 0;
   }
 }
 
@@ -988,6 +1131,10 @@ button.btn-red,
     }
 
   }
+
+  @include media("<=500px") {
+    background-position: 40% 50%;
+  }
 }
 
 #map {
@@ -1195,10 +1342,18 @@ body.page .cover.slide {
   right: 80px;
   bottom: 40px;
 
+  @include media("<=desktop") {
+    right: 10px;
+  }
+
   &.fixed {
     position: fixed;
     right: 80px;
     bottom: 50px;
+
+    @include media("<=desktop") {
+      right: 10px;
+    }
   }
 
   a {
@@ -2088,9 +2243,22 @@ section.nuestros-clientes {
   display: inline-block;
   width: calc((100% / 5) - 20px);
   padding: 0 20px;
+  margin-bottom: 15px;
 
   img {
     max-width: 100%;
     border-radius: 15px;
+  }
+
+  @include media("<=992px") {
+    width: calc((100% / 4) - 20px);
+  }
+
+  @include media("<=600px") {
+    width: calc((100% / 3) - 20px);
+  }
+
+  @include media("<=425px") {
+    width: calc((100% / 2) - 20px);
   }
 }

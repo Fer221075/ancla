@@ -20,19 +20,19 @@
     <section>
         <div class="support-banner" style="background-image: url('<?php echo get_template_directory_uri();?>/img/soporte_widget_banner.jpg');">
             <div class="container">
-                <a href="<?php echo get_home_url(); ?>/servicios/"><h5>Contacto con soporte técnico</h5></a>
+                <a href="<?php echo get_home_url(); ?>/servicios/"><h5>Contacto con soporte</h5></a>
             </div>
         </div>
     </section>
 
 	<footer>
         <div class="container">
-            <div class="col-md-6">
-                <div class="certs col-md-12 no-pad">
-                  <div class="col-md-4 no-pad">
+            <div class="col-xs-12 col-sm-6">
+                <div class="certs col-xs-12 no-pad">
+                  <div class="col-sm-12 no-pad">
                         <h4>Certificaciones</h4>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-sm-12">
                     <ul>
                         <li><img src="<?php echo get_template_directory_uri();?>/img/iso_9001.png" alt="iso_9001"></li>
                         <li><img src="<?php echo get_template_directory_uri();?>/img/iso_14001.png" alt="iso_14001"></li>
@@ -41,7 +41,7 @@
                   </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-xs-12 col-sm-6">
                 <div class="newsletter">
                     <form action="" class="clearfix">
                         <input type="text" placeholder="E-mail">
@@ -52,36 +52,6 @@
         </div>
         <div class="container footer-widgets">
             <?php dynamic_sidebar( 'footer-widgets' ); ?>
-<!--            <section class="widget">-->
-<!--                <h2 class="widget-title">Productos</h2>-->
-<!--                <ul>-->
-<!--                    <li><a href="#">Hogar</a></li>-->
-<!--                    <li><a href="#">Institucional</a></li>-->
-<!--                    <li><a href="#">Comercial</a></li>-->
-<!--                </ul>-->
-<!--            </section>-->
-<!--            <section class="widget">-->
-<!--                <h2 class="widget-title">Servicios</h2>-->
-<!--                <ul>-->
-<!--                    <li><a href="#">Soporte técnico</a></li>-->
-<!--                </ul>-->
-<!--            </section>-->
-<!--            <section class="widget">-->
-<!--                <h2 class="widget-title">Nosotros</h2>-->
-<!--                <ul>-->
-<!--                    <li><a href="#">Filosofía</a></li>-->
-<!--                    <li><a href="#">Historia</a></li>-->
-<!--                    <li><a href="#">Puntos de venta</a></li>-->
-<!--                </ul>-->
-<!--            </section>-->
-<!--            <section class="widget">-->
-<!--                <h2 class="widget-title">Contáctanos</h2>-->
-<!--                <ul>-->
-<!--                    <li><a href="#">Preguntas frecuentes</a></li>-->
-<!--                    <li><a href="#">Encuéntranos</a></li>-->
-<!--                    <li><a href="#">Contacto</a></li>-->
-<!--                </ul>-->
-<!--            </section>-->
         </div>
         <div class="container">
             <div class="legal">2016 Ancla, Colombia - Todos los derechos reservados</div>

@@ -127,6 +127,16 @@
             $(this).closest('form').submit();
         });
 
+        $('.open-menu').click(function (e) {
+            e.preventDefault();
+            $('.main-navigation .menu-container').fadeIn();
+        });
+
+        $('.close-menu').click(function (e) {
+            e.preventDefault();
+            $('.main-navigation .menu-container').fadeOut();
+        })
+
     });
 }));
 

@@ -20,8 +20,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-
         <div id="top" class="container top-bar">
             <ul class="top-links">
                 <ul class="flags">
@@ -51,6 +49,9 @@
                 </div>
                 <nav id="site-navigation" class="main-navigation" role="navigation">
                     <div class="menu-container">
+                        <a href="#" class="close-menu">
+                            <i class="fa fa-times"></i>
+                        </a>
                     <?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
                     <?php
                     $menu_name = 'primary';
@@ -113,6 +114,9 @@
 
                     </div>
                     <?php get_search_form(); ?>
+                    <a href="#" class="open-menu">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </nav>
                 </div>
             </div>
