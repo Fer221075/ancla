@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 ?>
-<div <?php wc_product_cat_class( 'col-xs-3 bg-img', $category ); ?>>
+<div <?php wc_product_cat_class( 'col-xs-6 col-md-3 bg-img', $category ); ?>>
 
 
 
