@@ -1,0 +1,33 @@
+.ancla-btn {
+  color: #ffffff;
+  background-color: $anclaRed;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 16px;
+  margin-top: 15px;
+
+  &.rounded {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+
+  &.translucid {
+    background-color: $anclaRedTranslucid;
+  }
+}
+
+.btn.btn-border-red {
+  border: 1px solid #c1282d;
+  border-radius: 15px;
+  color: $anclaRed;
+  font-weight: 500;
+  font-size: 18px;
+
+  @include hover_transition;
+
+  &:hover {
+    color: #fff;
+    background-color: $anclaRed;
+  }
+}

@@ -1,0 +1,36 @@
+.tab-anchors {
+  @include media("<desktop") {
+    display: none;
+  }
+}
+
+.tab-anchors ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  li {
+    display: inline-block;
+    width: (100% / 4);
+    float: left;
+  }
+}
+
+.tab-anchor {
+  width: 100%;
+  background-color: $headerAndFooterBg;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+
+  @include hover_transition;
+
+  &.current, &:hover {
+    background-color: $anclaRed;
+    color: #fff;
+  }
+}

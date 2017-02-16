@@ -1,0 +1,151 @@
+// TABLES
+table.shop_table .button {
+  background-color: $headerAndFooterBg;
+  color: #fff;
+
+  &:hover {
+    background-color: $anclaRed;
+    color: #fff;
+  }
+
+  &:disabled {
+    color: #fff !important;
+  }
+}
+
+// CHECKOUT - CART
+.cart_item {
+  a {
+    color: $headerAndFooterBg;
+    @include hover_transition;
+
+    &:hover {
+      color: $anclaRed;
+    }
+  }
+}
+
+.shipping {
+
+  a {
+    color: $headerAndFooterBg;
+  }
+}
+
+.woocommerce .cart_totals a.checkout-button {
+  background: $anclaRed;
+
+  &:hover {
+    background-color: $headerAndFooterBg;
+  }
+}
+
+p.cart-empty {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 50px 0;
+}
+
+.woocommerce .return-to-shop .button {
+  background-color: $anclaRed;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+
+  &:hover {
+    background-color: $headerAndFooterBg;
+    color: #fff;
+  }
+}
+
+.woocommerce form input.input-text,
+.woocommerce form textarea.input-text {
+  padding: 8px 8px;
+  border-left-style: outset;
+  border-top-style: outset;
+  background-color: #ececec;
+  border-radius: 10px;
+}
+
+.woocommerce-shipping-fields h3 label {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.woocommerce-info {
+  border-top-color: $headerAndFooterBg;
+
+  &::before {
+    color: $headerAndFooterBg;
+  }
+}
+
+.woocommerce a.button {
+  background-color: $headerAndFooterBg;
+  color: #fff;
+
+  &:hover {
+    background-color: $anclaRed;
+    color: #fff;
+  }
+}
+
+.woocommerce a.remove {
+  color: $anclaRed !important;
+
+  &:hover {
+    color: #fff !important;
+    background-color: $anclaRed;
+  }
+}
+
+.woocommerce input.button {
+  background-color: $headerAndFooterBg;
+  color: #fff;
+
+  &:hover {
+    background-color: $anclaRed;
+    color: #fff;
+  }
+}
+
+.woocommerce .place-order input.button {
+  background-color: $anclaRed;
+
+  &:hover {
+    background-color: $headerAndFooterBg;
+  }
+}
+
+// MY ACCOUNT
+.woocommerce-MyAccount-navigation {
+  margin-bottom: 105px;
+}
+
+.woocommerce-MyAccount-navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+
+  li {
+
+    a {
+      display: block;
+      background-color: $headerAndFooterBg;
+      color: #fff;
+      padding: 10px;
+
+      &:hover, &.my-account-active {
+        background-color: $anclaRed;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.woocommerce-Address a.edit {
+  color: $anclaRed;
+  font-weight: 500;
+}

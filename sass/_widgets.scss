@@ -1,0 +1,31 @@
+.widget {
+  float: left;
+  padding: 0 15px;
+
+  h2.widget-title {
+    font-size: 22px;
+    color: #fdfdfd;
+    font-weight: 500;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+
+    li {
+      padding: 5px 0;
+    }
+
+    a {
+      color: #e5e5e5;
+      @include hover_transition;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}

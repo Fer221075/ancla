@@ -2,6 +2,13 @@
 /************** Basic Styling (resets) ******************/
 /********************************************************/
 
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 92.5%;
+}
+
 a, input[type=submit] {
   transition: color 0.15s ease-out,border 0.15s ease-out,opacity 0.15s ease-out,background-color 0.15s ease-out;
   -webkit-transition: color 0.15s ease-out,border 0.15s ease-out,opacity 0.15s ease-out,background-color 0.15s ease-out;

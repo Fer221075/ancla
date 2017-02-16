@@ -1,0 +1,216 @@
+.cash-control-content {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  & > img {
+    position: absolute;
+
+    &.cc-title {
+      position: absolute;
+      right: 80px;
+      top: 130px;
+      width: 300px;
+      @include hover_transition;
+    }
+
+    &.cc-title.cc-title-big {
+      -webkit-transform: scale(1.25);
+      -moz-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+      -o-transform: scale(1.25);
+      transform: scale(1.25);
+    }
+
+    &.cc-ancla-logo {
+      left: 297px;
+      top: 25px;
+      width: 100px;
+    }
+  }
+
+  .cc-item {
+    position: fixed;
+    opacity: 0;
+
+    span {
+      color: #fff;
+      font-size: 16px;
+      display: inline-block;
+      position: absolute;
+      text-shadow: 2px 2px 15px rgb(0, 0, 0);
+      cursor: default;
+    }
+
+    img {
+      width: 53px;
+      box-shadow: inset 0px -20px 16px 19px rgba(0,198,255,.75), 1px 3px 16px 2px rgba(0,198,255,0.75);
+      border-radius: 50%;
+      opacity: 0.95;
+
+      @include hover_transition;
+    }
+
+    &:hover img {
+      box-shadow: inset 0px -20px 16px 19px rgba(0,198,255,.75), 1px 3px 16px 8px rgba(0,198,255,0.75);
+    }
+
+    &.cc-info {
+
+      span {
+        width: 225px;
+        top: 0;
+        left: 70px;
+      }
+    }
+
+    &.cc-online {
+
+      span {
+        width: 135px;
+        top: 0;
+        left: 70px;
+      }
+    }
+
+    &.cc-reports {
+      span {
+        width: 200px;
+        left: 50%;
+        top: 120%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+    }
+
+    &.cc-decision {
+
+      span {
+        width: 210px;
+        top: 0;
+        left: 70px;
+      }
+    }
+
+    &.cc-interaction {
+
+      span {
+        width: 200px;
+        left: 50%;
+        top: 120%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+    }
+
+    &.cc-web {
+
+      span {
+        width: 210px;
+        top: 0;
+        left: 70px;
+      }
+    }
+
+    &.cc-access {
+
+      span {
+        width: 115px;
+        top: 115%;
+        left: 50%;
+      }
+    }
+
+    &.cc-history {
+
+      span {
+        width: 115px;
+        top: 115%;
+        left: 75%;
+      }
+    }
+  }
+}
+
+.cc-info-banner{
+  background-size: initial;
+  position: relative;
+
+  @include hover_transition;
+
+  &.parallax {
+    background-position: 50% 50% !important;
+    background-size: contain;
+    background: no-repeat fixed;
+  }
+}
+
+a.cc-button {
+  color: #c1282d;
+  border: 2px solid #c1282d;
+  padding: 10px 15px;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 25px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.cc-info-banner a.cc-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+
+  &::before {
+    content: '';
+    width: 150%;
+    position: absolute;
+    height: 1px;
+    top: -45%;
+    left: -20%;
+    border-top: 1px dashed #d4d4d4;
+  }
+}
+
+.banner-trigger-off {
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  bottom: 100%;
+  background: transparent !important;
+}
+
+.banner-trigger-on {
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  top: -50%;
+  background: transparent !important;
+}
+
+.cash-control-features {
+  background-color: #efefef;
+  padding: 40px 0;
+
+  .cc-feature {
+    display: flex;
+    align-items: center;
+
+    &:not(:nth-child(-n+3)) {
+      margin-top: 45px;
+    }
+  }
+
+  .cc-desc {
+    font-size: 19px;
+    line-height: 1;
+    font-weight: 300;
+  }
+
+  .cc-icon {
+    text-align: center;
+  }
+}

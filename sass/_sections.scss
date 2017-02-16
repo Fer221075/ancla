@@ -1,0 +1,64 @@
+// SITE CONTENT
+.site-content {
+  padding: 40px 0;
+  position: relative;
+}
+
+body.home .site-content {
+  padding-top: 0;
+}
+
+body.term-cash-control .site-content {
+  padding: 0;
+}
+
+body.page .site-content {
+  padding: 0;
+}
+
+body.page.woocommerce-page .site-content {
+  padding: 40px 0;
+}
+
+// SECCIONES NOSOTROS
+.us-section {
+  padding: 40px 0;
+  border-bottom: 1px solid #eee;
+
+  h3 {
+    text-transform: uppercase;
+    color: $anclaRed;
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      background-color: $anclaRed;
+      width: 60%;
+      height: 2px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+}
+
+#respaldo ul {
+  padding: 20px 0;
+  li {
+    float: left;
+    list-style: outside none none;
+    img {
+      width: 80px;
+    }
+  }
+}

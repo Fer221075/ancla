@@ -1,0 +1,153 @@
+.cover {
+  height: 77vh;
+  overflow: hidden;
+  position: relative;
+
+  video {
+    width: 100%;
+    transform: translateY(-15%);
+
+    @include media("<=tablet") {
+      display: none !important;
+    }
+  }
+
+  .cover-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 110px 0 0;
+    text-align: right;
+    margin-top: 4%;
+
+    .cover-title {
+      text-transform: uppercase;
+      font-weight: bolder;
+      line-height: 0.9;
+      text-align: left;
+      color: $anclaRed;
+      font-size: 60px;
+
+      @include media("<desktop") {
+        font-size: 40px;
+      }
+
+      @include media("<=tablet") {
+        text-align: right;
+      }
+
+      @include media("<=425px") {
+        font-size: 30px;
+      }
+
+    }
+
+    p.cover-desc {
+      width: 70%;
+      float: left;
+      text-align: left;
+      font-size: 18px;
+      line-height: 1;
+
+      @include media("<desktop") {
+        width: 100%;
+      }
+
+      @include media("<=tablet") {
+        text-align: right;
+      }
+
+      @include media("<=425px") {
+        display: none;
+      }
+    }
+  }
+}
+
+body.page .cover,
+body.tax-product_cat .cover {
+  background-attachment: fixed;
+  height: 60vh;
+}
+
+body.home .cover {
+  height: 90vh;
+
+  @include media("<=1200px") {
+    height: 60vh;
+  }
+
+  @include media("height>=700px") {
+    height: 60vh;
+  }
+
+  @include media(">tablet") {
+    background-image: none !important;
+  }
+
+  @include media("<=tablet") {
+    height: 90vh;
+  }
+
+}
+
+body.single.single .cover {
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+.cover.cash-control {
+  //padding-top: 110px;
+  height:60vh;
+  //background-size: contain;
+  //background: #000 no-repeat fixed 50% 7%;
+  background: #000;
+
+  & > .container {
+    position: relative;
+  }
+
+  //.cover-img {
+  //  background-size: contain;
+  //  background: no-repeat fixed 0 9%;
+  //}
+
+  .cover-img, .container {
+    height: 100%;
+  }
+}
+
+// COVER SHADOW
+.cover-shadow {
+  background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,128,128,0.05) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(128,128,128,0.05)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,128,128,0.05) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,128,128,0.05) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,128,128,0.05) 100%); /* ie10+ */
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(128,128,128,0.05) 100%); /* w3c */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cover-post-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 15px;
+  padding-bottom: 30px;
+
+  h1 {
+    text-transform: uppercase;
+    color: #ececec;
+    font-size: 52px;
+  }
+
+  .post-meta {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #cecece;
+  }
+}

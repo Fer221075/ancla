@@ -1,0 +1,46 @@
+// NUESTROS CLIENTES
+section.nuestros-clientes {
+  background-color: #f8f8f8;
+}
+
+.nuestros-clientes {
+  padding: 50px 0;
+
+  h3 {
+    color: $anclaRed;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+}
+
+.container-clients {
+  text-align: center;
+}
+
+.client {
+
+  display: inline-block;
+  width: calc((100% / 5) - 20px);
+  padding: 0 20px;
+  margin-bottom: 15px;
+
+  img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  @include media("<=992px") {
+    width: calc((100% / 4) - 20px);
+  }
+
+  @include media("<=600px") {
+    width: calc((100% / 3) - 20px);
+  }
+
+  @include media("<=425px") {
+    width: calc((100% / 2) - 20px);
+  }
+}
