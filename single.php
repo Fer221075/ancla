@@ -29,7 +29,8 @@ while ( have_posts() ) : the_post(); ?>
                 <?php the_post_thumbnail(); ?>
                 <div class="cover-shadow"></div>
                 <div class="container full-h pos-r">
-                    <div class="cover-post-text row">
+                    <div class="row">
+                    <div class="cover-post-text">
                         <h1><?php the_title(); ?></h1>
                         <?php
                         $categories = get_the_category();
@@ -39,6 +40,7 @@ while ( have_posts() ) : the_post(); ?>
                         <div class="post-meta">
                             <?php ancla_posted_on(); ?>
                         </div>
+                    </div>
                     </div>
                 </div>
             </section>

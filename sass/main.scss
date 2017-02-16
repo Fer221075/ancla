@@ -1194,6 +1194,10 @@ button.btn-red,
 
 #map {
   height: 315px;
+
+  @include media("<992px") {
+    margin-top: 25px;
+  }
 }
 
 /************************************************/
@@ -1294,6 +1298,12 @@ button.btn-red,
   li.slick-active button:before {
     opacity: 1;
     color: $anclaRed;
+  }
+}
+
+.tab-anchors {
+  @include media("<desktop") {
+    display: none;
   }
 }
 
@@ -2071,6 +2081,10 @@ aside.blog-sidebar {
         color: $anclaRed;
       }
     }
+  }
+
+  @include media("<=tablet") {
+    display: none;
   }
 
 }

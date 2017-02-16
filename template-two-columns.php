@@ -21,10 +21,10 @@ while ( have_posts() ) : the_post(); ?>
 
     <div class="container products-container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-xs-12 col-md-6 clearfix">
                 <?php echo CFS()->get('left_col'); ?>
             </div>
-            <div class="col-md-6">
+            <div class="col-xs-12 col-md-6 clearfix">
                 <?php echo CFS()->get('right_col'); ?>
             </div>
         </div>

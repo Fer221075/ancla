@@ -11,14 +11,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <div class="row">
+    <div class="">
         <?php if ( has_post_thumbnail() ): ?>
-            <div class="col-md-4 post-image">
+            <div class="col-xs-12 col-sm-4 post-image">
                 <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
             </div>
-            <div class="col-md-8">
+            <div class="col-xs-12 col-sm-8">
         <?php else: ?>
-                <div class="col-md-12">
+                <div class="col-xs-12">
         <?php endif; ?>
 
             <div class="post-title">
