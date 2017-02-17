@@ -63,11 +63,8 @@ get_header(); ?>
     <div class="banner-trigger-on"></div>
     <div class="container">
         <div class="banner-info clearfix">
-            <div class="col-md-6">
+            <div class="col-xs-3 col-sm-4 col-md-6 cc-guy-banner">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_banner2_dude.png" alt="">
-            </div>
-            <div class="abs-fix">
-                <a href="#" class="cc-button">Conoce CASH CONTROL</a>
             </div>
         </div>
     </div>
@@ -91,7 +88,40 @@ get_header(); ?>
                 if ( $loop->have_posts() ) :
                     while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-                        <div class="col-md-4 cc-feature">
+                        <div class="col-xs-6 col-md-4 cc-feature">
+                            <div class="col-xs-4">
+                                <div class="cc-icon">
+                                    <?php the_post_thumbnail(); ?>
+                                </div>
+                            </div>
+                            <div class="col-xs-8 cc-desc">
+                                <p><?php the_title(); ?></p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4 cc-feature">
+                            <div class="col-xs-4">
+                                <div class="cc-icon">
+                                    <?php the_post_thumbnail(); ?>
+                                </div>
+                            </div>
+                            <div class="col-xs-8 cc-desc">
+                                <p><?php the_title(); ?></p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4 cc-feature">
+                            <div class="col-xs-4">
+                                <div class="cc-icon">
+                                    <?php the_post_thumbnail(); ?>
+                                </div>
+                            </div>
+                            <div class="col-xs-8 cc-desc">
+                                <p><?php the_title(); ?></p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4 cc-feature">
                             <div class="col-xs-4">
                                 <div class="cc-icon">
                                     <?php the_post_thumbnail(); ?>

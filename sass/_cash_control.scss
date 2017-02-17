@@ -131,12 +131,29 @@
         left: 75%;
       }
     }
+
+    @include media("<=930px") {
+      display: none;
+    }
+
   }
 }
 
 .cc-info-banner{
   background-size: initial;
   position: relative;
+  background-repeat: no-repeat;
+
+  @include media("<desktop") {
+    background-size: 175% 175%;
+    background-position: 50% 40% !important;
+    background-attachment: inherit;
+  }
+
+  @include media("<650px") {
+    background-size: 180% 190%;
+    background-position: 71% 40%!important;
+  }
 
   @include hover_transition;
 
@@ -144,6 +161,18 @@
     background-position: 50% 50% !important;
     background-size: contain;
     background: no-repeat fixed;
+
+    @include media("<desktop") {
+      background-size: 175% 175%;
+      background-position: 50% 40% !important;
+      background-attachment: inherit;
+    }
+
+    @include media("<650px") {
+      background-size: 180% 190%;
+      background-position: 71% 40%!important;
+    }
+
   }
 }
 
@@ -202,6 +231,22 @@ a.cc-button {
     &:not(:nth-child(-n+3)) {
       margin-top: 45px;
     }
+
+    @include media("<=992px") {
+      &:not(:nth-child(-n+3)) {
+        margin: 0;
+      }
+
+      &:not(:nth-child(-n+2)) {
+        margin-top: 25px;
+      }
+    }
+
+    @include media("<625px") {
+      width: 100%;
+      margin-top: 15px;
+    }
+
   }
 
   .cc-desc {
@@ -212,5 +257,11 @@ a.cc-button {
 
   .cc-icon {
     text-align: center;
+  }
+}
+
+.cc-guy-banner {
+  @include media("<560px") {
+    opacity: 0;
   }
 }

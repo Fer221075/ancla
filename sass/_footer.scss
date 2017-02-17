@@ -74,6 +74,19 @@ footer {
 
   .widget {
     width: 25%;
+
+    @include media("<=768px") {
+      width: (100% / 3);
+    }
+
+    @include media("<=600px") {
+      width: 50%;
+      text-align: center;
+    }
+
+    @include media("<=500px") {
+      width: 100%;
+    }
   }
 }
 
