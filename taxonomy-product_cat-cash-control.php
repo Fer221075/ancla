@@ -99,39 +99,6 @@ get_header(); ?>
                             </div>
                         </div>
 
-                        <div class="col-xs-6 col-md-4 cc-feature">
-                            <div class="col-xs-4">
-                                <div class="cc-icon">
-                                    <?php the_post_thumbnail(); ?>
-                                </div>
-                            </div>
-                            <div class="col-xs-8 cc-desc">
-                                <p><?php the_title(); ?></p>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-6 col-md-4 cc-feature">
-                            <div class="col-xs-4">
-                                <div class="cc-icon">
-                                    <?php the_post_thumbnail(); ?>
-                                </div>
-                            </div>
-                            <div class="col-xs-8 cc-desc">
-                                <p><?php the_title(); ?></p>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-6 col-md-4 cc-feature">
-                            <div class="col-xs-4">
-                                <div class="cc-icon">
-                                    <?php the_post_thumbnail(); ?>
-                                </div>
-                            </div>
-                            <div class="col-xs-8 cc-desc">
-                                <p><?php the_title(); ?></p>
-                            </div>
-                        </div>
-
                     <?php endwhile;
                 endif;
                 wp_reset_postdata();
