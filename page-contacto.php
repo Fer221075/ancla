@@ -27,6 +27,20 @@ while ( have_posts() ) : the_post(); ?>
             </div>
             <div class="col-xs-12 col-md-6 clearfix">
                <div id="map"></div>
+                <div class="contact-data">
+                    <h3>Información de contacto</h3>
+                    <ul>
+                        <li>
+                            Tel: <a href="tel:+5713116211">(+571) 3116211</a>
+                        </li>
+                        <li>
+                            Correo: <a href="mailto:info@ancla.la">info@ancla.la</a>
+                        </li>
+                        <li>
+                            Dirección: Carrera 68h # 73a - 29, Bogotá, Colombia.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
