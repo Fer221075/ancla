@@ -20,7 +20,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-        <div id="top" class="container top-bar">
+        <div id="top" class="container top-bar clearfix">
+            <div class="top-contact">
+                <ul>
+                    <li><a href="tel:+5713116211">TEL: (+571) 3116211</a></li>
+                    <li><a href="mailto:info@ancla.la">info@ancla.la</a></li>
+                </ul>
+            </div>
             <ul class="top-links">
                 <ul class="flags">
                     <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/svg/pa.svg" alt=""></a></li>

@@ -34,9 +34,18 @@
                   </div>
                   <div class="col-sm-12">
                     <ul>
-                        <li><img src="<?php echo get_template_directory_uri();?>/img/iso_9001.png" alt="iso_9001"></li>
-                        <li><img src="<?php echo get_template_directory_uri();?>/img/iso_14001.png" alt="iso_14001"></li>
-                        <li><img src="<?php echo get_template_directory_uri();?>/img/oshsas_18001.png" alt="oshsas_18001"></li>
+                        <li>
+                            <img src="<?php echo get_template_directory_uri();?>/img/iso_9001.png" alt="iso_9001">
+                            <span>CO-SA-CER482680</span>
+                        </li>
+                        <li>
+                            <img src="<?php echo get_template_directory_uri();?>/img/iso_14001.png" alt="iso_14001">
+                            <span>CO-OS-CER356378</span>
+                        </li>
+                        <li>
+                            <img src="<?php echo get_template_directory_uri();?>/img/oshsas_18001.png" alt="oshsas_18001">
+                            <span>CO-SC-CER356564</span>
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -54,7 +63,17 @@
             <?php dynamic_sidebar( 'footer-widgets' ); ?>
         </div>
         <div class="container">
-            <div class="legal">2016 Ancla, Colombia - Todos los derechos reservados</div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="legal">2016 Ancla, Colombia - Todos los derechos reservados</div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="footer-contact">
+                    <ul>
+                        <li><a href="tel:+5713116211">TEL: (+571) 3116211</a></li>
+                        <li><a href="mailto:info@ancla.la">info@ancla.la</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 	</footer>
 

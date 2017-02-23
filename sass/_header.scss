@@ -37,7 +37,6 @@ body.page.woocommerce-page header {
 // TOP BAR
 .top-bar {
   background-color: #fff;
-  text-align: right;
   padding: 5px 0;
   text-transform: uppercase;
   position: relative;
@@ -46,11 +45,24 @@ body.page.woocommerce-page header {
     color: #838383;
   }
 
+  .top-contact {
+    float: left;
+
+    li:not(:last-child) {
+      content: '-';
+      margin-left: 10px;
+    }
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
     display: inline-block;
     padding: 0 5px;
+
+    &.top-links {
+      float: right;
+    }
 
     li {
       display: inline-block;
@@ -206,8 +218,9 @@ ul.sub-menu {
   li {
     background-color: $headerAndFooterBg;
     background-blend-mode: multiply;
-    width: 180px;
+    width: 150px;
     float: left;
+    height: 120px;
 
     @include hover_transition;
 
@@ -218,7 +231,7 @@ ul.sub-menu {
 }
 
 ul.sub-menu.submenu-grid li a {
-  padding: 45px 20px;
+  padding: 30px 20px;
 }
 
 .home header, body.page header, body.term-cash-control header {
