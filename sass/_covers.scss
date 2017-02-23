@@ -91,6 +91,10 @@ body.home .cover {
     height: 60vh;
   }
 
+  @include media("height>=1200px") {
+    height: 90vh;
+  }
+
   @include media(">tablet") {
     background-image: none !important;
   }
