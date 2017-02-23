@@ -48,7 +48,7 @@ body.page.woocommerce-page header {
   .top-contact {
     float: left;
 
-    li:not(:last-child) {
+    li:not(:last-child)::after {
       content: '-';
       margin-left: 10px;
     }

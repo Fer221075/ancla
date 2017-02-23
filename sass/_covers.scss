@@ -29,6 +29,7 @@
       font-size: 60px;
 
       @include media("<desktop") {
+        font-size: 40px;
         label {
           font-size: 40px !important;
         }
@@ -79,7 +80,11 @@ body.home .cover {
   height: 90vh;
 
   @include media("<=1200px") {
-    height: 60vh;
+    height: 75vh;
+  }
+
+  @include media("<=800px") {
+    height: 64vh;
   }
 
   @include media("height>=700px") {

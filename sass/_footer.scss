@@ -18,6 +18,7 @@ footer {
       float: left;
       list-style: outside none none;
       text-align: center;
+      margin: 0 10px;
       img {
         width: 60px;
       }
@@ -123,7 +124,7 @@ footer {
     display: inline-block;
   }
 
-  li:not(:last-child) {
+  li:not(:last-child)::after {
     content: '-';
     margin-left: 10px;
   }
