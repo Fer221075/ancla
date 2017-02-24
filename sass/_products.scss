@@ -332,6 +332,12 @@ ul.category-actions {
   }
 }
 
+.clear.product-home-link {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+}
+
 // PRODUCTS DETAIL
 .woocommerce div.product div.images .product-thumbnails img {
   width: (100% / 5);

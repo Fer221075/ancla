@@ -1,7 +1,7 @@
 <section class="home-products">
     <div class="red-section-header">
         <div class="container">
-            <h3>Encuentra tu producto</h3>
+            <h3>SABES QUE CAJA FUERTE NECESITAS, DESCUBRELO AQUí</h3>
         </div>
     </div>
     <div class="container products-container">
@@ -23,5 +23,8 @@
         wp_reset_postdata();
 
         ?>
+        <div class="clear product-home-link">
+            <a class="btn ccf-submit-button" href="/productos/categorias/hogar/">Ver más productos</a>
+        </div>
     </div>
 </section>

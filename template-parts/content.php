@@ -36,6 +36,9 @@
             </div>
             <div class="post-excerpt">
                 <?php the_excerpt(); ?>
+                <div class="link-to">
+                    <a href="<?php the_permalink(); ?>">Ver más</a>
+                </div>
             </div>
 
             <div class="post-footer">
