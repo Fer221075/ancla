@@ -54,7 +54,7 @@
                 <div class="newsletter">
                     <form action="" class="clearfix">
                         <input type="text" placeholder="E-mail">
-                        <input type="submit" value="Suscribirme">
+                        <input type="submit" value="Suscribete a nuestro boletín">
                     </form>
                 </div>
             </div>
