@@ -102,6 +102,27 @@ body.home .cover {
   @include media("<=tablet") {
     height: 90vh;
   }
+}
+
+body.tax-product_cat .cover.cash-control {
+  height: 80vh;
+  min-height: 700px;
+
+  @include media("<=1200px") {
+    height: 75vh;
+  }
+
+  @include media("<=800px") {
+    height: 64vh;
+  }
+
+  //@include media(">=1200px", "height>=700px") {
+  //  height: 90vh;
+  //}
+
+  @include media("<=tablet") {
+    height: 90vh;
+  }
 
 }
 
@@ -110,26 +131,26 @@ body.single.single .cover {
   height: 70vh;
 }
 
-.cover.cash-control {
-  //padding-top: 110px;
-  height:60vh;
-  //background-size: contain;
-  //background: #000 no-repeat fixed 50% 7%;
-  background: #000;
-
-  & > .container {
-    position: relative;
-  }
-
-  //.cover-img {
-  //  background-size: contain;
-  //  background: no-repeat fixed 0 9%;
-  //}
-
-  .cover-img, .container {
-    height: 100%;
-  }
-}
+//.cover.cash-control {
+//  //padding-top: 110px;
+//  height:60vh;
+//  //background-size: contain;
+//  //background: #000 no-repeat fixed 50% 7%;
+//  background: #000;
+//
+//  & > .container {
+//    position: relative;
+//  }
+//
+//  //.cover-img {
+//  //  background-size: contain;
+//  //  background: no-repeat fixed 0 9%;
+//  //}
+//
+//  .cover-img, .container {
+//    height: 100%;
+//  }
+//}
 
 // COVER SHADOW
 .cover-shadow {
