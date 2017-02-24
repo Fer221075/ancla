@@ -41,7 +41,7 @@ get_header(); ?>
                     ?>
                     </div>
                     <?php
-
+                    
                     the_posts_navigation();
 
                 else :
