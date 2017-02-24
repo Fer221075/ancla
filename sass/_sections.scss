@@ -62,3 +62,16 @@ body.page.woocommerce-page .site-content {
     }
   }
 }
+
+#nuestrorespaldo ul {
+  margin-top: 80px;
+    li {
+      float: left;
+      margin: 0 20px;
+      font-size: 10px;
+      text-align: center;
+        div {
+          text-align: center;
+        }
+    }
+}

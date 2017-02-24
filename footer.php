@@ -54,7 +54,7 @@
                 <div class="newsletter">
                     <form action="" class="clearfix">
                         <input type="text" placeholder="E-mail">
-                        <input type="submit" value="Suscribirme">
+                        <input type="submit" value="Suscribete a nuestro boletín">
                     </form>
                 </div>
             </div>
@@ -71,6 +71,7 @@
                     <ul>
                         <li><a href="tel:+5713116211">TEL: (+571) 3116211</a></li>
                         <li><a href="mailto:info@ancla.la">info@ancla.la</a></li>
+                        <li><a href="/contacto/">Carrera 68h # 73a - 29, Bogotá, Colombia.</a></li>
                     </ul>
                 </div>
             </div>
