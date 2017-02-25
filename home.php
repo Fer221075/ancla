@@ -40,7 +40,8 @@ get_header(); ?>
                     </div>
                     <?php
 
-                    the_posts_navigation();
+//                    the_posts_navigation();
+                    ancla_pagination();
 
                 else :
 

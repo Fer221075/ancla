@@ -15,11 +15,9 @@ get_header(); ?>
         }
     </style>
 
-<section class="cover cash-control">
+<section class="cover bg-img cash-control">
+    <img src="<?php echo get_template_directory_uri();?>/img/cashcontrol_banner_bg.png" alt="">
     <div class="container">
-        <div class="cover-img bg-img">
-            <img src="<?php echo get_template_directory_uri();?>/img/cashcontrol_banner_bg.png" alt="">
-        </div>
         <div class="cash-control-content">
             <img class="cc-title" src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_title.png" alt="">
             <div class="cc-item cc-info" data-x="806" data-y="232">

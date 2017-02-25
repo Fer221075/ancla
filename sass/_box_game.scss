@@ -1,0 +1,149 @@
+@mixin top_right_rad() {
+  border-top-right-radius: 40px;
+}
+
+.box-game {
+  @include top_right_rad;
+  overflow: hidden;
+  border-left: 2px solid $anclaRed;
+}
+
+.box-game-header {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: block;
+    width: calc((100% / 4) + ((40px / 4)*3) );
+    float: right;
+    overflow: hidden;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-left: -40px;
+
+      a {
+        padding-left: 60px;
+      }
+    }
+  }
+
+  a {
+    @include top_right_rad;
+    transform: translateZ(0);
+    border-top: 2px solid $anclaRed;
+    border-right: 2px solid $anclaRed;
+    border-bottom: 2px solid $anclaRed;
+    background-color: #fff;
+    display: block;
+    padding: 10px 45px;
+    font-size: 16px;
+    font-weight: 500;
+
+    &.current-step {
+      color: #fff;
+      background-color: $anclaRed;
+    }
+
+    &.step-disabled {
+      pointer-events: none;
+      color: #cbcbcb;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: $anclaRed;
+    }
+  }
+}
+
+.box-game-body {
+  border-right: 2px solid $anclaRed;
+  position: relative;
+  height: 200px;
+}
+
+.step {
+  padding: 30px 15px 10px;
+  position: absolute;
+  top: 0;
+  right: auto;
+  width: 100%;
+
+  &:not(:first-child) {
+    right: -100%;
+  }
+
+  &.complete {
+    //button.step-action.on-step-complete {
+    //  visibility: visible;
+    //  opacity: 1;
+    //}
+  }
+}
+
+.step-option {
+  width: (100% / 5);
+  display: block;
+  float: left;
+
+  padding-right: 15px;
+  padding-left: 15px;
+
+  img {
+    max-width: 100%;
+    display: block;
+    cursor: pointer;
+  }
+
+  .option-check {
+    margin-top: 10px;
+  }
+
+  label {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  input[type='checkbox'] {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.box-game-footer {
+  border-bottom: 2px solid $anclaRed;
+  border-right: 2px solid $anclaRed;
+  padding: 15px;
+}
+
+.step-actions {
+
+  button.step-action {
+    @include hover_transition;
+    background-color: $anclaRed;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    float: right;
+
+    &#finish {
+      display: none;
+    }
+
+    &#prev-step {
+      float: left;
+      display: none;
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+      color: #8e8e8e;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.pagination {
+  width: 100%;
+  text-align: center;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a.page-numbers,
+  span.page-numbers.current {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    position: relative;
+    display: block;
+    border-radius: 5px;
+
+    @include hover_transition;
+
+    &.current,
+    &:hover {
+      background-color: $anclaRed;
+      color: #fff;
+    }
+  }
+}

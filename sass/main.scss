@@ -75,6 +75,8 @@ body {
 @import "blog";
 @import "sidebar";
 @import "clients";
+@import "pagination";
+@import "box_game";
 
 .abs-fix {
   position: absolute;
@@ -106,4 +108,44 @@ span.red {
 
 .fixed-bg {
   background-attachment: fixed;
+}
+
+.product-main-gallery {
+  img {
+    cursor: pointer;
+  }
+}
+
+.products-slick {
+  .slick-next:hover::after,
+  .slick-prev:hover::after {
+    background: none;
+    opacity: 0 !important;
+  }
+
+  .slick-next::before,
+  .slick-prev::before {
+    text-shadow: none;
+  }
+
+  .slick-prev {
+    left: unset;
+    right: 100%;
+    padding: 0;
+  }
+
+  .slick-next {
+    right: unset;
+    left: 100%;
+    padding: 0;
+  }
+
+}
+
+.slick-lightbox {
+  .slick-next:hover::after,
+  .slick-prev:hover::after {
+    background: none;
+    opacity: 0 !important;
+  }
 }
