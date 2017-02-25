@@ -20,13 +20,7 @@
                 endwhile;
             endif;
             wp_reset_postdata();
-            endwhile;
-        endif;
-        wp_reset_postdata();
 
-        ?>
-        <div class="clear product-home-link">
-            <a class="btn ccf-submit-button" href="<?php echo home_url('/productos/categorias/hogar/'); ?>">Ver más productos</a>
-        </div>
+            ?>
     </div>
 </section>
