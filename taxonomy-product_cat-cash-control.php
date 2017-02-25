@@ -17,7 +17,7 @@ get_header(); ?>
 
 <section class="cover bg-img cash-control">
     <img src="<?php echo get_template_directory_uri();?>/img/cashcontrol_banner_bg.png" alt="">
-    <div class="container">
+    <div class="container" style="position: relative;">
         <div class="cash-control-content">
             <img class="cc-title" src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_title.png" alt="">
             <div class="cc-item cc-info" data-x="806" data-y="232">
@@ -57,12 +57,36 @@ get_header(); ?>
 </section>
 <section class="bg-img cc-info-banner parallax">
     <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_banner2_bg.png" alt="">
-    <div class="banner-trigger-off"></div>
-    <div class="banner-trigger-on"></div>
     <div class="container">
         <div class="banner-info clearfix">
             <div class="col-xs-3 col-sm-4 col-md-6 cc-guy-banner">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_banner2_dude.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-img bg-fixed black-banner-cc">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/seccion_negra_CC.jpg" alt="">
+    <div class="container">
+        <div class="row black-banner-row">
+            <div class="col-md-offset-1 col-md-4">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/black_banner_title.png" alt="">
+            </div>
+            <div class="col-md-6" style="text-align: center;">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/black_banner_desc.png" alt="">
+            </div>
+        </div>
+        <div class="row black-banner-row">
+            <div class="col-md-offset-1 col-md-10 no-pad">
+                <div class="col-md-4">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/black_banner_seg.png" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/black_banner_control.png" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/black_banner_seguimiento.png" alt="">
+                </div>
             </div>
         </div>
     </div>

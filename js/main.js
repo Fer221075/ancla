@@ -201,33 +201,18 @@ function scrollTo(target) {
 
 function initParallaxCashControl() {
 
-    if ($('.banner-trigger-off').length > 0 && $('.banner-trigger-on').length > 0) {
-        var distanceOff = $('.banner-trigger-off').offset().top,
-            distanceOn = $('.banner-trigger-on').offset().top,
-            $window = $(window);
-
-        var banner = $('.cc-info-banner');
-
-        $(window).scroll(function() {
-            if ( $(window).scrollTop() >= distanceOn ) {
-                banner.removeClass('parallax');
-                $('.abs-fix').css('opacity', 1);
-            } else if ( $(window).scrollTop() <= distanceOn ) {
-                banner.addClass('parallax');
-            }
-        });
-    }
-
     if ($(window).scrollTop() == 0){
         $('.cash-control-content .cc-item').css('opacity', 100);
     }
 
     $(window).scroll(function () {
 
-        if ($('.cover.cash-control').length > 0){
-            var ccCover = $('.cover.cash-control');
+        var $cashControlCover = $('.cover.cash-control');
+
+        if ($cashControlCover.length > 0){
 
             $('.cash-control-content').css('opacity', 1 - (($(window).scrollTop()) / 250));
+            // $('.black-banner-row').css('opacity', 1 - (($(window).scrollTop()) / 250));
         }
     });
 }

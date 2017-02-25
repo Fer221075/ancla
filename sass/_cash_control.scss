@@ -265,3 +265,11 @@ a.cc-button {
     opacity: 0;
   }
 }
+
+.black-banner-cc {
+  padding: 100px 0;
+
+  .black-banner-row:not(:first-child) {
+    margin-top: 60px;
+  }
+}

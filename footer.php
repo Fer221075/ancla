@@ -52,10 +52,21 @@
             </div>
             <div class="col-xs-12 col-sm-6">
                 <div class="newsletter">
+                    <div class="no-pad">
+                        <h4>Boletín</h4>
+                    </div>
                     <form action="?na=s" class="clearfix">
                         <input type="text" placeholder="E-mail">
-                        <input type="submit" value="Suscribete a nuestro boletín">
+                        <input type="submit" value="Suscribirme">
                     </form>
+                </div>
+                <div class="social">
+                    <span>Síguenos:</span>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -71,7 +82,7 @@
                     <ul>
                         <li><a href="tel:+5713116211">TEL: (+571) 3116211</a></li>
                         <li><a href="mailto:info@ancla.la">info@ancla.la</a></li>
-                        <li><a href="<?php echo get_home_url() . '/contacto/'; ?>">Carrera 68h # 73a - 29, Bogotá, Colombia.</a></li>
+                        <li><a href="<?php echo home_url('/contacto/'); ?>">Carrera 68h # 73a - 29, Bogotá, Colombia.</a></li>
                     </ul>
                 </div>
             </div>

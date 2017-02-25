@@ -116,6 +116,10 @@ span.red {
   }
 }
 
+.bg-fixed {
+  background-attachment: fixed;
+}
+
 .products-slick {
   .slick-next:hover::after,
   .slick-prev:hover::after {
