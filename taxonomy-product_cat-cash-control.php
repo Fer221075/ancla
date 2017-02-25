@@ -78,13 +78,13 @@ get_header(); ?>
         </div>
         <div class="row black-banner-row">
             <div class="col-md-offset-1 col-md-10 no-pad">
-                <div class="col-md-4">
+                <div class="col-md-4" style="text-align: center;">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/black_banner_seg.png" alt="">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" style="text-align: center;">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/black_banner_control.png" alt="">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" style="text-align: center;">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/black_banner_seguimiento.png" alt="">
                 </div>
             </div>
