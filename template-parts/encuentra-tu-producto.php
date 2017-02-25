@@ -1,7 +1,7 @@
 <section class="home-products">
     <div class="red-section-header">
         <div class="container">
-            <a href="<?php echo home_url('/juego/'); ?>" target="_blank"><h3>¿Sabes que caja fuerte necesitas?, descubrelo aquí</h3></a>
+            <h3>¿Sabes qué caja fuerte necesitas? Descúbrelo aquí</h3>
         </div>
     </div>
     <div class="container products-container">
