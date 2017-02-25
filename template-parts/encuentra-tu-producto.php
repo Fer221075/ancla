@@ -1,7 +1,7 @@
 <section class="home-products">
     <div class="red-section-header">
         <div class="container">
-            <h3>¿Sabes qué caja fuerte necesitas? Descúbrelo aquí</h3>
+            <a href="<?php echo home_url('/juego/'); ?>" target="_blank"><h3>¿Sabes que caja fuerte necesitas?, descubrelo aquí</h3></a>
         </div>
     </div>
     <div class="container products-container">
@@ -20,7 +20,13 @@
                 endwhile;
             endif;
             wp_reset_postdata();
+            endwhile;
+        endif;
+        wp_reset_postdata();
 
-            ?>
+        ?>
+        <div class="clear product-home-link">
+            <a class="btn ccf-submit-button" href="<?php echo home_url('/productos/categorias/hogar/'); ?>">Ver más productos</a>
+        </div>
     </div>
 </section>
