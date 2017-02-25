@@ -1,7 +1,7 @@
 <section class="home-products">
     <div class="red-section-header">
         <div class="container">
-            <h3>SABES QUE CAJA FUERTE NECESITAS, DESCUBRELO AQUí</h3>
+            <a href="<?php echo home_url('/juego/'); ?>" target="_blank"><h3>SABES QUÉ CAJA FUERTE NECESITAS, DESCUBRELO AQUí</h3></a>
         </div>
     </div>
     <div class="container products-container">
@@ -24,7 +24,7 @@
 
         ?>
         <div class="clear product-home-link">
-            <a class="btn ccf-submit-button" href="/productos/categorias/hogar/">Ver más productos</a>
+            <a class="btn ccf-submit-button" href="<?php echo home_url('/productos/categorias/hogar/'); ?>">Ver más productos</a>
         </div>
     </div>
 </section>

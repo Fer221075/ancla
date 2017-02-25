@@ -51,11 +51,18 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6">
-                <div class="newsletter">
-                    <form action="" class="clearfix">
-                        <input type="text" placeholder="E-mail">
-                        <input type="submit" value="Suscribete a nuestro boletín">
-                    </form>
+                <div class="certs col-sm-12 no-pad">
+                    <div class="col-sm-12 no-pad">
+                        <h4>Suscríbete a nuestro boletín</h4>
+                    </div>
+                    <div class="col-sm-12 no-pad">
+                        <div class="newsletter">
+                            <form action="?na=s" class="clearfix">
+                                <input placeholder="E-mail" type="text">
+                                <input value="Suscríbete " type="submit">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
