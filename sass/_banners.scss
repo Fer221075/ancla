@@ -113,10 +113,10 @@
 
 // Remove styles from iphone and ipad
 
-.slick-slider .slick-list,
-.slick-track,
-.slick-slide,
-.slick-slide img {
+#content .slick-slider .slick-list,
+#content .slick-track,
+#content .slick-slide,
+#content .slick-slide img {
   -webkit-transform: initial;
   -moz-transform: initial;
   -ms-transform: initial;
