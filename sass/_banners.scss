@@ -110,3 +110,15 @@
     background-position: 40% 50%;
   }
 }
+
+// Remove styles from iphone and ipad
+
+.slick-slider .slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide img {
+  -webkit-transform: initial;
+  -moz-transform: initial;
+  -ms-transform: initial;
+  -o-transform: initial;
+}
