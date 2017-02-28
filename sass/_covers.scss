@@ -2,6 +2,8 @@
   height: 77vh;
   overflow: hidden;
   position: relative;
+  -webkit-background-size:cover;
+  background-size:cover;
 
   video {
     width: 100%;
