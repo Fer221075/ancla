@@ -70,9 +70,12 @@
   }
 }
 
-body.page .cover,
 body.tax-product_cat .cover {
   background-attachment: fixed;
+  height: 60vh;
+}
+
+body.page .cover {
   height: 60vh;
 }
 

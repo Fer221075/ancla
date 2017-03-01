@@ -1,7 +1,7 @@
 <section class="home-products">
     <div class="red-section-header">
         <div class="container">
-            <h3>¿Sabes qué caja fuerte necesitas? Descúbrelo aquí</h3>
+            <h3>¿Sabes qué caja fuerte necesitas? <a href="/juego">Descúbrelo aquí</a></h3>
         </div>
     </div>
     <div class="container products-container">
