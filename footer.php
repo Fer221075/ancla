@@ -55,8 +55,8 @@
                     <div class="no-pad">
                         <h4>Boletín</h4>
                     </div>
-                    <form action="?na=s" class="clearfix">
-                        <input type="text" name="ne" placeholder="E-mail">
+                    <form action="/?na=s" class="clearfix">
+                        <input type="text" name="ne" placeholder="E-mail" required>
                         <input type="submit" value="Suscribirme">
                     </form>
                 </div>
