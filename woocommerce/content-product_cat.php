@@ -9,8 +9,11 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 ?>
-<div <?php wc_product_cat_class( 'col-xs-6 col-md-3 bg-img', $category ); ?>>
-
+<?php if ( !strpos(get_site_url(), 'panama') ): ?>
+        <div <?php wc_product_cat_class( 'col-xs-6 col-md-3 bg-img', $category ); ?>>
+<?php else: ?>
+        <div <?php wc_product_cat_class( 'col-xs-6 col-md-4 bg-img', $category ); ?>>
+<?php endif; ?>
 
 
     <?php

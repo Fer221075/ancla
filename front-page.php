@@ -26,7 +26,9 @@ get_header(); ?>
     </div>
 </section>
 
-<?php get_template_part('/template-parts/encuentra-tu-producto'); ?>
+<?php if ( get_theme_mod( 'show_products_banner' ) ): ?>
+    <?php get_template_part('/template-parts/encuentra-tu-producto'); ?>
+<?php endif; ?>
 
 <?php get_template_part('/template-parts/nuestros-clientes'); ?>
 

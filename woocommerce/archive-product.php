@@ -33,9 +33,11 @@ do_action( 'woocommerce_before_main_content' ); ?>
 
     </div>
     <div class="row">
-    <div class="col-xs-3 hidden-xs store-sidebar">
-        <?php dynamic_sidebar( 'store-widgets' ); ?>
-    </div>
+    <?php if ( !is_shop() ): ?>
+        <div class="col-xs-3 hidden-xs store-sidebar">
+            <?php dynamic_sidebar( 'store-widgets' ); ?>
+        </div>
+    <?php endif; ?>
 
     <?php woocommerce_product_loop_start(); ?>
 

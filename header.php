@@ -23,15 +23,16 @@
         <div id="top" class="container top-bar clearfix">
             <div class="top-contact">
                 <ul>
-                    <li><a href="tel:+5713116211">TEL: (+571) 3116211</a></li>
-                    <li><a href="mailto:info@ancla.la">info@ancla.la</a></li>
+                    <?php if ( !empty( get_theme_mod('contact_phone') ) ): ?><li><a href="tel:<?php echo get_theme_mod('contact_phone') ?>">TEL: <?php echo get_theme_mod('contact_phone') ?></a></li><?php endif; ?>
+                    <?php if ( !empty( get_theme_mod('contact_email') ) ): ?><li><a href="mailto:<?php echo get_theme_mod('contact_email') ?>"><?php echo get_theme_mod('contact_email') ?></a></li><?php endif; ?>
                 </ul>
             </div>
             <ul class="top-links">
                 <ul class="flags">
-                    <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/svg/pa.svg" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/svg/co.svg" alt=""></a></li>
+                    <li><a href="/panama"><img src="<?php echo get_template_directory_uri();?>/svg/pa.svg" alt=""></a></li>
+                    <li><a href="/"><img src="<?php echo get_template_directory_uri();?>/svg/co.svg" alt=""></a></li>
                 </ul>
+                <?php if ( !strpos(get_site_url(), 'panama') ): ?>
                 <li>
                     <?php if ( is_user_logged_in() ): ?>
                         <a href="<?php echo esc_url( wc_get_account_endpoint_url( 'orders' ) ); ?>"><?php esc_attr_e( 'My Account', 'woocommerce' ); ?></a>
@@ -43,6 +44,7 @@
                     <a href="javascript:;" class="open-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                     <?php get_template_part('template-parts/floating-cart'); ?>
                 </li>
+                <?php endif; ?>
             </ul>
         </div>
         <header>
@@ -62,7 +64,10 @@
                     <?php
                     $menu_name = 'primary';
                     $locations = get_nav_menu_locations();
+                    if ( !empty($locations)):
                     $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+
+
                     $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
                     ?>
                     <ul id="primary-menu" class="menu">
@@ -116,7 +121,7 @@
                             <?php if ( isset($menuitems[ $count + 1 ]) && $menuitems[ $count + 1 ]->menu_item_parent != $parent_id ): ?>
                             </li>
                             <?php $submenu = false; endif; ?>
-                            <?php $count++; endforeach; endif; ?>
+                            <?php $count++; endforeach; endif; endif; ?>
 
                     </div>
                     <?php get_search_form(); ?>

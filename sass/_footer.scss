@@ -27,6 +27,7 @@ footer {
         color: #ebebeb;
         font-size: 10px;
         margin-top: 10px;
+        font-family: Arial, sans-serif;
       }
       @include media("<=tablet") {
         float: none;

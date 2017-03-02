@@ -77,6 +77,66 @@ function ancla_customize_register( $wp_customize ) {
         'type'     => 'textarea',
     ) ) );
 
+    $wp_customize->add_section( 'contact_info' , array(
+        'title'    => __( 'Información de contacto', 'ancla' ),
+        'priority' => 10
+    ) );
+
+    $wp_customize->add_setting( 'contact_phone' , array(
+        'transport' => 'postMessage',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'contact_phone', array(
+        'label'    => __( 'Teléfono', 'ancla' ),
+        'section'  => 'contact_info',
+        'settings' => 'contact_phone',
+    ) ) );
+
+    $wp_customize->add_setting( 'contact_email' , array(
+        'transport' => 'postMessage',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'contact_email', array(
+        'label'    => __( 'Correo electrónico', 'ancla' ),
+        'section'  => 'contact_info',
+        'settings' => 'contact_email',
+    ) ) );
+
+    $wp_customize->add_setting( 'country' , array(
+        'transport' => 'postMessage',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'country', array(
+        'label'    => __( 'País', 'ancla' ),
+        'section'  => 'contact_info',
+        'settings' => 'country',
+    ) ) );
+
+    $wp_customize->add_setting( 'address' , array(
+        'transport' => 'postMessage',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'address', array(
+        'label'    => __( 'Dirección', 'ancla' ),
+        'section'  => 'contact_info',
+        'settings' => 'address',
+    ) ) );
+
+    $wp_customize->add_section( 'other_options' , array(
+        'title'    => __( 'Más opciones', 'ancla' ),
+        'priority' => 30,
+        'panel'    => 'home_panel'
+    ) );
+
+    $wp_customize->add_setting( 'show_products_banner', array(
+        'transport' => 'postMessage',
+    ) );
+
+    $wp_customize->add_control( 'show_products_banner', array(
+        'type' => 'checkbox',
+        'section' => 'other_options',
+        'label' => __( 'Mostrar banner de productos' )
+    ) );
 }
 add_action( 'customize_register', 'ancla_customize_register' );
 

@@ -46,6 +46,9 @@
                             <img src="<?php echo get_template_directory_uri();?>/img/oshsas_18001.png" alt="oshsas_18001">
                             <span>CO-SC-CER356564</span>
                         </li>
+                        <li>
+                            <img src="<?php echo get_template_directory_uri();?>/img/sello-iqnet.png">
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -75,14 +78,14 @@
         </div>
         <div class="container">
             <div class="col-xs-12 col-sm-6">
-                <div class="legal"><?php echo date("Y"); ?> Cajas Fuertes Ancla, Colombia - Todos los derechos reservados</div>
+                <div class="legal"><?php echo date("Y"); ?> Cajas Fuertes Ancla<?php if ( !empty( get_theme_mod('country') ) ): echo ', ' . get_theme_mod('country'); endif; ?> - Todos los derechos reservados</div>
             </div>
             <div class="col-xs-12 col-sm-6">
                 <div class="footer-contact">
                     <ul>
-                        <li><a href="tel:+5713116211">TEL: (+571) 3116211</a></li>
-                        <li><a href="mailto:info@ancla.la">info@ancla.la</a></li>
-                        <li><a href="<?php echo home_url('/contacto/'); ?>">Carrera 68h # 73a - 29, Bogotá, Colombia.</a></li>
+                        <?php if ( !empty( get_theme_mod('contact_phone') ) ): ?><li><a href="tel:<?php echo get_theme_mod('contact_phone') ?>">TEL: <?php echo get_theme_mod('contact_phone') ?></a></li><?php endif; ?>
+                        <?php if ( !empty( get_theme_mod('contact_email') ) ): ?><li><a href="mailto:<?php echo get_theme_mod('contact_email') ?>"><?php echo get_theme_mod('contact_email') ?></a></li><?php endif; ?>
+                        <?php if ( !empty( get_theme_mod('address') ) ): ?><li><a href="<?php echo home_url('/contacto/'); ?>"><?php echo get_theme_mod('address'); ?></a></li><?php endif; ?>
                     </ul>
                 </div>
             </div>
