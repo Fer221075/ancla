@@ -29,3 +29,26 @@
     }
   }
 }
+
+.store-sidebar .widget {
+  h2.widget-title {
+    color: #2b2b2a;
+  }
+
+  a {
+    color: #2b2b2a;
+
+    &:hover {
+      color: $anclaRed;
+    }
+  }
+
+  .current-cat {
+    display: none;
+  }
+
+  .current-cat-parent > a {
+    display: none;
+  }
+
+}

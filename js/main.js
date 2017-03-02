@@ -178,6 +178,81 @@
                 }
             ]
         });
+
+        if ( $('.container-customers .customer').length > 5 ){
+            $('.container-customers').slick({
+                infinite: true,
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 6000,
+                centerMode: true,
+                rows: 2,
+                slidesPerRow: 5,
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesPerRow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 840,
+                        settings: {
+                            slidesPerRow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesPerRow: 1
+                        }
+                    }
+                ]
+            })
+        } else {
+            $('.container-customers').slick({
+                infinite: true,
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                centerMode: true,
+                slidesToShow: 5,
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 840,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            autoplay: true,
+                            autoplaySpeed: 4000,
+                            arrows: false
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 4000,
+                            arrows: false
+                        }
+                    }
+                ]
+            })
+        }
+
     });
 }));
 

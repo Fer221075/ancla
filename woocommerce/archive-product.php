@@ -32,6 +32,10 @@ do_action( 'woocommerce_before_main_content' ); ?>
     ?>
 
     </div>
+    <div class="row">
+    <div class="col-xs-3 hidden-xs store-sidebar">
+        <?php dynamic_sidebar( 'store-widgets' ); ?>
+    </div>
 
     <?php woocommerce_product_loop_start(); ?>
 
@@ -39,10 +43,16 @@ do_action( 'woocommerce_before_main_content' ); ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
         <?php wc_get_template_part( 'content', 'product' ); ?>
+        <?php wc_get_template_part( 'content', 'product' ); ?>
+        <?php wc_get_template_part( 'content', 'product' ); ?>
+        <?php wc_get_template_part( 'content', 'product' ); ?>
+        <?php wc_get_template_part( 'content', 'product' ); ?>
 
     <?php endwhile; // end of the loop. ?>
 
     <?php woocommerce_product_loop_end(); ?>
+
+    </div>
 
     <?php
     /**

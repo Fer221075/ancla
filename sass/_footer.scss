@@ -138,6 +138,11 @@ footer {
     @include media("<=500px") {
       width: 100%;
     }
+
+    a:hover {
+      color: $anclaRed;
+    }
+
   }
 }
 

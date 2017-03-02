@@ -14,16 +14,20 @@ section.nuestros-clientes {
     margin-bottom: 30px;
     margin-top: 0;
   }
+
+  .slick-dots {
+    bottom: -15px;
+  }
 }
 
-.container-clients {
+.container-customers {
   text-align: center;
 }
 
-.client {
+.customer {
 
   display: inline-block;
-  width: calc((100% / 5) - 20px);
+  width: 210px;//calc((100% / 5) - 20px);
   padding: 0 20px;
   margin-bottom: 15px;
 

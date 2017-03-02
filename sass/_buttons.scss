@@ -1,3 +1,7 @@
+.go-to-store {
+  text-align: center;
+}
+
 .ancla-btn {
   color: #ffffff;
   background-color: $anclaRed;
@@ -14,6 +18,10 @@
 
   &.translucid {
     background-color: $anclaRedTranslucid;
+  }
+
+  &:hover {
+    color: #fff;
   }
 }
 

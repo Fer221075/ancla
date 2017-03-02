@@ -97,6 +97,16 @@ function ancla_widgets_init() {
 	) );
 
     register_sidebar( array(
+        'name'          => esc_html__( 'Widgets tienda', 'ancla' ),
+        'id'            => 'store-widgets',
+        'description'   => esc_html__( 'Add widgets here.', 'ancla' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
         'name'          => esc_html__( 'Blog sidebar', 'ancla' ),
         'id'            => 'sidebar-blog',
         'description'   => esc_html__( 'Add widgets here.', 'ancla' ),

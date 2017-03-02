@@ -75,7 +75,7 @@
         </div>
         <div class="container">
             <div class="col-xs-12 col-sm-6">
-                <div class="legal">2016 Ancla, Colombia - Todos los derechos reservados</div>
+                <div class="legal"><?php echo date("Y"); ?> Cajas Fuertes Ancla, Colombia - Todos los derechos reservados</div>
             </div>
             <div class="col-xs-12 col-sm-6">
                 <div class="footer-contact">

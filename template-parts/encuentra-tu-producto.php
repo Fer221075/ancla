@@ -22,5 +22,9 @@
             wp_reset_postdata();
 
             ?>
+        </div>
+        <div class="go-to-store">
+            <a href="<?php echo home_url('/productos/categorias/hogar/'); ?>" class="ancla-btn">Ir a tienda web</a>
+        </div>
     </div>
 </section>

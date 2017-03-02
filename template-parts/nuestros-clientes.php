@@ -16,15 +16,35 @@ if ( $loop->have_posts() ) : ?>
         <div class="container">
             <h3>Nuestros Clientes</h3>
         </div>
-        <div class="container container-clients">
+        <div class="container container-customers">
 
-    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-        <div class="client">
-            <?php the_post_thumbnail(); ?>
-        </div>
+            <div class="customer">
+                <?php the_post_thumbnail(); ?>
+            </div>
 
-    <?php endwhile;?>
+<!--            <div class="customer">-->
+<!--                --><?php //the_post_thumbnail(); ?>
+<!--            </div>-->
+<!---->
+<!--            <div class="customer">-->
+<!--                --><?php //the_post_thumbnail(); ?>
+<!--            </div>-->
+<!---->
+<!--            <div class="customer">-->
+<!--                --><?php //the_post_thumbnail(); ?>
+<!--            </div>-->
+<!---->
+<!--            <div class="customer">-->
+<!--                --><?php //the_post_thumbnail(); ?>
+<!--            </div>-->
+<!---->
+<!--            <div class="customer">-->
+<!--                --><?php //the_post_thumbnail(); ?>
+<!--            </div>-->
+
+        <?php endwhile;?>
 
         </div>
     </div>
