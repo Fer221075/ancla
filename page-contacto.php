@@ -30,9 +30,9 @@ while ( have_posts() ) : the_post(); ?>
                 <div class="contact-data">
                     <h3>Información de contacto</h3>
                     <ul>
-                        <?php if ( !empty( get_theme_mod('contact_phone') ) ): ?><li><a href="tel:<?php echo get_theme_mod('contact_phone') ?>">TEL: <?php echo get_theme_mod('contact_phone') ?></a></li><?php endif; ?>
-                        <?php if ( !empty( get_theme_mod('contact_email') ) ): ?><li><a href="mailto:<?php echo get_theme_mod('contact_email') ?>"><?php echo get_theme_mod('contact_email') ?></a></li><?php endif; ?>
-                        <?php if ( !empty( get_theme_mod('address') ) ): ?><li><a href="<?php echo home_url('/contacto/'); ?>"><?php echo get_theme_mod('address'); ?></a></li><?php endif; ?>
+                        <?php if ( get_theme_mod('contact_phone') ): ?><li><a href="tel:<?php echo get_theme_mod('contact_phone') ?>">TEL: <?php echo get_theme_mod('contact_phone') ?></a></li><?php endif; ?>
+                        <?php if ( get_theme_mod('contact_email') ): ?><li><a href="mailto:<?php echo get_theme_mod('contact_email') ?>"><?php echo get_theme_mod('contact_email') ?></a></li><?php endif; ?>
+                        <?php if ( get_theme_mod('address') ): ?><li><a href="<?php echo home_url('/contacto/'); ?>"><?php echo get_theme_mod('address'); ?></a></li><?php endif; ?>
                     </ul>
                 </div>
             </div>

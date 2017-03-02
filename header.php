@@ -23,8 +23,8 @@
         <div id="top" class="container top-bar clearfix">
             <div class="top-contact">
                 <ul>
-                    <?php if ( !empty( get_theme_mod('contact_phone') ) ): ?><li><a href="tel:<?php echo get_theme_mod('contact_phone') ?>">TEL: <?php echo get_theme_mod('contact_phone') ?></a></li><?php endif; ?>
-                    <?php if ( !empty( get_theme_mod('contact_email') ) ): ?><li><a href="mailto:<?php echo get_theme_mod('contact_email') ?>"><?php echo get_theme_mod('contact_email') ?></a></li><?php endif; ?>
+                    <?php if ( get_theme_mod('contact_phone')  ): ?><li><a href="tel:<?php echo get_theme_mod('contact_phone') ?>">TEL: <?php echo get_theme_mod('contact_phone') ?></a></li><?php endif; ?>
+                    <?php if ( get_theme_mod('contact_email')  ): ?><li><a href="mailto:<?php echo get_theme_mod('contact_email') ?>"><?php echo get_theme_mod('contact_email') ?></a></li><?php endif; ?>
                 </ul>
             </div>
             <ul class="top-links">
