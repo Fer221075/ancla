@@ -211,6 +211,27 @@ add_filter( 'woocommerce_min_password_strength', 'reduce_woocommerce_min_strengt
 // Remove breadcrumbs
 //remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
+function the_title_trim($title) {
+
+    $title = esc_attr($title);
+
+    $findthese = array(
+        '#Protected:#',
+        '#Private:#',
+        '#Protegido:#',
+        '#Privado:#',
+    );
+
+    $replacewith = array(
+        '', // What to replace "Protected:" with
+        '' // What to replace "Private:" with
+    );
+
+    $title = preg_replace($findthese, $replacewith, $title);
+    return $title;
+}
+add_filter('the_title', 'the_title_trim');
+
 require get_template_directory() . '/inc/woocommerce-register-fields.php';
 /**
  * Implement custom comments mark up

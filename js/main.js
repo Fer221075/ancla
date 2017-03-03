@@ -253,6 +253,12 @@
             })
         }
 
+        $('.video-accordion .panel-title a').click(function () {
+           $('.cc-video').each(function () {
+               $(this)[0].pause();
+           })
+        });
+
     });
 }));
 

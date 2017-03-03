@@ -89,6 +89,13 @@ get_header(); ?>
                 </div>
             </div>
         </div>
+        <div class="row black-banner-row">
+            <div class="col-xs-12">
+                <div class="go-to-videos" style="text-align: center; text-transform: uppercase;">
+                    <a href="<?php echo home_url('/video-tutoriales-cash-control'); ?>" class="ancla-btn" style="padding: 10px 25px;">Ver tutoriales</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <section class="home-products">

@@ -1,0 +1,21 @@
+.video-accordion {
+  .panel-default>.panel-heading {
+    background-color: $anclaRed;
+    color: #fff;
+
+    a:hover,
+    a:active,
+    a:focus {
+      color: #fff;
+    }
+  }
+}
+
+.vid-description {
+  font-size: 16px;
+  padding: 35px 15px;
+
+  p {
+    margin-bottom: 10px;
+  }
+}
