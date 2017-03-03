@@ -16,122 +16,122 @@ get_header();?>
                     </ul>
                 </div>
                 <div class="box-game-body">
-                    <div id="step-1" data-step="1" class="step">
+                    <div id="step-1" data-step="1" class="step" data-attribute="protege">
                         <div class="row">
                             <div class="step-option">
                                 <label for="documentos"><img src="<?php echo get_template_directory_uri(); ?>/img/game_docs.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="documentos" name="step-1">
+                                    <input type="radio" id="documentos" name="step-1" value="documentos">
                                     <label for="documentos">Documentos</label>
                                 </div>
                             </div>
                             <div class="step-option">
                                 <label for="medios_digitales"><img src="<?php echo get_template_directory_uri(); ?>/img/game_digital.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="medios_digitales" name="step-1">
+                                    <input type="radio" id="medios_digitales" name="step-1" value="medios-digitales">
                                     <label for="medios_digitales">Medios digitales</label>
                                 </div>
                             </div>
                             <div class="step-option">
                                 <label for="electronicos"><img src="<?php echo get_template_directory_uri(); ?>/img/game_elect.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="electronicos" name="step-1">
+                                    <input type="radio" id="electronicos" name="step-1" value="electronicos">
                                     <label for="electronicos">Electrónicos</label>
                                 </div>
                             </div>
                             <div class="step-option">
                                 <label for="dinero"><img src="<?php echo get_template_directory_uri(); ?>/img/game_cash.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="dinero" name="step-1">
+                                    <input type="radio" id="dinero" name="step-1" value="dinero">
                                     <label for="dinero">Dinero</label>
                                 </div>
                             </div>
                             <div class="step-option">
                                 <label for="joyas"><img src="<?php echo get_template_directory_uri(); ?>/img/game_jewelry.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="joyas" name="step-1">
+                                    <input type="radio" id="joyas" name="step-1" value="joyas">
                                     <label for="joyas">Joyas</label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="step-2" data-step="2" class="step">
+                    <div id="step-2" data-step="2" class="step" data-attribute="protege-contra">
                         <div class="row">
                             <div class="step-option" style="margin-left: 30%;">
                                 <label for="fuego"><img src="<?php echo get_template_directory_uri(); ?>/img/game_fire.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="fuego" name="step-2">
+                                    <input type="radio" id="fuego" name="step-2" value="fuego">
                                     <label for="fuego">Fuego</label>
                                 </div>
                             </div>
                             <div class="step-option">
                                 <label for="ladrones"><img src="<?php echo get_template_directory_uri(); ?>/img/game_thieve.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="ladrones" name="step-2">
+                                    <input type="radio" id="ladrones" name="step-2" value="ladrones">
                                     <label for="ladrones">Ladrones</label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="step-3" data-step="3" class="step">
+                    <div id="step-3" data-step="3" class="step" data-attribute="tamano-caja">
                         <div class="row">
                             <div class="step-option" style="margin-left: 20%;">
                                 <label for="pequena"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_sm.png" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="pequena" name="step-3">
+                                    <input type="radio" id="pequena" name="step-3" value="pequena">
                                     <label for="pequena">Pequeña</label>
                                 </div>
                             </div>
                             <div class="step-option">
                                 <label for="mediana"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_mid.png" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="mediana" name="step-3">
+                                    <input type="radio" id="mediana" name="step-3"  value="mediana">
                                     <label for="mediana">Mediana</label>
                                 </div>
                             </div>
                             <div class="step-option">
                                 <label for="grande"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_big.png" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="grande" name="step-3">
+                                    <input type="radio" id="grande" name="step-3" value="grande">
                                     <label for="grande">Grande</label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="step-4" data-step="4" class="step">
+                    <div id="step-4" data-step="4" class="step" data-attribute="tipo-cerradura">
                         <div class="row">
                             <div class="step-option">
                                 <label for="digital"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_digital.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="digital" name="step-4">
+                                    <input type="radio" id="digital" name="step-4" value="digital">
                                     <label for="digital">Digital</label>
                                 </div>
                             </div>
                             <div class="step-option">
                                 <label for="combination"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_combination.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="combination" name="step-4">
+                                    <input type="radio" id="combination" name="step-4" value="combinacion">
                                     <label for="combination">Combinación</label>
                                 </div>
                             </div>
                             <div class="step-option">
                                 <label for="llave"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_key.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="llave" name="step-4">
+                                    <input type="radio" id="llave" name="step-4" value="llave">
                                     <label for="llave">Llave</label>
                                 </div>
                             </div>
                             <div class="step-option">
                                 <label for="digital_and_key"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_digital&key.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="digital_and_key" name="step-4">
+                                    <input type="radio" id="digital_and_key" name="step-4" value="digital_y_llave">
                                     <label for="digital_and_key">Digital + Llave</label>
                                 </div>
                             </div>
                             <div class="step-option">
                                 <label for="combination_and_key"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_combination&key.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="combination_and_key" name="step-4">
+                                    <input type="radio" id="combination_and_key" name="step-4" value="combinacion_y_llave">
                                     <label for="combination_and_key">Combinación + Llave</label>
                                 </div>
                             </div>
@@ -147,6 +147,17 @@ get_header();?>
                 </div>
             </div>
         </div>
+        <div class="row product-search-loader">
+            <div class="ancla-loader" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/loader_bg.png');">
+                <div class="spin">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/loader_content.png" alt="" data-pin="nopin">
+                </div>
+            </div>
+        </div>
+        <div class="row products-ajax-result">
+
+        </div>
+        <div class="row products-ajax-no-results">No se encontraron resultados</div>
     </div>
 
 </section>
@@ -234,10 +245,9 @@ get_header();?>
         var $stepContainer = $('#step-' + step);
 
         if ($stepContainer.length > 0) {
-            var checkedOptions = $stepContainer.find('input[type="checkbox"]:checked');
+            var checkedOptions = $stepContainer.find('input[type="radio"]:checked');
 
             if (checkedOptions.length > 0) {
-                //TODO add to query
                 $stepContainer.addClass('complete');
                 enableNextStep(step);
                 $('#next-step').prop('disabled', false);
@@ -249,6 +259,40 @@ get_header();?>
         }
     }
 
+    function getFilterString() {
+        var filters = "";
+
+        $('.step').each(function () {
+            filters += $(this).data('attribute') + ',' + $(this).find('input[type="radio"]:checked').first().val() + '/';
+        });
+
+        filters = filters.substring(0, filters.length-1);
+
+        return filters;
+    }
+
+    function getProducts() {
+
+        $('.product-search-loader').slideDown();
+        $('.products-ajax-result').slideUp();
+        $('.products-ajax-no-results').slideUp();
+
+        var url = ajax.baseUrl + '?action=get_products&filters=' + getFilterString();
+
+        $.ajax({
+            url: url
+        }).done(function (data) {
+            $('.product-search-loader').slideUp();
+            if (data.length > 0){
+                $('.products-ajax-result').html(data);
+                $('.products-ajax-result').slideDown();
+            } else {
+                $('.products-ajax-result').html('');
+                $('.products-ajax-no-results').slideDown();
+            }
+        });
+    }
+
     $(document).ready(function () {
 
         $('.game-step-btn').click(function (e) {
@@ -256,7 +300,7 @@ get_header();?>
             goToStep($(this).data('step'));
         });
 
-        $('input[type="checkbox"]').change(function () {
+        $('input[type="radio"]').change(function () {
             checkStep($(this).closest('.step').data('step'));
         });
 
@@ -267,6 +311,11 @@ get_header();?>
         $('#prev-step').click(function () {
             goToStep($('.current-step').data('step') - 1);
         });
+
+        $('#finish').click(function () {
+           getProducts();
+        });
+
     });
 
 </script>

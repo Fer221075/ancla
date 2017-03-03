@@ -15,6 +15,7 @@ function ancla_scripts(){
 
     wp_enqueue_script( 'ancla-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	wp_enqueue_script( 'ancla-scripts', get_template_directory_uri() . '/js/main.js', array('jquery', 'bootstrap'), null, true );
+    wp_localize_script( 'ancla-scripts', 'ajax', array( 'baseUrl' => admin_url( 'admin-ajax.php' )));
 
 	// CommentReplyJS
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

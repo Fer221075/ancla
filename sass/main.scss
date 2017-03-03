@@ -154,3 +154,13 @@ span.red {
     opacity: 0 !important;
   }
 }
+
+.products-ajax-result {
+  display: none;
+  padding: 40px 0;
+}
+
+.products-ajax-no-results {
+  @extend .products-ajax-result;
+  font-size: 22px;
+}

@@ -233,6 +233,9 @@ function the_title_trim($title) {
 add_filter('the_title', 'the_title_trim');
 
 require get_template_directory() . '/inc/woocommerce-register-fields.php';
+
+require get_template_directory() . '/inc/ajax-products.php';
+
 /**
  * Implement custom comments mark up
  */

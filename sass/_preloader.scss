@@ -123,5 +123,15 @@
       width: 100%;
     }
   }
+}
 
+.product-search-loader {
+  position: relative;
+  height: 150px;
+  display: none;
+
+  .ancla-loader {
+    width: 100px;
+    height: 100px;
+  }
 }
