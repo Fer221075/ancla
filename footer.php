@@ -35,19 +35,16 @@
                   <div class="col-sm-12">
                     <ul>
                         <li>
-                            <img src="<?php echo get_template_directory_uri();?>/img/iso_9001.png" alt="iso_9001">
+                            <img src="<?php echo get_home_url(); ?>/img/LOGOS-ICONTEC-ANCLA-03.png" alt="iso_9001">
                             <span>CO-SA-CER482680</span>
                         </li>
                         <li>
-                            <img src="<?php echo get_template_directory_uri();?>/img/iso_14001.png" alt="iso_14001">
+                            <img src="<?php echo get_template_directory_uri();?>/img/LOGOS-ICONTEC-ANCLA-02.png" alt="iso_14001">
                             <span>CO-OS-CER356378</span>
                         </li>
                         <li>
-                            <img src="<?php echo get_template_directory_uri();?>/img/oshsas_18001.png" alt="oshsas_18001">
+                            <img src="<?php echo get_template_directory_uri();?>/img/LOGOS-ICONTEC-ANCLA-03.png" alt="oshsas_18001">
                             <span>CO-SC-CER356564</span>
-                        </li>
-                        <li>
-                            <img src="<?php echo get_template_directory_uri();?>/img/sello-iqnet.png">
                         </li>
                     </ul>
                   </div>
