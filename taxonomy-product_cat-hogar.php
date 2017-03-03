@@ -13,6 +13,7 @@ get_header( 'shop' ); ?>
 <?php get_template_part('template-parts/category_banner', 'small'); ?>
 
 <div class="container iso-cats">
+    <div class="row">
 
 <?php woocommerce_product_loop_start(); ?>
 
@@ -53,6 +54,8 @@ foreach($categories as $category) {
 ?>
 
 <?php woocommerce_product_loop_end(); ?>
+
+    </div>
 
 </div>
 

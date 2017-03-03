@@ -133,7 +133,12 @@
             </div>
         </header><!-- #masthead -->
         <div class="loader-container">
-            <div class="pre-loader"></div>
+<!--            <div class="pre-loader"></div>-->
+            <div class="ancla-loader" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/loader_bg.png');">
+                <div class="spin">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/loader_content.png" alt="" data-pin="nopin">
+                </div>
+            </div>
         </div>
 
 	<section id="content" class="site-content">
