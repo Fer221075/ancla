@@ -35,7 +35,7 @@
                   <div class="col-sm-12">
                     <ul>
                         <li>
-                            <img src="<?php echo get_home_url(); ?>/img/LOGOS-ICONTEC-ANCLA-03.png" alt="iso_9001">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/LOGOS-ICONTEC-ANCLA-03.png" alt="iso_9001">
                             <span>CO-SA-CER482680</span>
                         </li>
                         <li>
