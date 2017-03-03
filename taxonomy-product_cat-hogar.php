@@ -14,6 +14,13 @@ get_header( 'shop' ); ?>
 
 <div class="container iso-cats">
     <div class="row">
+        <div class="red-section-header no-triangle">
+            <div class="container">
+                <h3>¿Sabes qué caja fuerte necesitas? <a href="/juego">Descúbrelo aquí</a></h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
 
 <?php woocommerce_product_loop_start(); ?>
 

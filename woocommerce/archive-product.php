@@ -19,6 +19,16 @@ do_action( 'woocommerce_before_main_content' ); ?>
 
 <?php if ( have_posts() ) : ?>
 
+    <div class="container">
+        <div class="row">
+            <div class="red-section-header no-triangle">
+                <div class="container">
+                    <h3>¿Sabes qué caja fuerte necesitas? <a href="/juego">Descúbrelo aquí</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="store-actions clearfix">
 
     <?php
