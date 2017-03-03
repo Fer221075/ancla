@@ -19,3 +19,19 @@
     margin-bottom: 10px;
   }
 }
+
+.restricted-area-login {
+  width: 92%;
+  max-width: 570px;
+  margin: 0 auto;
+
+  p > label,
+  p > input {
+    display: block;
+  }
+
+  .login-submit .button {
+    @extend .ancla-btn;
+    border: none;
+  }
+}
