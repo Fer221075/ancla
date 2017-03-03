@@ -51,9 +51,16 @@
             <div class="container clearfix">
                 <div class="row">
                 <div class="site-branding">
-                    <a href="<?php echo get_home_url(); ?>">
-                        <img src="<?php echo get_template_directory_uri();?>/img/logo_ancla_blanco.png" alt="">
-                    </a>
+                    <?php if ( get_theme_mod( 'ancla_logo' ) ) : ?>
+                        <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
+                            <img src='<?php echo esc_url( get_theme_mod( 'ancla_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
+                        </a>
+                    <?php else : ?>
+                        <hgroup>
+                            <h1 class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
+
+                        </hgroup>
+                    <?php endif; ?>
                 </div>
                 <nav id="site-navigation" class="main-navigation" role="navigation">
                     <div class="menu-container">

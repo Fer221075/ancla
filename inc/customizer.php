@@ -15,6 +15,17 @@ function ancla_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
+    $wp_customize->add_section( 'ancla_logo_section' , array(
+        'title'       => __( 'Logo', 'ancla' ),
+        'priority'    => 30
+    ) );
+    $wp_customize->add_setting( 'ancla_logo' );
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ancla_logo', array(
+        'label'    => __( 'Logo', 'ancla' ),
+        'section'  => 'ancla_logo_section',
+        'settings' => 'ancla_logo',
+    ) ) );
+
     $wp_customize->add_panel( 'home_panel', array(
         'priority'       => 10,
         'capability'     => 'edit_theme_options',
