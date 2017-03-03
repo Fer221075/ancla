@@ -50,12 +50,21 @@ $coords = explode(",", $lat_long);
 
 <script>
       function initMap() {
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: <?php echo $coords[0]; ?>, lng: <?php echo $coords[1]; ?>},
-          scrollwheel: false,
-          zoom: 13
-        });
+
+          var myLatLng = {lat: <?php echo $coords[0]; ?>, lng: <?php echo $coords[1]; ?>};
+
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: myLatLng,
+              scrollwheel: false,
+              zoom: 15
+            });
+
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map
+            });
       }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzLnx3jwbamPXFtl9bsjHtsWxNKgaV-vg&callback=initMap"
