@@ -32,7 +32,7 @@ get_header(); ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_reports_icon.png" alt="">
                 <span>Reportes de acuerdo al <strong>perfil del usuario</strong></span>
             </div>
-            <div class="cc-item cc-decision" data-x="853" data-y="634">
+            <div class="cc-item cc-decision" data-x="853" data-y="654">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_decision_icon.png" alt="">
                 <span>Ayuda a <strong>tomar decisiones</strong> del proceso de efectivo</span>
             </div>
@@ -48,7 +48,7 @@ get_header(); ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_access_icon.png" alt="">
                 <span><strong>Acceso seguro</strong> a la web</span>
             </div>
-            <div class="cc-item cc-history" data-x="1490" data-y="500">
+            <div class="cc-item cc-history" data-x="1520" data-y="500">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_history_icon.png" alt="">
                 <span>Historial de transacciones por <strong>3 años</strong></span>
             </div>
