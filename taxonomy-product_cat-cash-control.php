@@ -48,7 +48,7 @@ get_header(); ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_access_icon.png" alt="">
                 <span><strong>Acceso seguro</strong> a la web</span>
             </div>
-            <div class="cc-item cc-history" data-x="1290" data-y="341">
+            <div class="cc-item cc-history" data-x="1290" data-y="500">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_history_icon.png" alt="">
                 <span>Historial de transacciones por <strong>3 años</strong></span>
             </div>
