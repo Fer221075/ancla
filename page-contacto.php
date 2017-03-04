@@ -53,6 +53,19 @@ $coords = explode(",", $lat_long);
 
           var myLatLng = {lat: <?php echo $coords[0]; ?>, lng: <?php echo $coords[1]; ?>};
 
+          var contentString = '<div id="content">'+
+              '<h3 id="firstHeading" class="firstHeading"><?php echo get_bloginfo( 'name', 'display' ) ?></h3>'+
+              '<div id="bodyContent">'+
+              'Dirección: <?php echo get_theme_mod('address') ?> </br>'+
+              'Teléfono: <?php echo get_theme_mod('contact_phone') ?> </br>'+
+              'Email: <?php echo get_theme_mod('contact_email') ?> </br>'+
+              '</div>'+
+              '</div>';
+
+              var infowindow = new google.maps.InfoWindow({
+                  content: contentString
+              });
+
             // Create a map object and specify the DOM element for display.
             var map = new google.maps.Map(document.getElementById('map'), {
               center: myLatLng,
@@ -65,6 +78,10 @@ $coords = explode(",", $lat_long);
                 position: myLatLng,
                 map: map
             });
+
+          marker.addListener('click', function() {
+              infowindow.open(map, marker);
+          });
       }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzLnx3jwbamPXFtl9bsjHtsWxNKgaV-vg&callback=initMap"
