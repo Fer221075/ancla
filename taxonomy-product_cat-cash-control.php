@@ -20,7 +20,7 @@ get_header(); ?>
     <div class="container" style="position: relative;">
         <div class="cash-control-content">
             <img class="cc-title" src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_title.png" alt="">
-            <div class="cc-item cc-info" data-x="806" data-y="232">
+            <div class="cc-item cc-info" data-x="806" data-y="272">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_info_icon.png" alt="">
                 <span><strong>Centraliza y maneja</strong> la información de la red de locales</span>
             </div>
@@ -44,11 +44,11 @@ get_header(); ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_web_icon.png" alt="">
                 <span><strong>Web de consulta</strong> no permite cambios a la información</span>
             </div>
-            <div class="cc-item cc-access" data-x="1297" data-y="421">
+            <div class="cc-item cc-access" data-x="1297" data-y="431">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_access_icon.png" alt="">
                 <span><strong>Acceso seguro</strong> a la web</span>
             </div>
-            <div class="cc-item cc-history" data-x="1520" data-y="500">
+            <div class="cc-item cc-history" data-x="1560" data-y="500">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_history_icon.png" alt="">
                 <span>Historial de transacciones por <strong>3 años</strong></span>
             </div>
