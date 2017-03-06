@@ -76,6 +76,7 @@ $coords = explode(",", $lat_long);
 
             var marker = new google.maps.Marker({
                 position: myLatLng,
+                icon: '<?php echo get_template_directory_uri(); ?>/img/map_pin.png',
                 map: map
             });
 
