@@ -179,14 +179,20 @@
             ]
         });
 
-        if ( $('.container-customers .customer').length > 5 ){
+        var customersLength= $('.container-customers .customer').length;
+
+        if ( customersLength == 2 ) {
+            $('.container-customers .customer').first().css('text-align', 'right');
+            $('.container-customers .customer').last().css('text-align', 'left');
+        }
+
+        if ( customersLength > 5 ){
             $('.container-customers').slick({
                 infinite: true,
                 dots: true,
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 6000,
-                centerMode: true,
                 rows: 2,
                 slidesPerRow: 5,
                 responsive: [
@@ -217,8 +223,7 @@
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                centerMode: true,
-                slidesToShow: 5,
+                slidesToShow: customersLength,
                 responsive: [
                     {
                         breakpoint: 1100,

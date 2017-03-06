@@ -30,10 +30,13 @@ section.nuestros-clientes {
   width: 210px;//calc((100% / 5) - 20px);
   padding: 0 20px;
   margin-bottom: 15px;
+  text-align: center;
 
   img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 230px;
     border-radius: 15px;
+    display: inline-block;
   }
 
   @include media("<=992px") {
