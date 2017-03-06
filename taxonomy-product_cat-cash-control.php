@@ -20,35 +20,35 @@ get_header(); ?>
     <div class="container" style="position: relative;">
         <div class="cash-control-content">
             <img class="cc-title" src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_title.png" alt="">
-            <div class="cc-item cc-info" data-x="806" data-y="272">
+            <div class="cc-item cc-info" data-x="620" data-y="272">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_info_icon.png" alt="">
                 <span><strong>Centraliza y maneja</strong> la información de la red de locales</span>
             </div>
-            <div class="cc-item cc-online" data-x="738" data-y="384">
+            <div class="cc-item cc-online" data-x="552" data-y="384">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_online_icon.png" alt="">
                 <span>Información <strong>en linea</strong> de cada caja</span>
             </div>
-            <div class="cc-item cc-reports" data-x="661" data-y="465">
+            <div class="cc-item cc-reports" data-x="475" data-y="465">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_reports_icon.png" alt="">
                 <span>Reportes de acuerdo al <strong>perfil del usuario</strong></span>
             </div>
-            <div class="cc-item cc-decision" data-x="853" data-y="654">
+            <div class="cc-item cc-decision" data-x="665" data-y="654">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_decision_icon.png" alt="">
                 <span>Ayuda a <strong>tomar decisiones</strong> del proceso de efectivo</span>
             </div>
-            <div class="cc-item cc-interaction" data-x="1059" data-y="417">
+            <div class="cc-item cc-interaction" data-x="864" data-y="417">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_interaction_icon.png" alt="">
                 <span><strong>Interacción</strong> entre los interesados del efectivo</span>
             </div>
-            <div class="cc-item cc-web" data-x="1155" data-y="582">
+            <div class="cc-item cc-web" data-x="969" data-y="582">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_web_icon.png" alt="">
                 <span><strong>Web de consulta</strong> no permite cambios a la información</span>
             </div>
-            <div class="cc-item cc-access" data-x="1297" data-y="431">
+            <div class="cc-item cc-access" data-x="1111" data-y="431">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_access_icon.png" alt="">
                 <span><strong>Acceso seguro</strong> a la web</span>
             </div>
-            <div class="cc-item cc-history" data-x="1560" data-y="500">
+            <div class="cc-item cc-history" data-x="1374" data-y="500">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/cashcontrol_history_icon.png" alt="">
                 <span>Historial de transacciones por <strong>3 años</strong></span>
             </div>
