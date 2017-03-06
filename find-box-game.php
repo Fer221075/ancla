@@ -100,7 +100,7 @@ get_header();?>
                     </div>
                     <div id="step-4" data-step="4" class="step" data-attribute="tipo-cerradura">
                         <div class="row">
-                            <div class="step-option">
+                            <div class="step-option" style="margin-left: 20%;">
                                 <label for="digital"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_digital.jpg" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="digital" name="step-4" value="digital">
@@ -121,20 +121,20 @@ get_header();?>
                                     <label for="llave">Llave</label>
                                 </div>
                             </div>
-                            <div class="step-option">
-                                <label for="digital_and_key"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_digital&key.jpg" alt=""></label>
-                                <div class="option-check">
-                                    <input type="checkbox" id="digital_and_key" name="step-4" value="digital_y_llave">
-                                    <label for="digital_and_key">Digital + Llave</label>
-                                </div>
-                            </div>
-                            <div class="step-option">
-                                <label for="combination_and_key"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_combination&key.jpg" alt=""></label>
-                                <div class="option-check">
-                                    <input type="checkbox" id="combination_and_key" name="step-4" value="combinacion_y_llave">
-                                    <label for="combination_and_key">Combinación + Llave</label>
-                                </div>
-                            </div>
+<!--                            <div class="step-option">-->
+<!--                                <label for="digital_and_key"><img src="--><?php //echo get_template_directory_uri(); ?><!--/img/game_box_digital&key.jpg" alt=""></label>-->
+<!--                                <div class="option-check">-->
+<!--                                    <input type="checkbox" id="digital_and_key" name="step-4" value="digital_y_llave">-->
+<!--                                    <label for="digital_and_key">Digital + Llave</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="step-option">-->
+<!--                                <label for="combination_and_key"><img src="--><?php //echo get_template_directory_uri(); ?><!--/img/game_box_combination&key.jpg" alt=""></label>-->
+<!--                                <div class="option-check">-->
+<!--                                    <input type="checkbox" id="combination_and_key" name="step-4" value="combinacion_y_llave">-->
+<!--                                    <label for="combination_and_key">Combinación + Llave</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>
