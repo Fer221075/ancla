@@ -12,7 +12,7 @@ get_header( 'shop' ); ?>
 
 <?php get_template_part('template-parts/category_banner', 'small'); ?>
 
-<div class="container iso-cats">
+<div class="container">
     <div class="row">
         <div class="red-section-header no-triangle">
             <div class="container">
@@ -20,6 +20,9 @@ get_header( 'shop' ); ?>
             </div>
         </div>
     </div>
+</div>
+
+<div class="container iso-cats">
     <div class="row">
 
 <?php woocommerce_product_loop_start(); ?>

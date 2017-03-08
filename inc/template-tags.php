@@ -120,11 +120,11 @@ function ancla_category_actions($term) {
     </div>
     <ul class="category-actions">
         <li class="category-action">
-            <a href="<?php echo get_home_url() . '/contacto/?asunto=Solicitar%20Cotización'; ?>"><img src="<?php echo get_template_directory_uri() . '/img/icono_asesor.png' ?>" alt=""></a>
+            <a href="<?php echo get_home_url() . '/contacto/?asunto=Contactar%20un%20asesor'; ?>"><img src="<?php echo get_template_directory_uri() . '/img/icono_asesor.png' ?>" alt=""></a>
             <span><strong>Contacte</strong> un asesor</span>
         </li>
         <li class="category-action">
-            <a href="<?php echo get_home_url() . '/contacto/?asunto=Contactar%20un%20asesor'; ?>"><img src="<?php echo get_template_directory_uri() . '/img/icono_cotizacion.png' ?>" alt=""></a>
+            <a href="<?php echo get_home_url() . '/contacto/?asunto=Solicitar%20Cotización'; ?>"><img src="<?php echo get_template_directory_uri() . '/img/icono_cotizacion.png' ?>" alt=""></a>
             <span><strong>Solicite</strong> cotización</span>
         </li>
     </ul>

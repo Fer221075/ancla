@@ -18,21 +18,22 @@ get_header();?>
                 <div class="box-game-body">
                     <div id="step-1" data-step="1" class="step" data-attribute="protege">
                         <div class="row">
-                            <div class="step-option">
+                            <div class="step-option auto-tooltip" title="Pasaporte, cédulas, tarjetas de propiedad, tarjetas crédito y débito, facturas, recibos, chequeras, libreta militar, CDTS, títulos valores, recomendaciones, cartas, certificaciones, escrituras,
+ títulos valores">
                                 <label for="documentos"><img src="<?php echo get_template_directory_uri(); ?>/img/game_docs.jpg" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="documentos" name="step-1" value="documentos">
                                     <label for="documentos">Documentos</label>
                                 </div>
                             </div>
-                            <div class="step-option">
+                            <!--div class="step-option">
                                 <label for="medios_digitales"><img src="<?php echo get_template_directory_uri(); ?>/img/game_digital.jpg" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="medios_digitales" name="step-1" value="medios-digitales">
                                     <label for="medios_digitales">Medios digitales</label>
                                 </div>
-                            </div>
-                            <div class="step-option">
+                            </div-->
+                            <div class="step-option auto-tooltip" title="Cd / Dvd, Discos duros externos, Memorias, Tablet, Celulares">
                                 <label for="electronicos"><img src="<?php echo get_template_directory_uri(); ?>/img/game_elect.jpg" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="electronicos" name="step-1" value="electronicos">
@@ -108,10 +109,10 @@ get_header();?>
                                 </div>
                             </div>
                             <div class="step-option">
-                                <label for="combination"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_combination.jpg" alt=""></label>
+                                <label for="mecanic"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_combination.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="combination" name="step-4" value="combinacion">
-                                    <label for="combination">Combinación</label>
+                                    <input type="checkbox" id="mecanic" name="step-4" value="mecanica">
+                                    <label for="mecanic">Mecánica</label>
                                 </div>
                             </div>
                             <div class="step-option" style="margin-right: auto;">
@@ -319,6 +320,8 @@ get_header();?>
         $('#finish').click(function () {
             getProducts();
         });
+
+        $('.auto-tooltip').tooltip();
 
     });
 
