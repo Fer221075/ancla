@@ -18,8 +18,8 @@ get_header();?>
                 <div class="box-game-body">
                     <div id="step-1" data-step="1" class="step" data-attribute="protege">
                         <div class="row">
-                            <div class="step-option auto-tooltip" title="Pasaporte, Cédulas, tarjetas de propiedad, tarjetas crédito y débito, Facturas, Recibos, Chequeras, Libreta militar, CDTS, Títulos valores, Recomendaciones, Cartas, Certificaciones, Escrituras
-Titulos valores">
+                            <div class="step-option auto-tooltip" title="Pasaporte, cédulas, tarjetas de propiedad, tarjetas crédito y débito, facturas, recibos, chequeras, libreta militar, CDTS, títulos valores, recomendaciones, cartas, certificaciones, escrituras,
+ títulos valores">
                                 <label for="documentos"><img src="<?php echo get_template_directory_uri(); ?>/img/game_docs.jpg" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="documentos" name="step-1" value="documentos">
