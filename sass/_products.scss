@@ -150,7 +150,17 @@ ul.category-actions {
     img {
       width: 90px;
     }
+
+    @include media("<=382px") {
+      float: left;
+      width: 50%;
+    }
   }
+
+  @include media("<=382px") {
+    margin-top: 20px;
+  }
+
 }
 
 // SUBCATEGORIES

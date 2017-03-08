@@ -53,6 +53,13 @@ body.page-template-find-box-game header {
   .top-contact {
     float: left;
 
+
+    @include media("<=550px") {
+      width: 100%;
+      text-align: center;
+    }
+
+
     li:not(:last-child)::after {
       content: '-';
       margin-left: 10px;
@@ -67,6 +74,11 @@ body.page-template-find-box-game header {
 
     &.top-links {
       float: right;
+
+      @include media("<=550px") {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     li {

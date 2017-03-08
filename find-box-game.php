@@ -12,7 +12,7 @@ get_header();?>
                         <li><a href="#" class="game-step-btn step-disabled" data-step="4">¿Qué tipo de cerradura?</a></li>
                         <li><a href="#" class="game-step-btn step-disabled" data-step="3">¿Qué medidas necesitas?</a></li>
                         <li><a href="#" class="game-step-btn step-disabled" data-step="2">¿De qué lo quieres proteger?</a></li>
-                        <li><a href="#" class="game-step-btn current-step" data-step="1">¿Qué quieres proteger?</a></li>
+                        <li class="current-step-li"><a href="#" class="game-step-btn current-step" data-step="1">¿Qué quieres proteger?</a></li>
                     </ul>
                 </div>
                 <div class="box-game-body">
@@ -56,15 +56,15 @@ get_header();?>
                         </div>
                     </div>
                     <div id="step-2" data-step="2" class="step" data-attribute="protege-contra">
-                        <div class="row">
-                            <div class="step-option" style="margin-left: 30%;">
+                        <div class="row" style="display: flex;">
+                            <div class="step-option" style="margin-left: auto;">
                                 <label for="fuego"><img src="<?php echo get_template_directory_uri(); ?>/img/game_fire.jpg" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="fuego" name="step-2" value="fuego">
                                     <label for="fuego">Fuego</label>
                                 </div>
                             </div>
-                            <div class="step-option">
+                            <div class="step-option" style="margin-right: auto;">
                                 <label for="ladrones"><img src="<?php echo get_template_directory_uri(); ?>/img/game_thieve.jpg" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="ladrones" name="step-2" value="ladrones">
@@ -74,8 +74,8 @@ get_header();?>
                         </div>
                     </div>
                     <div id="step-3" data-step="3" class="step" data-attribute="tamano-caja">
-                        <div class="row">
-                            <div class="step-option" style="margin-left: 20%;">
+                        <div class="row" style="display: flex;">
+                            <div class="step-option" style="margin-left: auto;">
                                 <label for="pequena"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_sm.png" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="pequena" name="step-3" value="pequena">
@@ -89,7 +89,7 @@ get_header();?>
                                     <label for="mediana">Mediana</label>
                                 </div>
                             </div>
-                            <div class="step-option">
+                            <div class="step-option" style="margin-right: auto;">
                                 <label for="grande"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_big.png" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="grande" name="step-3" value="grande">
@@ -99,8 +99,8 @@ get_header();?>
                         </div>
                     </div>
                     <div id="step-4" data-step="4" class="step" data-attribute="tipo-cerradura">
-                        <div class="row">
-                            <div class="step-option" style="margin-left: 20%;">
+                        <div class="row" style="display: flex;">
+                            <div class="step-option" style="margin-left: auto;">
                                 <label for="digital"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_digital.jpg" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="digital" name="step-4" value="digital">
@@ -114,7 +114,7 @@ get_header();?>
                                     <label for="combination">Combinación</label>
                                 </div>
                             </div>
-                            <div class="step-option">
+                            <div class="step-option" style="margin-right: auto;">
                                 <label for="llave"><img src="<?php echo get_template_directory_uri(); ?>/img/game_box_key.jpg" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="llave" name="step-4" value="llave">
@@ -166,12 +166,15 @@ get_header();?>
 
     function goToStep(stepNumber) {
         var $currentStepTab = $('.current-step');
+        var $currentStepLi = $currentStepTab.closest('li');
         var $targetStepContainer = $('.step[data-step="'+stepNumber+'"]');
 
         if ($targetStepContainer.length > 0) {
 
             $currentStepTab.removeClass('current-step');
+            $currentStepLi.removeClass('current-step-li');
             $('.game-step-btn[data-step="'+stepNumber+'"]').addClass('current-step');
+            $('.game-step-btn[data-step="'+stepNumber+'"]').closest('li').addClass('current-step-li');
 
             if ($targetStepContainer.data('step') > $currentStepTab.data('step')) {
 
@@ -274,6 +277,7 @@ get_header();?>
     function getProducts() {
 
         $('.product-search-loader').slideDown();
+        scrollTo($('.product-search-loader'));
         $('.products-ajax-result').slideUp();
         $('.products-ajax-no-results').slideUp();
 
@@ -313,7 +317,7 @@ get_header();?>
         });
 
         $('#finish').click(function () {
-           getProducts();
+            getProducts();
         });
 
     });

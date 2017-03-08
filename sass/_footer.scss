@@ -162,6 +162,11 @@ footer {
       color: $anclaRed;
     }
   }
+
+  @include media("<=768px") {
+    text-align: center;
+  }
+
 }
 
 .footer-contact {
