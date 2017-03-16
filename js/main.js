@@ -302,7 +302,7 @@ $(window).on("load", function() {
 
 function formSubjectFromParam() {
     if ( QueryString.asunto ) {
-        $('form #ccf_field_motivo option').each(function () {
+        $('form select[name="field_subject_recipient"] option').each(function () {
             if ( $(this).val().toLowerCase() == QueryString.asunto.toLowerCase() ) {
                 $(this).attr('selected', true);
                 return;
