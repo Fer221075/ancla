@@ -74,14 +74,14 @@
 .box-game-body {
   border-right: 2px solid $anclaRed;
   position: relative;
-  height: 200px;
+  height: 380px;
 
   @include media("<=970px") {
-    height: 325px;
+    height: 650px;
   }
 
   @include media("<=480px") {
-    height: 505px;
+    height: 980px;
   }
 
 }
@@ -133,6 +133,9 @@
     margin: 0;
     display: inline-block;
     vertical-align: middle;
+    @include media("<=480px") {
+      font-size: 9px;
+    }
   }
 
   input[type='checkbox'] {

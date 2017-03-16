@@ -18,21 +18,39 @@ get_header();?>
                 <div class="box-game-body">
                     <div id="step-1" data-step="1" class="step" data-attribute="protege">
                         <div class="row">
-                            <div class="step-option auto-tooltip" title="Pasaporte, cédulas, tarjetas de propiedad, tarjetas crédito y débito, facturas, recibos, chequeras, libreta militar, CDTS, títulos valores, recomendaciones, cartas, certificaciones, escrituras,
- títulos valores">
-                                <label for="documentos"><img src="<?php echo get_template_directory_uri(); ?>/img/game_docs.jpg" alt=""></label>
+                            <div class="step-option auto-tooltip" title="Pasaporte, cédulas, tarjetas de propiedad, tarjetas crédito y débito, facturas, recibos, chequeras, libreta militar">
+                                <label for="documento-media-carta"><img src="<?php echo get_template_directory_uri(); ?>/img/media-carta.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="documentos" name="step-1" value="documentos">
-                                    <label for="documentos">Documentos</label>
+                                    <input type="checkbox" id="documento-media-carta" name="step-1" value="documento-media-carta">
+                                    <label for="documento-media-carta">Documentos media carta</label>
                                 </div>
                             </div>
-                            <!--div class="step-option">
-                                <label for="medios_digitales"><img src="<?php echo get_template_directory_uri(); ?>/img/game_digital.jpg" alt=""></label>
+
+                            <div class="step-option auto-tooltip" title="CDTS, títulos valores, recomendaciones, cartas">
+                                <label for="documento-carta"><img src="<?php echo get_template_directory_uri(); ?>/img/carta.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="medios_digitales" name="step-1" value="medios-digitales">
-                                    <label for="medios_digitales">Medios digitales</label>
+                                    <input type="checkbox" id="documento-carta" name="step-1" value="documento-carta">
+                                    <label for="documento-carta">Documentos carta</label>
                                 </div>
-                            </div-->
+                            </div>
+
+                            <div class="step-option auto-tooltip" title="Escrituras, títulos valores">
+                                <label for="documento-oficio"><img src="<?php echo get_template_directory_uri(); ?>/img/oficio.jpg" alt=""></label>
+                                <div class="option-check">
+                                    <input type="checkbox" id="documento-oficio" name="step-1" value="documento-oficio">
+                                    <label for="documento-¨">Documentos oficio</label>
+                                </div>
+                            </div>
+
+                            <div class="step-option auto-tooltip">
+                                <label for="notebook-13"><img src="<?php echo get_template_directory_uri(); ?>/img/notebook-13.jpg" alt=""></label>
+                                <div class="option-check">
+                                    <input type="checkbox" id="notebook-13" name="step-1" value="notebook-13">
+                                    <label for="notebook-13">Notebook 13</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="step-option auto-tooltip" title="Cd / Dvd, Discos duros externos, Memorias, Tablet, Celulares">
                                 <label for="electronicos"><img src="<?php echo get_template_directory_uri(); ?>/img/game_elect.jpg" alt=""></label>
                                 <div class="option-check">
@@ -52,6 +70,13 @@ get_header();?>
                                 <div class="option-check">
                                     <input type="checkbox" id="joyas" name="step-1" value="joyas">
                                     <label for="joyas">Joyas</label>
+                                </div>
+                            </div>
+                            <div class="step-option">
+                                <label for="llaves"><img src="<?php echo get_template_directory_uri(); ?>/img/game_keys.jpg  " alt=""></label>
+                                <div class="option-check">
+                                    <input type="checkbox" id="llaves" name="step-1" value="llaves">
+                                    <label for="llaves">Llaves</label>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +183,8 @@ get_header();?>
         <div class="row products-ajax-result">
 
         </div>
-        <div class="row products-ajax-no-results">No se encontraron resultados</div>
+        <div class="row products-ajax-no-results">No se encontraron resultados para tu búsqueda, te recomendamos descargar la <a style="
+    color: #c1282d;" href="<?php echo get_template_directory_uri(); ?>/img/guia_compra_productos.pdf" target="_blank">guía de compra de productos</a></div>
     </div>
 
 </section>
