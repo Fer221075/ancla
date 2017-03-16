@@ -72,6 +72,13 @@ get_header();?>
                                     <label for="joyas">Joyas</label>
                                 </div>
                             </div>
+                            <div class="step-option">
+                                <label for="llaves"><img src="<?php echo get_template_directory_uri(); ?>/img/game_keys.jpg  " alt=""></label>
+                                <div class="option-check">
+                                    <input type="checkbox" id="joyas" name="step-1" value="llaves">
+                                    <label for="llaves">Joyas</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="step-2" data-step="2" class="step" data-attribute="protege-contra">
