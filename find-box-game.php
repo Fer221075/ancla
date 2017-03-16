@@ -76,7 +76,7 @@ get_header();?>
                                 <label for="llaves"><img src="<?php echo get_template_directory_uri(); ?>/img/game_keys.jpg  " alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="llaves" name="step-1" value="llaves">
-                                    <label for="llaves">Llaves</label>
+                                    <label for="llaves">Joyas</label>
                                 </div>
                             </div>
                         </div>
@@ -183,7 +183,7 @@ get_header();?>
         <div class="row products-ajax-result">
 
         </div>
-        <div class="row products-ajax-no-results">No se encontraron resultados</div>
+        <div class="row products-ajax-no-results">No se encontraron resultados para tu búsqueda, te recomendamos descargar la <a href="<?php echo get_template_directory_uri(); ?>/img/guia_compra_productos.pdf" target="_blank">guía de compra de productos</a></div>
     </div>
 
 </section>
