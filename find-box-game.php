@@ -76,7 +76,7 @@ get_header();?>
                                 <label for="llaves"><img src="<?php echo get_template_directory_uri(); ?>/img/game_keys.jpg  " alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="llaves" name="step-1" value="llaves">
-                                    <label for="llaves">Joyas</label>
+                                    <label for="llaves">Llaves</label>
                                 </div>
                             </div>
                         </div>
