@@ -183,7 +183,8 @@ get_header();?>
         <div class="row products-ajax-result">
 
         </div>
-        <div class="row products-ajax-no-results">No se encontraron resultados para tu búsqueda, te recomendamos descargar la <a href="<?php echo get_template_directory_uri(); ?>/img/guia_compra_productos.pdf" target="_blank">guía de compra de productos</a></div>
+        <div class="row products-ajax-no-results">No se encontraron resultados para tu búsqueda, te recomendamos descargar la <a style="
+    color: #c1282d;" href="<?php echo get_template_directory_uri(); ?>/img/guia_compra_productos.pdf" target="_blank">guía de compra de productos</a></div>
     </div>
 
 </section>
