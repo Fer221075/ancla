@@ -164,3 +164,8 @@ span.red {
   @extend .products-ajax-result;
   font-size: 22px;
 }
+
+div#signup-content {
+  @extend .wrapper;
+  width: 1170px;
+}
