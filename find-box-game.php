@@ -65,7 +65,7 @@ get_header();?>
                                     <label for="dinero">Dinero</label>
                                 </div>
                             </div>
-                            <div class="step-option">
+                            <div class="step-option auto-tooltip" title="Relojes, Anillos, Collares, Aretes, Pulseras, Etc">
                                 <label for="joyas"><img src="<?php echo get_template_directory_uri(); ?>/img/game_jewelry.jpg" alt=""></label>
                                 <div class="option-check">
                                     <input type="checkbox" id="joyas" name="step-1" value="joyas">
