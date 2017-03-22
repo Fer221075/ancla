@@ -302,22 +302,26 @@ $(window).on("load", function() {
 });
 
 function fixProductDimensions() {
-    var defArray = ['(Largo)', '(Ancho)', '(Alto)'];
 
-    var dimensionsString = $('td.product_dimensions').html();
-    var dimensionsArray = dimensionsString.split('x');
+    if ( $('td.product_dimensions').length > 0 ) {
 
-    var resultString = '';
+        var defArray = ['(Largo)', '(Ancho)', '(Alto)'];
 
-    for (var i = 0; i < dimensionsArray.length; i++){
+        var dimensionsString = $('td.product_dimensions').html();
+        var dimensionsArray = dimensionsString.split('x');
 
-        resultString += dimensionsArray[i].trim().replace('cm', '').trim() + ' ' + defArray[i] + ' ';
+        var resultString = '';
 
+        for (var i = 0; i < dimensionsArray.length; i++) {
+
+            resultString += dimensionsArray[i].trim().replace('cm', '').trim() + ' ' + defArray[i] + ' ';
+
+        }
+
+        resultString += 'cm';
+
+        $('td.product_dimensions').html(resultString);
     }
-
-    resultString += 'cm';
-
-    $('td.product_dimensions').html(resultString);
 }
 
 function formSubjectFromParam() {
