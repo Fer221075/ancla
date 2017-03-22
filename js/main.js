@@ -288,6 +288,7 @@ var QueryString = function () {
         });
 
         formSubjectFromParam();
+        fixProductDimensions();
 
     });
 }));
@@ -299,6 +300,25 @@ $(window).on("load", function() {
     }, 200);
 
 });
+
+function fixProductDimensions() {
+    var defArray = ['(Largo)', '(Ancho)', '(Alto)'];
+
+    var dimensionsString = $('td.product_dimensions').html();
+    var dimensionsArray = dimensionsString.split('x');
+
+    var resultString = '';
+
+    for (var i = 0; i < dimensionsArray.length; i++){
+
+        resultString += dimensionsArray[i].trim().replace('cm', '').trim() + ' ' + defArray[i] + ' ';
+
+    }
+
+    resultString += 'cm';
+
+    $('td.product_dimensions').html(resultString);
+}
 
 function formSubjectFromParam() {
     if ( QueryString.asunto ) {
