@@ -233,7 +233,7 @@ function the_title_trim($title) {
 add_filter('the_title', 'the_title_trim');
 
 function change_welcome_mail_loginlink( $welcome_email, $user_id, $password, $meta ) {
-    $welcome_email = str_replace( 'LOGINLINK', home_url( '/juego' ) , $welcome_email );
+    $welcome_email = str_replace( 'LOGINLINK', home_url( '/video-tutoriales-cash-control' ) , $welcome_email );
     return $welcome_email;
 }
 add_filter( 'update_welcome_user_email', 'change_welcome_mail_loginlink', 10, 4 );
