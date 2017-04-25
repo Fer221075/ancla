@@ -75,7 +75,7 @@
         </div>
         <div class="container">
             <div class="col-xs-12 col-sm-6">
-                <div class="legal"><?php echo date("Y"); if ( !strpos(get_site_url(), 'panama') ): ?> Cajas Fuertes<?php endif; ?> Ancla<?php if ( get_theme_mod('country') ): echo ', ' . get_theme_mod('country'); endif; ?> - Todos los derechos reservados</div>
+                <div class="legal"><?php echo get_theme_mod('legal_text') ?></div>
             </div>
             <div class="col-xs-12 col-sm-6">
                 <div class="footer-contact">

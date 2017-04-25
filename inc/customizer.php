@@ -88,9 +88,33 @@ function ancla_customize_register( $wp_customize ) {
         'type'     => 'textarea',
     ) ) );
 
+    $wp_customize->add_panel( 'footer_panel', array(
+        'priority'       => 10,
+        'capability'     => 'edit_theme_options',
+        'theme_supports' => '',
+        'title'          => __('Footer', 'ancla'),
+    ) );
+
+    $wp_customize->add_section( 'legal' , array(
+        'title'    => __( 'Legal', 'ancla' ),
+        'priority' => 10,
+        'panel'    => 'footer_panel'
+    ) );
+
+    $wp_customize->add_setting( 'legal_text' , array(
+        'transport' => 'postMessage',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'legal_text', array(
+        'label'    => __( 'Texto legal', 'ancla' ),
+        'section'  => 'legal',
+        'settings' => 'legal_text',
+    ) ) );
+
     $wp_customize->add_section( 'contact_info' , array(
         'title'    => __( 'Información de contacto', 'ancla' ),
-        'priority' => 10
+        'priority' => 10,
+        'panel'    => 'footer_panel'
     ) );
 
     $wp_customize->add_setting( 'contact_phone' , array(
