@@ -512,3 +512,22 @@ ul.category-actions {
 .woocommerce .woocommerce-result-count {
   margin: 0;
 }
+
+
+//Temporal hide store
+
+li.bg-img.submenu-item:first-child {
+  display: none;
+}
+
+.products-container {
+  display: none;
+}
+
+.col-xs-6.col-md-3.bg-img.product-category.product.first {
+  display: none;
+}
+
+.col-xs-6.col-md-3.bg-img.product-category.product {
+  width: 33.33333333%;
+}
