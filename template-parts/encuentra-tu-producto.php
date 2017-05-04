@@ -4,7 +4,7 @@
             <h3>¿Sabes qué caja fuerte necesitas? <a href="/juego">Descúbrelo aquí</a></h3>
         </div>
     </div>
-    <div class="container products-container">
+    <div class="container products-container" style="display: none;">
         <div class="products-slick">
             <?php
 
