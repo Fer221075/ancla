@@ -513,17 +513,17 @@ ul.category-actions {
   margin: 0;
 }
 
+//Hide temporal store
 
-//Temporal hide store
-
-li.bg-img.submenu-item:first-child {
-  display: none;
-}
-
-.products-container {
+#primary-menu .sub-menu li.bg-img.submenu-item:first-child {
   display: none;
 }
 
 .col-xs-6.col-md-3.bg-img.product-category.product {
   width: 33.33333333%;
 }
+
+.col-xs-6.col-md-3.bg-img.product-category.product {
+  display: none;
+}
+
