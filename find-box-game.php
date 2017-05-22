@@ -91,10 +91,10 @@ get_header();?>
                                 </div>
                             </div>
                             <div class="step-option" style="margin-right: auto;">
-                                <label for="ladrones"><img src="<?php echo get_template_directory_uri(); ?>/img/game_thieve.jpg" alt=""></label>
+                                <label for="aumentar-niveles-seguridad"><img src="<?php echo get_template_directory_uri(); ?>/img/game_thieve.jpg" alt=""></label>
                                 <div class="option-check">
-                                    <input type="checkbox" id="ladrones" name="step-2" value="ladrones">
-                                    <label for="ladrones">Ladrones</label>
+                                    <input type="checkbox" id="aumentar-niveles-seguridad" name="step-2" value="aumentar-niveles-seguridad">
+                                    <label for="aumentar-niveles-seguridad">Aumentar nivel de seguridad</label>
                                 </div>
                             </div>
                         </div>
