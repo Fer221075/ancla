@@ -174,16 +174,16 @@ add_action('woocommerce_after_order_notes', 'my_custom_checkout_field');
  
 function my_custom_checkout_field( $checkout ) {
  
-    echo '<div id="my-new-field"><h3>'.__('My Checkbox: ').'</h3>';
+    echo '<div id="optin">';
  
     woocommerce_form_field( 'my_checkbox', array(
         'type'          => 'checkbox',
         'class'         => array('input-checkbox'),
-        'label'         => __('I have read and agreed.'),
+        'p'         => __('Acepto la <a href="/wp-content/uploads/2017/02/politica_general_privacidad.pdf">política general de privacidad</a> y las <a href="/wp-content/uploads/2017/02/Habeas-data.pdf">condiciones de acceso y uso de este sitio web</a> *'),
         'required'  => true,
         ), $checkout->get_value( 'my_checkbox' ));
  
-    echo '</div>';
+    echo '</p>';
 }
 
 /**
