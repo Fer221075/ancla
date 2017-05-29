@@ -174,7 +174,7 @@ add_action('woocommerce_after_order_notes', 'my_custom_checkout_field');
  
 function my_custom_checkout_field( $checkout ) {
  
-    echo '<div id="optin">><h3>'.__('Términos y condiciones del sitio: ').'</h3>';
+    echo '<div id="optin"><h3>'.__('Términos y condiciones del sitio: ').'</h3>';
  
     woocommerce_form_field( 'my_checkbox', array(
         'type'          => 'checkbox',
