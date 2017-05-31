@@ -149,6 +149,29 @@ function woocommerce_support() {
 }
 add_action('woocommerce_after_order_notes', 'custom_checkout_field');
 
+
+
+// Custom field on shopping cart
+
+add_action('woocommerce_cart_collaterals', 'my_custom_checkout_field');
+
+function my_custom_checkout_field() {
+    echo '<div id="my_custom_checkout_field">';
+
+    woocommerce_form_field( 'checkbox_to_checkout', array(
+        'type'          => 'checkbox',
+        'class'         => array('input-checkbox'),
+        'label'         => __('<span>Confirmar pedido<span>'),
+        'required'  => true,
+    ));
+
+    echo '</div>';
+
+}
+
+// End field on shopping cart
+
+
 function custom_checkout_field( $checkout ) {
 
     echo '<div id="optin"><h3>'.__('Términos y condiciones: ').'</h3>';
@@ -183,45 +206,6 @@ add_action('woocommerce_checkout_update_order_meta', 'custom_checkout_field_upda
 function custom_checkout_field_update_order_meta( $order_id ) {
     if ($_POST['my_checkbox']) update_post_meta( $order_id, 'My Checkbox', esc_attr($_POST['my_checkbox']));
 }
-
-
-// Custom field on shopping cart
-
-
-
-add_action('woocommerce_cart_collaterals', 'my_custom_checkout_field');
-
-function my_custom_checkout_field() {
-    echo '<div id="my_custom_checkout_field"><h2>'.__('My Field').'</h2>';
-
-    woocommerce_form_field( 'my_field_name', array(
-        'type'          => 'text',
-        'class'        => array('my-field-class form-row-wide'),
-        'label'        => __('Fill in this field'),
-        'required'        => true,
-        'placeholder'      => __('Enter something'),
-    ));
-
-    echo '</div>';
-
-}
-
-/**
- * Process the checkout
- *
- */
-add_action('woocommerce_proceed_to_checkout', 'my_custom_checkout_field_process');
-
-function my_custom_checkout_field_process(){
-
-// Check if set, if its not set add an error.
-    if (!$_POST['my_field_name']) {
-        $woocommerce->add_error(__('Please enter something into this new shiny field.'));
-    }
-}
-
-// End field on shopping cart
-
 
 // Display empty product categories
 add_filter( 'woocommerce_product_subcategories_hide_empty', 'show_empty_categories', 10, 1 );
