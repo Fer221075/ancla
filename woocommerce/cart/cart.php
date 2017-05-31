@@ -119,10 +119,6 @@ do_action( 'woocommerce_before_cart' ); ?>
         ?>
         <tr>
             <td colspan="6" class="actions">
-                <div style="display:none">
-                    <input type="checkbox" value="validation">
-                    <label for="check_validation">Confirmar pedido</label>
-                </div>
 
                 <?php if ( wc_coupons_enabled() ) { ?>
                     <div class="coupon">

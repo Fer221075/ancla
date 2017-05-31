@@ -170,6 +170,25 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
+
+add_action('woocommerce_after_cart', 'checkout_next_field');
+
+function checkout_next_field( $cart ) {
+
+    echo '<div id="optin">';
+
+    woocommerce_form_field( 'my_checkbox', array(
+        'type', 'checkbox',
+        'class'  => array('input-checkbox'),
+        'label'  => ('<span>Confirmar pedido.<span>'),
+        'required'  => true,
+    ), $cart->get_value( 'my_checkbox' ));
+    echo '</div>';
+}
+
+
+
+
 add_action('woocommerce_after_order_notes', 'my_custom_checkout_field');
  
 function my_custom_checkout_field( $checkout ) {
