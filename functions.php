@@ -171,24 +171,6 @@ function woocommerce_support() {
 }
 
 
-add_action('woocommerce_after_cart', 'checkout_next_field');
-
-function checkout_next_field( $cart ) {
-
-    echo '<div id="optin">';
-
-    woocommerce_form_field( 'my_checkbox', array(
-        'type', 'checkbox',
-        'class'  => array('input-checkbox'),
-        'label'  => ('<span>Confirmar pedido.<span>'),
-        'required'  => true,
-    ), $cart->get_value( 'my_checkbox' ));
-    echo '</div>';
-}
-
-
-
-
 add_action('woocommerce_after_order_notes', 'my_custom_checkout_field');
  
 function my_custom_checkout_field( $checkout ) {
@@ -198,7 +180,7 @@ function my_custom_checkout_field( $checkout ) {
     woocommerce_form_field( 'my_checkbox', array(
         'type', 'checkbox',
         'class'  => array('input-checkbox'),
-        'label'  => ('<span>Acepto la <a href="/wp-content/uploads/2017/02/politica_general_privacidad.pdf" target="_blank">política política de privacidad</a> , <a href="/wp-content/uploads/2017/02/Habeas-data.pdf" target="_blank">terminos y condiciones</a> y el uso de mis datos con fines comerciales.<span>'),
+        'label'  => __('<span>Acepto la <a href="/wp-content/uploads/2017/02/politica_general_privacidad.pdf" target="_blank">política política de privacidad</a> , <a href="/wp-content/uploads/2017/02/Habeas-data.pdf" target="_blank">terminos y condiciones</a> y el uso de mis datos con fines comerciales.<span>'),
         'required'  => true,
         ), $checkout->get_value( 'my_checkbox' ));
     echo '</div>';
@@ -214,7 +196,7 @@ function my_custom_checkout_field_process() {
  
     // Check if set, if its not set add an error.
     if (!$_POST['my_checkbox'])
-         $woocommerce->add_error( __('Please agree to my checkbox.') );
+         $woocommerce->add_error( __('Para continuar debes aceptar los terminos y condiciones.') );
 }
  
 /**
@@ -225,6 +207,43 @@ add_action('woocommerce_checkout_update_order_meta', 'my_custom_checkout_field_u
 function my_custom_checkout_field_update_order_meta( $order_id ) {
     if ($_POST['my_checkbox']) update_post_meta( $order_id, 'My Checkbox', esc_attr($_POST['my_checkbox']));
 }
+
+
+
+
+
+add_action('woocommerce_cart_collaterals', 'checkbox_after_checkout');
+
+function checkbox_after_checkout() {
+    echo '<div id="checkbox_field">';
+
+    woocommerce_form_field( 'check_after_checkout', array(
+        'type'          => 'checkbox',
+        'class'        => array('form-row-wide'),
+        'label'        => __('Confirmar pedido'),
+        'required'     => true,
+    ));
+
+    echo '</div>';
+
+}
+
+/**
+ * Process the checkout
+ *
+ */
+add_action('woocommerce_proceed_to_checkout', 'custom_checkout_check_process');
+
+function custom_checkout_check_process() {
+
+// Check if set, if its not set add an error.
+    if (!$_POST['my_field_name'])
+    {
+        $woocommerce->add_error( __('Debes confirmar el pedido para continuar') );
+    }
+}
+
+
 
 
 // Display empty product categories
