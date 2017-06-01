@@ -147,41 +147,29 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
-add_action('woocommerce_after_order_notes', 'custom_checkout_field');
 
 
-
-// Custom field on shopping cart
-
-add_action('woocommerce_cart_collaterals', 'my_custom_checkout_field');
-
-function my_custom_checkout_field() {
-    echo '<div id="my_custom_checkout_field">';
-
-    woocommerce_form_field( 'checkbox_to_checkout', array(
-        'type'          => 'checkbox',
-        'class'         => array('input-checkbox'),
-        'label'         => __('<span>Confirmar pedido<span>'),
-        'required'  => true,
-    ));
-
-    echo '</div>';
-
-}
-
-// End field on shopping cart
+add_action('woocommerce_after_order_notes', 'custom_checkout_terms_field');
 
 
-function custom_checkout_field( $checkout ) {
+function custom_checkout_terms_field( $checkout ) {
 
-    echo '<div id="optin"><h3>'.__('Términos y condiciones: ').'</h3>';
+    echo '<div id="optin"><h3 style="display:none;">'.__('Términos y condiciones: ').'</h3>';
 
-    woocommerce_form_field( 'my_checkbox', array(
+    woocommerce_form_field( 'terms', array(
         'type'          => 'checkbox',
         'class'         => array('input-checkbox'),
         'label'         => __('<span>Acepto la <a href="/wp-content/uploads/2017/02/politica_general_privacidad.pdf" target="_blank">política política de privacidad</a> , <a href="/wp-content/uploads/2017/02/Habeas-data.pdf" target="_blank">terminos y condiciones</a> y el uso de mis datos con fines comerciales.<span>'),
         'required'  => true,
-    ), $checkout->get_value( 'my_checkbox' ));
+    ), $checkout->get_value( 'terms' ));
+
+
+    woocommerce_form_field( 'confirm', array(
+        'type'          => 'checkbox',
+        'class'         => array('input-checkbox'),
+        'label'         => __('<span>Confirmar pedido.<span>'),
+        'required'  => true,
+    ), $checkout->get_value( 'confirm' ));
 
     echo '</div>';
 }
@@ -194,7 +182,7 @@ function custom_checkout_field_process() {
     global $woocommerce;
 
     // Check if set, if its not set add an error.
-    if (!$_POST['my_checkbox'])
+    if (!$_POST['terms'])
         $woocommerce->add_error( __('Debes aceptar los terminos y condiciones para continuar.') );
 }
 
@@ -204,7 +192,7 @@ function custom_checkout_field_process() {
 add_action('woocommerce_checkout_update_order_meta', 'custom_checkout_field_update_order_meta');
 
 function custom_checkout_field_update_order_meta( $order_id ) {
-    if ($_POST['my_checkbox']) update_post_meta( $order_id, 'My Checkbox', esc_attr($_POST['my_checkbox']));
+    if ($_POST['terms']) update_post_meta( $order_id, 'My Checkbox', esc_attr($_POST['terms']));
 }
 
 // Display empty product categories

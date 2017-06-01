@@ -170,12 +170,8 @@ div#signup-content {
   width: 1170px;
 }
 
-#my_checkbox_field {
-  span {
-    margin-left: 20px;
-  }
-
-  input#my_checkbox {
-    margin: 6px 0px 0px 0px;
-  }
+#optin {
+  h3 { display: none;}
+  span {  margin-left: 20px;  }
+  input.input-checkbox {  margin: 6px 0px 0px 0px; }
 }
