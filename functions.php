@@ -182,8 +182,8 @@ function custom_checkout_field_process() {
     global $woocommerce;
 
     // Check if set, if its not set add an error.
-    if (!$_POST['terms'])
-        $woocommerce->add_error( __('Debes aceptar los terminos y condiciones para continuar.') );
+    if (!$_POST['terms']||!$_POST['confirm'])
+        $woocommerce->add_error( __('Debes aceptar todos los campos para continuar') );
 }
 
 /**
@@ -193,6 +193,7 @@ add_action('woocommerce_checkout_update_order_meta', 'custom_checkout_field_upda
 
 function custom_checkout_field_update_order_meta( $order_id ) {
     if ($_POST['terms']) update_post_meta( $order_id, 'My Checkbox', esc_attr($_POST['terms']));
+    if ($_POST['confirm']) update_post_meta( $order_id, 'Confirmar', esc_attr($_POST['confirm']));
 }
 
 // Display empty product categories
