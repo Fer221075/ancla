@@ -149,6 +149,21 @@ function woocommerce_support() {
 }
 
 
+// Hook in
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+
+// Our hooked in function - $fields is passed via the filter!
+function custom_override_checkout_fields( $fields ) {
+    $fields['billing']['billing_company']['label'] = 'Empresa';
+    $fields['shipping']['shipping_company']['label'] = 'Empresa';
+    $fields['order']['order_comments']['label'] = 'Observaciones';
+    $fields['order']['order_comments']['placeholder'] = 'Observaciones del pedido';
+    return $fields;
+}
+
+
+
+
 add_action('woocommerce_after_order_notes', 'custom_checkout_terms_field');
 
 
