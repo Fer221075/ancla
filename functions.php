@@ -161,11 +161,17 @@ function custom_override_checkout_fields( $fields ) {
     return $fields;
 }
 
+add_filter( 'wc_add_to_cart_message_html', 'bbloomer_custom_add_to_cart_message' );
 
+function bbloomer_custom_add_to_cart_message() {
 
+    global $woocommerce;
+    $return_to  = get_permalink(woocommerce_get_page_id('cart'));
+    $message    = sprintf('<a href="%s" class="button wc-forwards">%s</a> %s', $return_to, __('Ver carrito', 'woocommerce'), __('El producto se ha agregado con éxito.', 'woocommerce') );
+    return $message;
+}
 
 add_action('woocommerce_after_order_notes', 'custom_checkout_terms_field');
-
 
 function custom_checkout_terms_field( $checkout ) {
 
