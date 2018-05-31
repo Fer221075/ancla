@@ -21,7 +21,7 @@ while ( have_posts() ) : the_post(); ?>
     </div>
 
     <div class="container products-container">
-      <div class="col-xs-12 col-md-12 clearfix">
+      <div class="col-xs-12 col-md-12 clearfix content-services">
 		  <?php echo the_content() ?>
       </div>
   </section>
