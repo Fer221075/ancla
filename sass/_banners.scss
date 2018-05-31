@@ -98,9 +98,8 @@
     &::after {
       content: '\f105';
       font-family: 'FontAwesome';
-      color: $anclaRed;
+      color: white;
       margin-left: 10px;
-      opacity: 0.6;
 
       @include hover_transition;
     }
