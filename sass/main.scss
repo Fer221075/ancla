@@ -101,9 +101,16 @@ span.red {
 }
 
 .contact-data {
+  font-size: 18px;
   ul {
     list-style-type: none;
     padding: 0;
+  }
+  li{
+    margin: 20px 0;
+  }
+  svg{
+    vertical-align: middle;
   }
 }
 
@@ -174,4 +181,21 @@ div#signup-content {
   h3 { display: none;}
   span {  margin-left: 20px;  }
   input.input-checkbox {  margin: 6px 0px 0px 0px; }
+}
+.Contact{
+  label{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 4px;
+  }
+  select{
+    width: 100%;
+  }
+  input[type="submit"] {
+    height: auto;
+    padding: 8px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 100%;
+  }
 }
