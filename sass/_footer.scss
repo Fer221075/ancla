@@ -2,7 +2,7 @@
 footer {
   background-color: $headerAndFooterBg;
   padding: 40px 0 0;
-
+  margin-bottom: 40px;
   .certs {
     h4 {
       color: #ebebeb;
@@ -185,5 +185,12 @@ footer {
   li:not(:last-child)::after {
     content: '-';
     margin-left: 10px;
+  }
+}
+
+.cert{
+
+  img{
+    max-width: 140px;
   }
 }

@@ -2,6 +2,7 @@
 header {
   background-color: $headerAndFooterBg;
   width: 100%;
+  margin-bottom: 72px;
 
   .search-form {
     margin-left: 15px;
@@ -9,7 +10,6 @@ header {
     @include media("<=desktop") {
       padding: 40px 0;
     }
-
     @include media("<=phone") {
       padding: 25px 0;
     }
@@ -52,13 +52,15 @@ body.page-template-find-box-game header {
 
   .top-contact {
     float: left;
-
+    padding: 8px 0;
 
     @include media("<=550px") {
       width: 100%;
       text-align: center;
     }
-
+    svg {
+      vertical-align: middle;
+    }
 
     li:not(:last-child)::after {
       content: '-';
@@ -188,7 +190,7 @@ a.open-menu {
       position: fixed;
       top: 0;
       left: 0;
-      background: rgba(0,0,0,0.9);;
+      background: rgba(0, 0, 0, 0.9);;
       width: 100%;
       height: 100%;
       padding: 40px 15px 40px 40px;
@@ -264,3 +266,19 @@ ul.sub-menu.submenu-grid li a {
     }
   }
 }
+
+.cartColorLink {
+  background: #c1282d;
+  color: white;
+  padding: 8px 20px !important;
+  border-radius: 0 0 0 10px;
+  svg {
+    vertical-align: middle;
+    a {
+      font-size: 16px;
+      padding: 5px 0 6px;
+      display: inline-block;
+    }
+  }
+}
+

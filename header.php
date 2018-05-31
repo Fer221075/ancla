@@ -40,15 +40,42 @@
 
 <body <?php body_class(); ?>>
 <div id="top" class="container top-bar clearfix" style="padding: 0 !important;">
-  <div class="top-contact" style=" padding: 5px 0">
+  <div class="top-contact" style=" ">
     <ul>
 		<?php if ( get_theme_mod( 'contact_phone' ) ): ?>
           <li><a
-            href="tel:<?php echo get_theme_mod( 'contact_phone' ) ?>">TEL: <?php echo get_theme_mod( 'contact_phone' ) ?></a>
+            href="tel:<?php echo get_theme_mod( 'contact_phone' ) ?>">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="50px" height="25px" viewBox="0 0 50 25" enable-background="new 0 0 50 25" xml:space="preserve">
+<g>
+  <g>
+    <g>
+      <path fill="#c1282d" d="M36.967,19.773l-3.869-3.87c-0.771-0.768-2.048-0.745-2.846,0.054l-1.949,1.949
+				c-0.123-0.068-0.251-0.139-0.385-0.215c-1.231-0.682-2.916-1.616-4.688-3.391c-1.779-1.778-2.715-3.465-3.398-4.697
+				c-0.072-0.13-0.142-0.256-0.21-0.376l1.309-1.306l0.643-0.645c0.799-0.799,0.821-2.075,0.052-2.845l-3.869-3.871
+				c-0.77-0.768-2.046-0.745-2.846,0.054l-1.09,1.097l0.03,0.029c-0.366,0.467-0.672,1.005-0.898,1.585
+				c-0.21,0.552-0.341,1.08-0.4,1.608c-0.511,4.236,1.425,8.106,6.678,13.359c7.262,7.262,13.113,6.714,13.366,6.687
+				c0.55-0.066,1.076-0.197,1.612-0.405c0.575-0.225,1.112-0.53,1.579-0.895l0.024,0.021l1.104-1.082
+				C37.712,21.821,37.735,20.545,36.967,19.773z"/>
+    </g>
+  </g>
+</g>
+</svg>
+            TEL: <?php echo get_theme_mod( 'contact_phone' ) ?></a>
           </li><?php endif; ?>
 		<?php if ( get_theme_mod( 'contact_email' ) ): ?>
           <li><a
-            href="mailto:<?php echo get_theme_mod( 'contact_email' ) ?>"><?php echo get_theme_mod( 'contact_email' ) ?></a>
+            href="mailto:<?php echo get_theme_mod( 'contact_email' ) ?>">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="50px" height="25px" viewBox="0 0 50 25" enable-background="new 0 0 50 25" xml:space="preserve">
+<g>
+  <polygon fill="#c1282d" points="25,15.949 6.836,0 43.164,0 	"/>
+  <polygon fill="#c1282d" points="17.765,12.494 5.035,23.674 5.035,1.316 	"/>
+  <polygon fill="#c1282d" points="19.414,13.943 25,18.848 30.585,13.943 43.175,25 6.825,25 	"/>
+  <polygon fill="#c1282d" points="32.235,12.494 44.965,1.316 44.965,23.674 	"/>
+</g>
+</svg>
+                <?php echo get_theme_mod( 'contact_email' ) ?></a>
           </li><?php endif; ?>
     </ul>
   </div>
@@ -58,8 +85,20 @@
       <li><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/svg/co.svg" alt=""></a></li>
     </ul>
 	  <?php if ( ! strpos( get_site_url(), 'panama' ) ): ?>
-        <ul class="cartColorLink" style="background: #c1282d; color: white; padding: 5px 20px; border-radius: 0 0 0 10px;">
+        <ul class="cartColorLink">
           <li >
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="50px" height="25px" viewBox="0 0 50 25" enable-background="new 0 0 50 25" xml:space="preserve">
+<g>
+  <path fill="#FFFFFF" d="M25,12.78c3.53,0,6.391-2.861,6.391-6.39C31.391,2.861,28.529,0,25,0c-3.528,0-6.39,2.861-6.39,6.391
+		C18.61,9.919,21.471,12.78,25,12.78z M25,3.195c1.766,0,3.196,1.431,3.196,3.195S26.764,9.585,25,9.585
+		c-1.764,0-3.194-1.43-3.194-3.194S23.236,3.195,25,3.195z"/>
+  <path fill="#FFFFFF" d="M27.32,13.816c-0.027,0.001-0.055,0.001-0.084,0.002h-4.472c-4.807-0.133-8.812,3.655-8.944,8.462
+		c-0.001,0.028-0.001,0.057-0.002,0.084v1.278c0,0.879,0.879,1.358,1.758,1.358h18.85c0.877,0,1.756-0.479,1.756-1.358v-1.278
+		C36.096,17.558,32.129,13.73,27.32,13.816z M17.172,21.806c0.16-2.396,2.636-4.792,5.591-4.792h4.473
+		c2.955,0,5.432,2.396,5.592,4.792H17.172z"/>
+</g>
+</svg>
 			  <?php if ( is_user_logged_in() ): ?>
                 <a
                   href="<?php echo esc_url( wc_get_account_endpoint_url( 'orders' ) ); ?>"><?php esc_attr_e( 'My Account', 'woocommerce' ); ?></a>
