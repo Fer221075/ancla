@@ -169,7 +169,7 @@ a.open-menu {
     li a {
       color: $headerFontColor;
       display: block;
-      padding: 45px 20px;
+      padding: 16px 20px;
 
       &:hover {
         color: #ffffff;
@@ -235,12 +235,7 @@ ul.sub-menu {
   li {
     background-color: $headerAndFooterBg;
     background-blend-mode: multiply;
-    width: 150px;
-    float: left;
-    height: 120px;
-
     @include hover_transition;
-
     &:hover {
       background-color: $anclaRed !important;
     }
@@ -248,7 +243,7 @@ ul.sub-menu {
 }
 
 ul.sub-menu.submenu-grid li a {
-  padding: 30px 20px;
+  padding: 10px 20px;
 }
 
 .home header, body.page header, body.term-cash-control header {
