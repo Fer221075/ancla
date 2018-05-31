@@ -1,6 +1,6 @@
 <?php
 
-/* Template Name: Content 2 columns */
+/* Template Name: servicios */
 
 get_header(); ?>
 
