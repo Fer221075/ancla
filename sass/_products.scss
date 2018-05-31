@@ -308,27 +308,39 @@ ul.category-actions {
 .prod {
   text-align: center;
   color: #3c4142;
-  margin-bottom: 15px;
-
+  margin-bottom: 30px;
+  border: 2px solid #dedede;
+  background: #fcfcfc;
+  p{
+    text-align: left;
+    padding: 4px 12px 12px 12px;
+    height:48px;
+    overflow: hidden;
+  }
   a {
     color: #3c4142;
   }
 
   img {
-    width: 85%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
   }
 
   .product-name {
-    font-size: 20px;
-    margin: 0 0 10px;
+    font-size: 19px;
+    text-align: left;
+    margin: 20px 0 0 12px;
+    color: black;
   }
 
   .price {
     display: block;
     font-weight: 500;
     font-size: 20px;
+    text-align: left;
+    padding: 6px 12px 12px;
+    color: #c1282d;
   }
 
   .add-to-cart {
