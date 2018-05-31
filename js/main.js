@@ -292,7 +292,7 @@ var QueryString = function () {
 
     });
 }));
-
+$('.loader-container').fadeOut();
 $(window).on("load", function() {
     customIsotope();
     setInterval(function () {

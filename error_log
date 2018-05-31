@@ -1,0 +1,2 @@
+[04-Feb-2018 05:21:59 America/Bogota] PHP Fatal error:  Call to undefined function post_password_required() in /home/cajasfue/ancla_la/wordpress/wp-content/themes/ancla/comments.php on line 18
+[04-Feb-2018 05:22:01 America/Bogota] PHP Fatal error:  Call to undefined function post_password_required() in /home/cajasfue/ancla_la/wordpress/wp-content/themes/ancla/comments.php on line 18

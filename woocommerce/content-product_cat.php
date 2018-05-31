@@ -8,6 +8,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
+return
 ?>
 <?php if ( !strpos(get_site_url(), 'panama') ): ?>
         <div <?php wc_product_cat_class( 'col-xs-6 col-md-3 bg-img', $category ); ?>>

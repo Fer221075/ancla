@@ -315,3 +315,16 @@ require get_template_directory() . '/inc/product-cat-customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 add_filter( 'jetpack_development_mode', '__return_true' );
 //add_filter( 'jetpack_is_staging_site', '__return_true' );
+
+
+function mycustom_wp_footer() {
+?>
+<script type="text/javascript">
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+    ga( 'send', 'event', 'Formulario contacto', 'submit' );
+    ga( 'send', 'event', 'Formulario soporte', 'submit' );
+}, false );
+</script>
+<?php
+}
+
