@@ -19,7 +19,9 @@ get_header(); ?>
 <?php endif; ?>
 
 <?php get_template_part('/template-parts/nuestros-clientes'); ?>
-
+<div class="container" style="text-align: center">
+    <img style="max-width: 100%; margin: 20px auto" src="<?php echo get_template_directory_uri()?>/img/infografia-web-ancla.png" alt="">
+</div>
 <?php
 get_footer();
 ?>

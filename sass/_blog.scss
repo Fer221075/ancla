@@ -3,7 +3,12 @@ h1.entry-title {
   color: $anclaRed;
   margin: 20px 0;
 }
+@media (min-width: 700px) {
+  .blog-posts .post-content{
+    height: 350px;
+  }
 
+}
 body.blog {
 
   h1  {
@@ -18,13 +23,22 @@ body.blog {
 }
 
 .blog-posts {
-  padding-top: 30px;
+  padding-top: 100px;
   padding-bottom: 30px;
+  figure{
+    max-height: 400px;
+    height: 200px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  .post-content{
+    height: auto;
+  }
 }
 
 .blog-posts article.post:not(:last-child) {
-  margin-bottom: 40px;
-  border-bottom: 1px solid #ececec;
+
 }
 
 article.post {

@@ -8,9 +8,8 @@ get_header(); ?>
 while ( have_posts() ) : the_post(); ?>
 
   <section class="cover bg-img">
-	  <?php the_post_thumbnail(); ?>
+      <img src="<?php get_the_post_thumbnail_url()?>" alt="">
   </section>
-
   <section>
 
     <div class="red-section-header">

@@ -313,7 +313,7 @@ require get_template_directory() . '/inc/product-cat-customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-add_filter( 'jetpack_development_mode', '__return_true' );
+//add_filter( 'jetpack_development_mode', '__return_true' );
 //add_filter( 'jetpack_is_staging_site', '__return_true' );
 
 
@@ -328,3 +328,9 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 <?php
 }
 
+
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

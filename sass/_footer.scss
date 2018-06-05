@@ -125,7 +125,7 @@ footer {
   padding-bottom: 25px;
 
   .widget {
-    width: 25%;
+    width: 20%;
 
     @include media("<=768px") {
       width: (100% / 3);
@@ -139,14 +139,11 @@ footer {
     @include media("<=500px") {
       width: 100%;
     }
-
     a:hover {
       color: $anclaRed;
     }
-
   }
 }
-
 // LEGAL
 .legal,
 .footer-contact {
@@ -154,10 +151,8 @@ footer {
   text-align: left;
   font-style: italic;
   padding: 15px 0;
-
   a {
     color: #8e8e8e;
-
     &:hover {
       color: $anclaRed;
     }

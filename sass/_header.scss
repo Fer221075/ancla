@@ -2,7 +2,12 @@
 header {
   background-color: $headerAndFooterBg;
   width: 100%;
-  margin-bottom: 72px;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  height: auto;
+  z-index: 1;
+  left: 0;
 
   .search-form {
     margin-left: 15px;
@@ -281,4 +286,5 @@ ul.sub-menu.submenu-grid li a {
     }
   }
 }
+
 
