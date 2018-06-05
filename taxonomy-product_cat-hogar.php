@@ -12,7 +12,7 @@ get_header( 'shop' ); ?>
 
 <?php get_template_part('template-parts/category_banner', 'small'); ?>
 
-<div class="container">
+<div class="container" style="margin-top: 80px">
     <div class="row">
         <div class="red-section-header no-triangle">
             <div class="container">
@@ -35,7 +35,7 @@ $parent_id 		= empty( $term->term_id ) ? 0 : $term->term_id;
 $args = array('child_of' => $parent_id);
 
 $categories = get_terms('product_cat', $args);
-foreach($categories as $category) {
+/*foreach($categories as $category) {
 
     $thumbnail_id = get_woocommerce_term_meta($category->term_id, 'thumbnail_id', true);
 
@@ -46,20 +46,20 @@ foreach($categories as $category) {
         $image = wc_placeholder_img_src();
     }
 
-    ?>
+    */?><!--
 
     <div class="subcat-item">
-        <a href="<?php echo get_term_link( $category->slug , 'product_cat' ) ?>">
-            <img src="<?php echo $image; ?>" alt="">
+        <a href="<?php /*echo get_term_link( $category->slug , 'product_cat' ) */?>">
+            <img src="<?php /*echo $image; */?>" alt="">
             <div class="item-hover bg-img">
-                <img src="<?php echo $image; ?>" alt="">
-                <h4 class="item-title"><?php echo $category->name;?></h4>
+                <img src="<?php /*echo $image; */?>" alt="">
+                <h4 class="item-title"><?php /*echo $category->name;*/?></h4>
             </div>
         </a>
     </div>
 
-    <?php
-}
+    --><?php
+/*}*/
 
 ?>
 

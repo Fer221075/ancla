@@ -24,7 +24,7 @@
             ?>
 
         <div class="go-to-store">
-            <a href="<?php echo home_url('/productos/categorias/hogar/'); ?>" class="ancla-btn">Ir a tienda web</a>
+            <a href="<?php echo home_url('/productos/'); ?>" class="ancla-btn">Ver más productos</a>
         </div>
     </div>
 </section>
