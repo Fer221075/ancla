@@ -81,7 +81,7 @@
 </svg>
                     <?php echo get_theme_mod('contact_email') ?></a>
                 </li><?php endif; ?>
-            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=573005549372&text=Estoy%20interesado%20en%20" style="text-transform: lowercase; font-size: 16px;">
+            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=573123776742&text=Estoy%20interesado%20en%20" style="text-transform: lowercase; font-size: 16px;">
                 <svg style="position: relative;left: -25px;" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      width="50px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 50 25" xml:space="preserve">
 <g id="XMLID_468_">
