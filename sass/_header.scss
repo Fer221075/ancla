@@ -286,5 +286,13 @@ ul.sub-menu.submenu-grid li a {
     }
   }
 }
+.top-contact .hiddenLi{
+  display: none;
+}
+@media (min-width: 500px) {
+  .top-contact .hiddenLi{
+    display: inline-block;
+  }
+}
 
 

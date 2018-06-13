@@ -43,7 +43,7 @@
     <div class="top-contact" style=" ">
         <ul>
             <?php if (get_theme_mod('contact_phone')): ?>
-                <li><a
+                <li class="hiddenLi"><a
                         href="tel:<?php echo get_theme_mod('contact_phone') ?>">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -66,7 +66,7 @@
                     TEL: <?php echo get_theme_mod('contact_phone') ?></a>
                 </li><?php endif; ?>
             <?php if (get_theme_mod('contact_email')): ?>
-                <li><a style="text-transform: lowercase;font-size: 16px"
+                <li class="hiddenLi"><a style="text-transform: lowercase;font-size: 16px"
                        href="mailto:<?php echo get_theme_mod('contact_email') ?>">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -81,6 +81,30 @@
 </svg>
                     <?php echo get_theme_mod('contact_email') ?></a>
                 </li><?php endif; ?>
+            <li><a target="_blank" href="https://web.whatsapp.com/send?phone=573005549372&text=Estoy%20interesado%20en%20" style="text-transform: lowercase; font-size: 16px;">
+                <svg style="position: relative;left: -25px;" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="50px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 50 25" xml:space="preserve">
+<g id="XMLID_468_">
+    <path id="XMLID_469_" fill="#A11E27" d="M30.999,14.365c-0.049-0.023-1.871-0.921-2.195-1.037
+		c-0.132-0.048-0.273-0.094-0.425-0.094c-0.246,0-0.452,0.122-0.613,0.363c-0.183,0.271-0.733,0.915-0.903,1.107
+		c-0.022,0.025-0.053,0.056-0.071,0.056c-0.016,0-0.298-0.116-0.384-0.153c-1.955-0.85-3.439-2.892-3.643-3.236
+		c-0.029-0.05-0.03-0.072-0.03-0.072c0.007-0.026,0.073-0.092,0.107-0.126c0.099-0.098,0.207-0.228,0.311-0.353
+		c0.049-0.059,0.099-0.119,0.147-0.175c0.151-0.175,0.218-0.312,0.296-0.47l0.041-0.082c0.19-0.378,0.027-0.697-0.025-0.8
+		c-0.043-0.086-0.813-1.943-0.895-2.138c-0.197-0.471-0.457-0.69-0.818-0.69c-0.034,0,0,0-0.141,0.006
+		c-0.171,0.007-1.104,0.13-1.516,0.39c-0.437,0.275-1.177,1.154-1.177,2.699c0,1.39,0.882,2.703,1.261,3.202
+		c0.009,0.013,0.027,0.038,0.052,0.075c1.451,2.118,3.259,3.688,5.093,4.421c1.765,0.705,2.601,0.786,3.076,0.786l0,0
+		c0.199,0,0.359-0.016,0.5-0.029l0.09-0.009c0.609-0.054,1.949-0.748,2.254-1.595c0.24-0.667,0.304-1.396,0.145-1.661
+		C31.427,14.57,31.237,14.479,30.999,14.365z"/>
+    <path id="XMLID_470_" fill="#A11E27" d="M25.222,0c-6.771,0-12.279,5.467-12.279,12.187c0,2.174,0.582,4.302,1.684,6.163
+		l-2.109,6.222c-0.04,0.116-0.01,0.244,0.076,0.331C12.655,24.966,12.739,25,12.825,25c0.033,0,0.066-0.005,0.098-0.016l6.487-2.061
+		c1.775,0.948,3.782,1.448,5.812,1.448c6.77,0.001,12.278-5.466,12.278-12.186S31.992,0,25.222,0z M25.222,21.834
+		c-1.911,0-3.761-0.552-5.352-1.596c-0.053-0.035-0.115-0.053-0.178-0.053c-0.033,0-0.066,0.005-0.099,0.015l-3.25,1.033
+		l1.049-3.095c0.034-0.101,0.017-0.211-0.045-0.296c-1.211-1.655-1.852-3.611-1.852-5.656c0-5.32,4.363-9.648,9.726-9.648
+		s9.725,4.328,9.725,9.648C34.947,17.506,30.585,21.834,25.222,21.834z"/>
+</g>
+</svg> <span style="position: relative;left: -25px;">(+571)3116211 </span></a>
+
+            </li>
         </ul>
     </div>
     <ul class="top-links">
