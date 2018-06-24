@@ -41,7 +41,7 @@ do_action( 'woocommerce_before_main_content' ); ?>
             <a href="<?php site_url(); ?>/productos/categorias/financiero/"><img src="<?php echo get_template_directory_uri(); ?>/svg/icon_linea_financiera.svg" alt=""></a>
         </article>
         <article class="col-xs-12 col-sm-6 col-md-3">
-            <a href="<?php site_url(); ?>/productos/categorias/cash-control/"><img src="<?php echo get_template_directory_uri(); ?>/svg/icon_linea_mini_bank.svg" alt=""></a>
+            <a href="<?php site_url(); ?>/minibank/"><img src="<?php echo get_template_directory_uri(); ?>/svg/icon_linea_mini_bank.svg" alt=""></a>
         </article>
     </section>
     <div class="store-actions clearfix">
