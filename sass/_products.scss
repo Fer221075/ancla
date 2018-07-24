@@ -545,3 +545,30 @@ ul.category-actions {
 .woocommerce .woocommerce-breadcrumb{
   margin-top: 70px;
 }
+.price-offers{
+  small{
+    display: none;
+  }
+  del{
+    opacity: .5;
+  }
+  ins{
+    text-decoration: none;
+  }
+}
+.sale{
+  position: relative;
+  overflow: hidden;
+  &:before{
+    content: '10%' ;
+    top: 12px;
+    padding: 10px 50px 5px;
+    color: #fff;
+    font-size: 20px;
+    position:absolute;
+    background: #c1282d;
+    transform: rotate(-45deg);
+    font-weight: bold;
+    left: -36px;
+  }
+}
