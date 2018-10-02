@@ -7,7 +7,6 @@
  */
 
 get_header(); ?>
-
     <div class="container">
 
                 <?php
@@ -23,10 +22,11 @@ get_header(); ?>
 
                     ?>
                     <div class="row blog-posts">
-                    <?php
 
+                    <?php
+                    $query = new WP_Query( 'cat=-87' );
                     /* Start the Loop */
-                    while ( have_posts() ) : the_post();
+                    while ( $query->have_posts()  ) : $query->the_post();
 
                         /*
                          * Include the Post-Format-specific template for the content.
