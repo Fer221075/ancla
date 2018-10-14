@@ -32,7 +32,7 @@
                 <div class="certs col-xs-12 no-pad">
                   <div class="col-sm-12 no-pad">
                         <h4>Certificaciones</h4>
-                 
+<p>Diseño, producción, venta y soporte técnico de productos para seguridad física tales como cajas fuertes, cofres, puertas y complementos de seguridad electrónica.</p>                 
                             <img src="<?php echo get_template_directory_uri(); ?>/img/LOGOS-completos.png" alt="iso_9001" width="100%" height="100%"/>
                             
                       
@@ -67,7 +67,9 @@
             <div class="container">
                 <div class="col-xs-12 col-sm-6">
                     <h3 style="margin-bottom: 20px">Certificaciones de calidad</h3>
-                    <img style="max-width: 100%" src="<?php echo get_template_directory_uri();?>/img/certificaciones.png" alt="">
+<img style="max-width: 100%" src="<?php echo get_template_directory_uri();?>/img/certificaciones.png" alt="">
+			<p>Diseño, producción, venta y soporte técnico de productos para seguridad física tales como cajas fuertes, cofres, puertas y complementos de seguridad electrónica.</p>
+
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <h3 style="margin-bottom: 38px">Métodos de pago</h3>
