@@ -25,7 +25,7 @@ get_header(); ?>
                         ?>
                     </div><!-- .page-header -->
 
-                    <div class="col-xs-12 row blog-posts">
+                    <div class="row col-lg-10 blog-posts">
                     <?php
                     /* Start the Loop */
                     while ( have_posts() ) : the_post();
@@ -40,8 +40,11 @@ get_header(); ?>
                     endwhile;
                     ?>
                     </div>
+                    <div class=" col-lg-2">
+                        <?php dynamic_sidebar('sidebar-blog'); ?>
+                    </div>
                     <?php
-                    
+
                     the_posts_navigation();
 
                 else :
