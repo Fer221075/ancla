@@ -18,14 +18,14 @@ get_header(); ?>
                 <?php
                 if ( have_posts() ) : ?>
 
-                    <div class="page-header">
+                    <div class="page-header" style="margin: 64px 0 20px;">
                         <?php
                             the_archive_title( '<h1 class="page-title">', '</h1>' );
                             the_archive_description( '<div class="archive-description">', '</div>' );
                         ?>
                     </div><!-- .page-header -->
 
-                    <div class="row col-lg-10 blog-posts">
+                    <div class="row col-lg-10 blog-posts" style="padding-top: 24px;">
                     <?php
                     /* Start the Loop */
                     while ( have_posts() ) : the_post();
