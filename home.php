@@ -37,7 +37,7 @@ get_header(); ?>
                 <div class=" col-lg-2">
                     <?php dynamic_sidebar('sidebar-blog');?>
 
-                    <?php  dynamic_sidebar('sidebar-blog'); ?>
+                    <?php  dynamic_sidebar('sidebar-news'); ?>
 
                 </div>
             </div>
