@@ -21,8 +21,10 @@
     <div class="support-banner"
          style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/soporte_widget_banner.jpg');">
         <div class="container">
-            <a href="<?php echo get_home_url(); ?>/contacto/"><h5>¿Necesitas ayuda? contactános </h5></a>
-            <a href="<?php echo get_home_url(); ?>/contacto/"><h5>O envianos un ticket a nuestra plataforma</h5></a>
+            <div style="position: relative; top: 40px;">
+                <a href="<?php echo get_home_url(); ?>/contacto/"><h4 style="font-size: 28px;     margin: 0;"  >¿Necesitas ayuda? contactános </h4></a>
+                <br><a href="http://soporte.ancla.la"><h4 style="font-size: 28px;     margin: 0;"  >o envianos un ticket a nuestra plataforma</h4></a>
+            </div>
         </div>
     </div>
 </section>
@@ -68,13 +70,15 @@
             <div class="container">
                 <div class="col-xs-12 col-sm-6">
                     <h3 style="margin-bottom: 20px">Certificaciones de calidad</h3>
-<img style="max-width: 100%" src="<?php echo get_template_directory_uri();?>/img/certificaciones.png" alt="">
-			<p>Diseño, producción, venta y soporte técnico de productos para seguridad física tales como cajas fuertes, cofres, puertas y complementos de seguridad electrónica.</p>
+                    <img style="max-width: 100%"
+                         src="<?php echo get_template_directory_uri(); ?>/img/certificaciones.png" alt="">
+                    <p>Diseño, producción, venta y soporte técnico de productos para seguridad física tales como cajas
+                        fuertes, cofres, puertas y complementos de seguridad electrónica.</p>
 
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <h3 style="margin-bottom: 38px">Métodos de pago</h3>
-                    <img style="max-width: 100%" src="<?php echo get_template_directory_uri();?>/img/pagos.png" alt="">
+                    <img style="max-width: 100%" src="<?php echo get_template_directory_uri(); ?>/img/pagos.png" alt="">
                 </div>
             </div>
             <div class="container" style="margin-top: 30px;">
