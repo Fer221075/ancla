@@ -21,7 +21,8 @@
     <div class="support-banner"
          style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/soporte_widget_banner.jpg');">
         <div class="container">
-            <a href="<?php echo get_home_url(); ?>/contacto/"><h5>¿Necesitas ayuda? contactános</h5></a>
+            <a href="<?php echo get_home_url(); ?>/contacto/"><h5>¿Necesitas ayuda? contactános </h5></a>
+            <a href="<?php echo get_home_url(); ?>/contacto/"><h5>O envianos un ticket a nuestra plataforma</h5></a>
         </div>
     </div>
 </section>
