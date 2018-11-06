@@ -35,10 +35,13 @@ get_header(); ?>
                     ?>
                 </div>
                 <div class=" col-lg-2">
-                    <?php print_r(get_the_category())?>
-                    <?php dynamic_sidebar('sidebar-blog');?>
 
-                    <?php  dynamic_sidebar('sidebar-news'); ?>
+                    <?php if (get_the_category()):
+                        dynamic_sidebar('sidebar-news');
+                    else:
+                        dynamic_sidebar('sidebar-blog');
+                    endif; ?>
+
 
                 </div>
             </div>
