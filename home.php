@@ -35,7 +35,10 @@ get_header(); ?>
                     ?>
                 </div>
                 <div class=" col-lg-2">
-                    <?php dynamic_sidebar('sidebar-blog'); ?>
+                    <?php if(is_category( '87' )):; dynamic_sidebar('sidebar-blog'); endif;?>
+
+                    <?php  dynamic_sidebar('sidebar-blog'); ?>
+
                 </div>
             </div>
             <?php
