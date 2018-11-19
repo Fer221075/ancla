@@ -17,14 +17,13 @@
 
 </section><!-- #content -->
 
-<section>
-    <div class="support-banner"
-         style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/soporte_widget_banner.jpg');">
-        <div class="container">
-            <div style="position: relative; top: 40px;">
-                <a href="<?php echo get_home_url(); ?>/contacto/"><h4 style="font-size: 28px;     margin: 0;"  >¿Necesitas ayuda? contactános </h4></a>
-                <br><a href="http://soporte.ancla.la"><h4 style="font-size: 28px;     margin: 0;"  >o envianos un ticket a nuestra plataforma</h4></a>
-            </div>
+<section class="banner-support">
+    <div class="banner-supportContainer">
+        <div class="banner-supportCol b1">
+            <p><a href="/contacto">¿Necesitas ayuda? <br> contáctanos</a></p>
+        </div>
+        <div class="banner-supportCol b2">
+            <p><a href="http://soporte.ancla.la/">Envianos un ticket<br> a nuestra plataforma</a></p>
         </div>
     </div>
 </section>

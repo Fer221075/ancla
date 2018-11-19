@@ -144,6 +144,7 @@ footer {
     }
   }
 }
+
 // LEGAL
 .legal,
 .footer-contact {
@@ -183,9 +184,50 @@ footer {
   }
 }
 
-.cert{
+.cert {
 
-  img{
+  img {
     max-width: 140px;
+  }
+}
+
+.banner-support {
+  background: black;
+  &Container {
+    display: flex;
+    max-width: 1180px;
+    margin: auto;
+  }
+  &Col {
+    width: 50%;
+
+  }
+  .b1 {
+    background: url(../img/minibanner01.png) center right no-repeat;
+    text-align: left;
+    background-size: cover;
+  }
+  .b2 {
+    background: url("../img/minibanner02.png") center left no-repeat;
+    text-align: right;
+    background-size: cover;
+    position: relative;
+    left: -1px;
+  }
+  a {
+    padding: 40px 20px;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-supportCol {
+    width: 100%;
+  }
+  .banner-supportContainer {
+    display: block;
   }
 }
