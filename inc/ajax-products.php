@@ -32,7 +32,6 @@ function get_products() {
     if ( $loop->have_posts() ) :
         while ( $loop->have_posts() ) : $loop->the_post();
             global $product; ?>
-
             <div class="col-xs-6 col-sm-6 col-md-3">
                 <article <?php post_class('prod'); ?>>
                     <a href="<?php the_permalink(); ?>"><?php echo woocommerce_get_product_thumbnail(); ?></a>
