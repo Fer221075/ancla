@@ -560,7 +560,7 @@ article.sale{
   position: relative;
   overflow: hidden;
   &:before{
-    content: '10%' ;
+    content: attr(data-por);
     top: 12px;
     padding: 10px 50px 5px;
     color: #fff;

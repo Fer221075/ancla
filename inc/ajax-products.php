@@ -35,14 +35,7 @@ function get_products()
             global $product; ?>
             <div class="col-xs-6 col-sm-6 col-md-3">
                 <article <?php post_class('prod'); ?>
-                    <?php $por = '0';
-                    if (get_the_title() == '') {
-                        $por = '10%';
-                    } else {
-                        $por = '50%';
-                    } ?>
-                        data-por="<?php echo $por ?> "
-                        data-name="<?php echo get_the_title() ?> "
+
                 >
                     <a href="<?php the_permalink(); ?>"><?php echo woocommerce_get_product_thumbnail(); ?></a>
                     <a href="<?php the_permalink(); ?>"><h4 class="product-name"><?php the_title(); ?></h4></a>
