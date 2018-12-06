@@ -18,6 +18,7 @@ if (empty($product) || !$product->is_visible()) {
         if (get_the_ID() == 41) {
             $por = '50%';
         } else {
+            $por = '10%';
         } ?>
             data-por="<?php echo $por ?> "
             data-id="<?php echo get_the_ID() ?> ">
