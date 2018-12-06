@@ -15,7 +15,7 @@ if (empty($product) || !$product->is_visible()) {
     <article <?php post_class('prod'); ?>
 
         <?php $por = '0';
-        if (get_the_ID() == 41) {
+        if (get_the_ID() == 38 || get_the_ID() == 36 || get_the_ID() == 34 || get_the_ID() == 1805) {
             $por = '50%';
         } else {
             $por = '10%';
