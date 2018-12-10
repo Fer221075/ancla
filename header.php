@@ -106,7 +106,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <ul class="top-links">
         <ul class="flags">
-            <li><a href="/panama"><img src="<?php echo get_template_directory_uri(); ?>/svg/pa.svg" alt=""></a></li>
+            <!--<li><a href="/panama"><img src="<?php #echo get_template_directory_uri(); ?>/svg/pa.svg" alt=""></a></li>-->
             <li><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/svg/co.svg" alt=""></a></li>
         </ul>
         <?php if (!strpos(get_site_url(), 'panama')): ?>
