@@ -14,12 +14,25 @@ if (empty($product) || !$product->is_visible()) {
 <div class="col-xs-6 col-sm-6 <?php echo (is_front_page()) ? 'col-md-3 ' : 'col-md-4'; ?>">
     <article <?php post_class('prod'); ?>
 
-        <?php $por = '0';
-        if (get_the_ID() == 38 || get_the_ID() == 36 || get_the_ID() == 34 || get_the_ID() == 1805) {
-            $por = '50%';
-        } else {
-            $por = '10%';
-        } ?>
+        <?php $por = '10%';
+             if(get_the_ID() == 2275){
+                  $por = '69%';
+             }
+             if(get_the_ID() == 36){
+                  $por = '49%';
+             }
+              if(get_the_ID() == 38){
+                  $por = '70%';
+             }
+              if(get_the_ID() == 36){
+                  $por = '49%';
+             }
+              if(get_the_ID() == 34){
+                  $por = '55%';
+             }
+            
+             
+          ?>
             data-por="<?php echo $por ?> "
             data-id="<?php echo get_the_ID() ?> ">
         <a href="<?php the_permalink(); ?>"><?php echo woocommerce_get_product_thumbnail(); ?></a>
