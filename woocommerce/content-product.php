@@ -30,8 +30,7 @@ if (empty($product) || !$product->is_visible()) {
               if(get_the_ID() == 34){
                   $por = '55%';
              }
-            
-             
+                        
           ?>
             data-por="<?php echo $por ?> "
             data-id="<?php echo get_the_ID() ?> ">
