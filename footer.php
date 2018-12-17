@@ -70,7 +70,7 @@
                 <div class="col-xs-12 col-sm-6">
                     <h3 style="margin-bottom: 20px">Certificaciones de calidad</h3>
                     <img style="max-width: 100%"
-                         src="<?php echo get_template_directory_uri(); ?>/img/certificaciones.png" alt="">
+                         src="<?php echo get_template_directory_uri(); ?>/img/c1.png" alt="">
                     <p>Diseño, producción, venta y soporte técnico de productos para seguridad física tales como cajas
                         fuertes, cofres, puertas y complementos de seguridad electrónica.</p>
 
