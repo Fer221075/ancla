@@ -22,6 +22,10 @@ if (empty($product) || !$product->is_visible()) {
             if (get_the_ID() == 2275) {
                 $por = '40%';
             }
+            
+            if (get_the_ID() == 2373) {
+                $por = '40%';
+            }
             if (get_the_ID() == 36) {
                 $por = '51.3%';
             }
