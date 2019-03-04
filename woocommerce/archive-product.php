@@ -292,16 +292,12 @@ do_action('woocommerce_before_main_content'); ?>
 
         <?php woocommerce_product_loop_start(); ?>
 
-        <?php
-        $args = array(
-            'post_type' => 'product',
-            'posts_per_page' => 100
-        );
-        $loop = new WP_Query($args)
-        ?>
-        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-            <?php wc_get_template_part('content', 'product'); ?>
-        <?php endwhile; // end of the loop. ?>
+        <?php woocommerce_product_subcategories(); ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+ 
+        <?php wc_get_template_part( 'content', 'product' ); ?>
+ 
+    <?php endwhile; // end of the loop. ?>
 
         <?php woocommerce_product_loop_end(); ?>
 
