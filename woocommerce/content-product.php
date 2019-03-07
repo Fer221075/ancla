@@ -15,21 +15,22 @@ if (empty($product) || !$product->is_visible()) {
     <article <?php post_class('prod'); ?>
 
         <?php $por = '10%';
-             if(get_the_ID() == 2275){
-                  $por = '69%';
-             }
-             if(get_the_ID() == 36){
-                  $por = '49%';
-             }
-              if(get_the_ID() == 38){
-                  $por = '70%';
-             }
-              
-              if(get_the_ID() == 34){
-                  $por = '55%';
-             }
-                        
-          ?>
+
+        if (!$product->managing_stock() && !$product->is_in_stock()) {
+            $por = 'Agotado';
+        }else{
+            if (get_the_ID() == 2275) {
+                $por = '40%';
+            }
+            
+            if (get_the_ID() == 2373) {
+                $por = '40%';
+            }
+            
+
+        }
+
+        ?>
             data-por="<?php echo $por ?> "
             data-id="<?php echo get_the_ID() ?> ">
         <a href="<?php the_permalink(); ?>"><?php echo woocommerce_get_product_thumbnail(); ?></a>
