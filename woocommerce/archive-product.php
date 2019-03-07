@@ -250,6 +250,19 @@ do_action('woocommerce_before_main_content'); ?>
                        href="<?php site_url(); ?>/productos/categorias/hogar/ordenador-de-llaves/">Ordenador de
                         llaves</a></li>
                 <li>
+
+                    <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="icon-botiquin" fill="#A11E27" fill-rule="nonzero">
+                                <path d="M20,15.1 L20,6 L0,6 L0,15.1 C0,15.5 0.3,15.8 0.7,15.8 L19.2,15.8 C19.7,15.8 20,15.5 20,15.1 Z M13.2,11.2 C13.2,11.6 12.9,11.9 12.5,11.9 L11,11.9 L11,13.4 C11,13.8 10.7,14.1 10.3,14.1 L9.7,14.1 C9.3,14.1 9,13.8 9,13.4 L9,12 L7.5,12 C7.1,12 6.8,11.7 6.8,11.3 L6.8,10.7 C6.8,10.3 7.1,10 7.5,10 L9,10 L9,8.6 C9,8 9.3,7.7 9.7,7.7 L10.3,7.7 C10.7,7.7 11,8 11,8.4 L11,9.8 L12.4,9.8 C12.8,9.8 13.1,10.1 13.1,10.5 L13.1,11.2 L13.2,11.2 Z" id="Shape"></path>
+                                <path d="M20,3.6 C20,3.2 19.7,2.9 19.3,2.9 L15.3,2.9 L15.3,0.9 C15.3,0.5 15,0.2 14.6,0.2 L5.5,0.2 C5.1,0.2 4.8,0.5 4.8,0.9 L4.8,2.8 L0.8,2.8 C0.3,2.8 0,3.2 0,3.6 L0,5.2 L20,5.2 L20,3.6 Z M13.7,2.8 L6.3,2.8 L6.3,1.7 L13.7,1.7 L13.7,2.8 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <a style="font-size: 15px"
+                       href="<?php site_url(); ?>/productos/categorias/hogar/botiquines/">Botiqunes</a>
+                </li>
+                <li>
                     <svg style="vertical-align: middle" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20"
@@ -294,9 +307,9 @@ do_action('woocommerce_before_main_content'); ?>
 
         <?php woocommerce_product_subcategories(); ?>
         <?php while ( have_posts() ) : the_post(); ?>
- 
+
         <?php wc_get_template_part( 'content', 'product' ); ?>
- 
+
     <?php endwhile; // end of the loop. ?>
 
         <?php woocommerce_product_loop_end(); ?>
