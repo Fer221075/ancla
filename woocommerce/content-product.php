@@ -11,6 +11,7 @@ if (empty($product) || !$product->is_visible()) {
     return;
 }
 ?>
+
 <div class="col-xs-6 col-sm-6 <?php echo (is_front_page()) ? 'col-md-3 ' : 'col-md-4'; ?>">
     <article <?php post_class('prod'); ?>
 
@@ -22,11 +23,11 @@ if (empty($product) || !$product->is_visible()) {
             if (get_the_ID() == 2275) {
                 $por = '40%';
             }
-            
+
             if (get_the_ID() == 2373) {
                 $por = '40%';
             }
-            
+
 
         }
 

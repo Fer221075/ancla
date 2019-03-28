@@ -14,6 +14,7 @@ global $wp_query;
 if ( ! woocommerce_products_will_display() )
     return;
 ?>
+
 <p class="woocommerce-result-count">
     <?php
     $paged    = max( 1, $wp_query->get( 'paged' ) );

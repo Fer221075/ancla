@@ -19,23 +19,57 @@
     <?php wp_head(); ?>
 
 
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KMBCZKC');</script>
+    <!-- End Google Tag Manager -->
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KMBCZKC');</script>
-<!-- End Google Tag Manager -->
-
-
+    <style>
+        @media (max-width: 600px) {
+            #topbar{
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body <?php body_class(); ?>>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMBCZKC"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMBCZKC"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+<div id="topbar" style="background: #c1282d; padding: 10px 0;">
+    <div style="display: flex;position: relative;     align-items: center; justify-content: space-around;max-width: 90%; width: 600px; margin: auto;color: white !important;">
+        <div>
+            aprovecha nuestro
+            <img style=" display: inline;max-width: 150px;"
+                 src="https://www.ancla.la/wp-content/uploads/2019/03/img-top.png" alt="">
+        </div>
+        <div>
+            <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 50px;"
+               href="https://www.ancla.la/productos/hogar/cofre-camion-puerta-doble-mecanico/">Cónocelo aquí</a>
+            <button id="button-topClose" style="background: none;
+    border: none;
+    font-size: 26px;
+    position: absolute;
+    top: -2px;
+    right: -20px;">X</button>
+        </div>
+    </div>
+</div>
 <div id="top" class="container top-bar clearfix" style="padding: 0 !important;">
     <div class="top-contact" style=" ">
         <ul>
@@ -64,7 +98,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </li><?php endif; ?>
             <?php if (get_theme_mod('contact_email')): ?>
                 <li class="hiddenLi"><a style="text-transform: lowercase;font-size: 16px"
-                       href="mailto:<?php echo get_theme_mod('contact_email') ?>">
+                                        href="mailto:<?php echo get_theme_mod('contact_email') ?>">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="50px" height="25px" viewBox="0 0 50 25" enable-background="new 0 0 50 25"
@@ -78,9 +112,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </svg>
                     <?php echo get_theme_mod('contact_email') ?></a>
                 </li><?php endif; ?>
-            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=573123776742&text=Estoy%20interesado%20en%20" style="text-transform: lowercase; font-size: 16px;">
-                <svg style="position: relative;left: -25px;" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="50px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 50 25" xml:space="preserve">
+            <li><a target="_blank"
+                   href="https://api.whatsapp.com/send?phone=573123776742&text=Estoy%20interesado%20en%20"
+                   style="text-transform: lowercase; font-size: 16px;">
+                    <svg style="position: relative;left: -25px;" version="1.1" id="Capa_1"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="50px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 50 25"
+                         xml:space="preserve">
 <g id="XMLID_468_">
     <path id="XMLID_469_" fill="#A11E27" d="M30.999,14.365c-0.049-0.023-1.871-0.921-2.195-1.037
 		c-0.132-0.048-0.273-0.094-0.425-0.094c-0.246,0-0.452,0.122-0.613,0.363c-0.183,0.271-0.733,0.915-0.903,1.107
@@ -99,7 +137,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		l1.049-3.095c0.034-0.101,0.017-0.211-0.045-0.296c-1.211-1.655-1.852-3.611-1.852-5.656c0-5.32,4.363-9.648,9.726-9.648
 		s9.725,4.328,9.725,9.648C34.947,17.506,30.585,21.834,25.222,21.834z"/>
 </g>
-</svg> <span style="position: relative;left: -25px;">(+57)3123776742</span></a>
+</svg>
+                    <span style="position: relative;left: -25px;">(+57)3123776742</span></a>
 
             </li>
         </ul>

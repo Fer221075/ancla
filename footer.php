@@ -34,18 +34,18 @@
                 <div class="certs col-xs-12 no-pad">
                   <div class="col-sm-12 no-pad">
                         <h4>Certificaciones</h4>
-<p>Diseño, producción, venta y soporte técnico de productos para seguridad física tales como cajas fuertes, cofres, puertas y complementos de seguridad electrónica.</p>                 
+<p>Diseño, producción, venta y soporte técnico de productos para seguridad física tales como cajas fuertes, cofres, puertas y complementos de seguridad electrónica.</p>
                             <img src="<?php echo get_template_directory_uri(); ?>/img/LOGOS-completos.png" alt="iso_9001" width="100%" height="100%"/>
-                            
-                      
+
+
 
                     </ul>
                   </div>
                 </div>
-            </div>  
+            </div>
             <div class="col-xs-12 col-sm-6">
                 <div class="newsletter">
-                    <div class="no-pad"> 
+                    <div class="no-pad">
                         <h4>Boletín</h4>
                     </div>
                     <form action="?na=s" method="post" class="clearfix">
@@ -104,7 +104,11 @@
                 </div>
             </div>
 </footer>
-
+<script>
+    document.getElementById('button-topClose').addEventListener('click',function (ev) {
+        document.getElementById('topbar').remove();
+    })
+</script>
 <?php wp_footer(); ?>
 
 </body>
