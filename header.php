@@ -61,12 +61,6 @@
         <div>
             <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 50px;"
                href="https://www.ancla.la/productos/hogar/cofre-camion-puerta-doble-mecanico/">Cónocelo aquí</a>
-            <button id="button-topClose" style="background: none;
-    border: none;
-    font-size: 26px;
-    position: absolute;
-    top: -2px;
-    right: -20px;">X</button>
         </div>
     </div>
 </div>
