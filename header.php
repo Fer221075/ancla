@@ -52,7 +52,7 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div id="topbar" style="background: #c1282d; padding: 10px 0;">
-    <div style="display: flex;position: relative;     align-items: center; justify-content: space-around;max-width: 90%; width: 600px; margin: auto;color: white !important;">
+    <div class="topbar-content">
         <div>
             aprovecha nuestro
             <img style=" display: inline;max-width: 150px;"
