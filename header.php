@@ -56,7 +56,7 @@
         <div>
             aprovecha nuestro
             <img style=" display: inline;max-width: 150px;"
-                 src="https://www.ancla.la/wp-content/uploads/2019/03/logomarzo.png" alt="">
+                 src="https://www.ancla.la/wp-content/uploads/2019/04/logo-abril-cenefa-header.png" alt="">
         </div>
         <div>
             <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 50px;"
