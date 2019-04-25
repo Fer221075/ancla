@@ -310,7 +310,7 @@
         </div>
     </div>
 <?php } ?>
-<?php if (get_the_ID() == 34) { ?>
+<?php if (get_the_ID() == 2373) { ?>
 <section id="content" class="site-content">
     <section
             style="margin: 78px auto 20px; max-width: 1000px; border: 2px #c1282c solid;padding: 50px 20px 10px;position: relative">
@@ -325,5 +325,5 @@
         </div>
     </section>
     <?php } ?>
-    <?php print_r(get_the_ID() ) ?>
+
 
