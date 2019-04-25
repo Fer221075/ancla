@@ -37,7 +37,7 @@
 
     <style>
         @media (max-width: 600px) {
-            #topbar{
+            #topbar {
                 display: none;
             }
         }
@@ -310,5 +310,19 @@
         </div>
     </div>
 <?php } ?>
+<?php if (get_the_ID() == 34) { ?>
 <section id="content" class="site-content">
+    <section
+            style="margin: 78px auto 20px; max-width: 1000px; border: 2px #c1282c solid;padding: 50px 20px 10px;position: relative">
+        <figure style="position: absolute; top: -70px; left: calc(50% - 140px)">
+            <img src="https://www.ancla.la/wp-content/uploads/2019/04/imgarriba.png" alt="">
+        </figure>
+        <div class="stepByStep">
+            <div><img src="https://www.ancla.la/wp-content/uploads/2019/04/paso01.png" alt=""></div>
+            <div><img src="https://www.ancla.la/wp-content/uploads/2019/04/paso02.png" alt=""></div>
+            <div><img src="https://www.ancla.la/wp-content/uploads/2019/04/paso03.png" alt=""></div>
+            <div><img src="https://www.ancla.la/wp-content/uploads/2019/04/paso04.png" alt=""></div>
+        </div>
+    </section>
+    <?php } ?>
 

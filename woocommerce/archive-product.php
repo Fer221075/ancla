@@ -14,7 +14,6 @@ get_header('shop'); ?>
  * @hooked woocommerce_breadcrumb - 20
  */
 do_action('woocommerce_before_main_content'); ?>
-
 <?php get_template_part('template-parts/category_banner', 'small'); ?>
 
 <?php if (have_posts()) : ?>
