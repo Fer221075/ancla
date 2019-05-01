@@ -32,7 +32,12 @@
             j.src =
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KMBCZKC');</script>
+
+        })(window, document, 'script', 'dataLayer', 'GTM-KMBCZKC');
+
+
+
+    </script>
     <!-- End Google Tag Manager -->
 
     <style>
@@ -65,7 +70,7 @@
     </div>
 </div>
 <div id="top" class="container top-bar clearfix" style="padding: 0 !important;">
-    <div class="top-contact" style=" ">
+    <div class="top-contact" style="max-width: 55%">
         <ul>
             <?php if (get_theme_mod('contact_phone')): ?>
                 <li class="hiddenLi"><a
@@ -137,40 +142,24 @@
             </li>
         </ul>
     </div>
-    <ul class="top-links">
-        <ul class="flags">
-            <!--<li><a href="/panama"><img src="<?php #echo get_template_directory_uri(); ?>/svg/pa.svg" alt=""></a></li>-->
-            <li><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/svg/co.svg" alt=""></a></li>
-        </ul>
-        <?php if (!strpos(get_site_url(), 'panama')): ?>
-            <ul class="cartColorLink">
-                <li>
-                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         width="50px" height="25px" viewBox="0 0 50 25" enable-background="new 0 0 50 25"
-                         xml:space="preserve">
-<g>
-    <path fill="#FFFFFF" d="M25,12.78c3.53,0,6.391-2.861,6.391-6.39C31.391,2.861,28.529,0,25,0c-3.528,0-6.39,2.861-6.39,6.391
-		C18.61,9.919,21.471,12.78,25,12.78z M25,3.195c1.766,0,3.196,1.431,3.196,3.195S26.764,9.585,25,9.585
-		c-1.764,0-3.194-1.43-3.194-3.194S23.236,3.195,25,3.195z"/>
-    <path fill="#FFFFFF" d="M27.32,13.816c-0.027,0.001-0.055,0.001-0.084,0.002h-4.472c-4.807-0.133-8.812,3.655-8.944,8.462
-		c-0.001,0.028-0.001,0.057-0.002,0.084v1.278c0,0.879,0.879,1.358,1.758,1.358h18.85c0.877,0,1.756-0.479,1.756-1.358v-1.278
-		C36.096,17.558,32.129,13.73,27.32,13.816z M17.172,21.806c0.16-2.396,2.636-4.792,5.591-4.792h4.473
-		c2.955,0,5.432,2.396,5.592,4.792H17.172z"/>
-</g>
-</svg>
+    <ul class="top-links" style="max-width: 45%">
+        <!-- <ul class="flags">
+            <li><a href="/panama"><img src="<?php #echo get_template_directory_uri(); ?>/svg/pa.svg" alt=""></a></li>
+                <li><a href="/"><img src="<?php #echo get_template_directory_uri(); ?>/svg/co.svg" alt=""></a></li>
+        </ul>-->
+
+            <div class="cartColorLink" style="    min-height: 42px;">
+
+
                     <?php if (is_user_logged_in()): ?>
                         <a
                                 href="<?php echo esc_url(wc_get_account_endpoint_url('orders')); ?>"><?php esc_attr_e('My Account', 'woocommerce'); ?></a>
                     <?php else: ?>
                         <a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Login / Registro</a>
                     <?php endif; ?>
-                </li>
-                <li>
 
-                </li>
-            </ul>
-        <?php endif; ?>
+            </div>
+
     </ul>
 </div>
 <header>
