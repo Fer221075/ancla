@@ -65,7 +65,7 @@
         </div>
         <div>
             <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 50px;"
-               href="https://www.ancla.la/productos/hogar/cofre-camion-puerta-doble-mecanico/">Cónocelo aquí</a>
+               href="https://www.ancla.la/productos/hogar/cofre-camion-puerta-doble-mecanico/">¡Entra YA!</a>
         </div>
     </div>
 </div>
