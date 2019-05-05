@@ -59,9 +59,10 @@
 <div id="topbar" style="background: #c1282d; padding: 10px 0;">
     <div class="topbar-content">
         <div>
-            aprovecha nuestro
+            
             <img style=" display: inline;max-width: 150px;"
-                 src="https://www.ancla.la/wp-content/uploads/2019/04/logo-abril-cenefa-header.png" alt="">
+                 src="https://www.ancla.la/wp-content/uploads/2019/05/logohello01may.png" alt="">
+	     para nuestras súper mamás	
         </div>
         <div>
             <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 50px;"
