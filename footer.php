@@ -104,7 +104,7 @@
                 </div>
             </div>
 </footer>
-<?php if (is_home() ): ?>
+<?php if (is_front_page() ): ?>
 <div class="popUpFull open" id="popUpFull">
     <div class="popUpFull-content">
         <div class="popUpFull-contentClose" id="popUpFullClose">
