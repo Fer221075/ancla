@@ -104,6 +104,7 @@
                 </div>
             </div>
 </footer>
+<?php if (is_home() ): ?>
 <div class="popUpFull open" id="popUpFull">
     <div class="popUpFull-content">
         <div class="popUpFull-contentClose" id="popUpFullClose">
@@ -112,8 +113,8 @@
         <img src="https://www.ancla.la/wp-content/uploads/2019/05/imgpopup-1.png" alt="">
     </div>
 </div>
+<?php endif; ?>
 <script>
-
     document.getElementById('popUpFullClose').addEventListener('click', function(){
         document.getElementById('popUpFull').classList.toggle('open');
     })
