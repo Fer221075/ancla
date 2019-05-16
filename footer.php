@@ -104,10 +104,23 @@
                 </div>
             </div>
 </footer>
+<div class="popUpFull open" id="popUpFull">
+    <div class="popUpFull-content">
+        <div class="popUpFull-contentClose" id="popUpFullClose">
+            Cerrar X
+        </div>
+        <img src="https://www.ancla.la/wp-content/uploads/2019/05/imgpopup-1.png" alt="">
+    </div>
+</div>
 <script>
     document.getElementById('button-topClose').addEventListener('click',function (ev) {
         document.getElementById('topbar').remove();
+    });
+    document.getElementById('popUpFullClose').addEventListener('click', function(){
+        document.getElementById('popUpFull').classList.toggle('open');
+        alert('hola')
     })
+
 </script>
 <?php wp_footer(); ?>
 
