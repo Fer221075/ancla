@@ -113,9 +113,7 @@
     </div>
 </div>
 <script>
-    document.getElementById('button-topClose').addEventListener('click',function (ev) {
-        document.getElementById('topbar').remove();
-    });
+
     document.getElementById('popUpFullClose').addEventListener('click', function(){
         document.getElementById('popUpFull').classList.toggle('open');
     })
