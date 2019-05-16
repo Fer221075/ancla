@@ -110,7 +110,9 @@
         <div class="popUpFull-contentClose" id="popUpFullClose">
             Cerrar X
         </div>
-        <img src="https://www.ancla.la/wp-content/uploads/2019/05/imgpopup-1.png" alt="">
+        <a href="https://www.ancla.la/productos/hogar/cofre-camion-puerta-doble-mecanico/">
+            <img src="https://www.ancla.la/wp-content/uploads/2019/05/imgpopup-1.png" alt="">
+        </a>
     </div>
 </div>
 <?php endif; ?>
