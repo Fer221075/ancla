@@ -46,6 +46,43 @@
                 display: none;
             }
         }
+        .popUpFull{
+            background: rgba(0,0,0,.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .popUpFull.open{
+            display: flex;
+        }
+
+        .popUpFull-content{
+            position: relative;
+            max-width: 700px;
+        }
+
+        .popUpFull-content img{
+            max-width: 100%;
+        }
+
+
+        .popUpFull-contentClose{
+            position: absolute;
+            top: -10px;
+            right: -40px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer
+        }
+        @media (max-width: 800px) {
+            .popUpFull-contentClose {
+                top: -30px;
+                right: 20px;
+            }
+        }
+
     </style>
 </head>
 
@@ -59,10 +96,10 @@
 <div id="topbar" style="background: #c1282d; padding: 10px 0;">
     <div class="topbar-content">
         <div>
-            
+
             <img style=" display: inline;max-width: 150px;"
                  src="https://www.ancla.la/wp-content/uploads/2019/05/logohello01may.png" alt="">
-	     para nuestras súper mamás	
+	     para nuestras súper mamás
         </div>
         <div>
             <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 50px;"
