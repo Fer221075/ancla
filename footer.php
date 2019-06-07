@@ -104,25 +104,8 @@
                 </div>
             </div>
 </footer>
-<?php if (is_front_page() ): ?>
-<div class="popUpFull open" id="popUpFull">
-    <div class="popUpFull-content">
-        <div class="popUpFull-contentClose" id="popUpFullClose">
-            Cerrar X
-        </div>
-        <a href="https://www.ancla.la/productos/hogar/cofre-camion-puerta-doble-mecanico/">
-            <img src="https://www.ancla.la/wp-content/uploads/2019/05/imgpopup-1.png" alt="">
-        </a>
-    </div>
-</div>
-<?php endif; ?>
-<script>
-    document.getElementById('popUpFullClose').addEventListener('click', function(){
-        document.getElementById('popUpFull').classList.toggle('open');
-    })
 
-</script>
 <?php wp_footer(); ?>
-
+<script type="text/javascript" src="https://unpkg.com/adsmodal@latest"></script>
 </body>
 </html>
