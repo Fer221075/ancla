@@ -104,7 +104,7 @@
                 </div>
             </div>
 </footer>
-<?php if (is_front_page()): ?>
+<!-- codigo popup <?php if (is_front_page()): ?>
     <div class="popUpFull open" id="popUpFull">
         <div class="popUpFull-content">
             <div class="popUpFull-contentClose" id="popUpFugllClose">
@@ -115,7 +115,7 @@
             </a>
         </div>
     </div>
-<?php endif; ?>
+<?php endif; ?> -->
 <script>
     document.getElementById('popUpFullClose').addEventListener('click', function () {
         document.getElementById('popUpFull').classList.toggle('open');

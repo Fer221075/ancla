@@ -102,12 +102,12 @@
         <div>
 
             <img style=" display: inline;max-width: 150px;"
-                 src="https://www.ancla.la/wp-content/uploads/2019/06/Logohello01jun.png" alt="">
-	          nada mejor que ANCLA
+                 src="https://www.ancla.la/wp-content/uploads/2019/07/logohellobar01jul.png" alt="">
+	           con ANCLA
         </div>
         <div>
             <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 50px;"
-               href="https://www.ancla.la/productos/hogar/cofre-camion-puerta-doble-mecanico/">Conoce nuestra promo del mes</a>
+               href="https://www.ancla.la/productos/hogar/caja-fuerte-2400-mecanica/">Conoce nuestra nueva caja</a>
         </div>
     </div>
 </div>
