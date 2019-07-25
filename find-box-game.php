@@ -187,7 +187,6 @@ get_header();?>
     color: #c1282d;" href="<?php echo get_template_directory_uri(); ?>/img/guia_compra_productos.pdf" target="_blank">guía de compra de productos</a></div>
     </div>
 
-</section>
 
 <?php
 get_footer();

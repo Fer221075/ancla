@@ -298,6 +298,8 @@ do_action('woocommerce_before_main_content'); ?>
                     <a style="font-size: 15px" href="<?php site_url(); ?>/productos/">Todos los productos</a>
                 </li>
             </ul>
+            <iframe height="300px"   src="/gif" style="border: none; transform: scale(0.8) translateX(-34px);"></iframe>
+
             <?php //dynamic_sidebar( 'store-widgets' ); ?>
         </div>
         <?php //endif; ?>

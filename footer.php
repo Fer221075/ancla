@@ -107,7 +107,7 @@
 <?php if (is_front_page()): ?>
     <div class="popUpFull open" id="popUpFull">
         <div class="popUpFull-content">
-            <div class="popUpFull-contentClose" id="popUpFullClose">
+            <div class="popUpFull-contentClose" id="popUpFugllClose">
                 Cerrar X
             </div>
             <a href="https://www.ancla.la/productos/hogar/cofre-40x40/?utm_source=Web%20ancla&utm_medium=Pop%20Up%2040x40%20mecanico&utm_campaign=40x40%20mecanico">
