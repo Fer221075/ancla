@@ -39,6 +39,26 @@
 
     </script>
     <!-- End Google Tag Manager -->
+	
+	<!-- Global site tag (gtag.js) - Google Ads: 803156296 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-803156296"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-803156296');
+</script>
+	
+	<!-- Event snippet for Compra conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-803156296/DJgoCMiShIQBEMji_P4C',
+      'transaction_id': ''
+  });
+</script>
+
+
 
     <style>
         @media (max-width: 600px) {
@@ -107,7 +127,7 @@
         </div>
         <div>
             <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 50px;"
-               href="https://www.ancla.la/productos/hogar/caja-fuerte-2400-mecanica/">Haz clic AQUÍ</a>
+               href="https://www.ancla.la/caja-para-todos/">Haz clic AQUÍ</a>
         </div>
     </div>
 </div>
