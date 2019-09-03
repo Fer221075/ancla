@@ -105,12 +105,12 @@
         <div>
 
             <img style=" display: inline;max-width: 150px;"
-                 src="https://www.ancla.la/wp-content/uploads/2019/08/img-hello-bar-ago-2019.png" alt="">
-	           Tenemos la caja ideal para ti.
+                 src="https://www.ancla.la/wp-content/uploads/2019/09/img-hellobar-sep-2019.png" alt="">
+	           Conoce nuestra promo de amor y amistad.
         </div>
         <div>
             <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 50px;"
-               href="https://www.ancla.la/caja-para-todos/">Haz clic AQUÍ</a>
+               href="https://www.ancla.la/productos/hogar/cofre-diamante-lam-18/">Haz clic AQUÍ</a>
         </div>
     </div>
 </div>
