@@ -109,7 +109,7 @@
 	           Conoce nuestra promo de amor y amistad.
         </div>
         <div>
-            <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 50px;"
+            <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 25px;"
                href="https://www.ancla.la/productos/hogar/cofre-diamante-lam-18/">Haz clic AQUÍ</a>
         </div>
     </div>
