@@ -105,12 +105,12 @@
         <div>
 
             <img style=" display: inline;max-width: 150px;"
-                 src="https://www.ancla.la/wp-content/uploads/2019/09/img-hellobar-sep-2019.png" alt="">
-	           Conoce nuestra promo de amor y amistad.
+                 src="https://www.ancla.la/wp-content/uploads/2019/10/img-hello-bar-oct-2019.png" alt="">
+	           Haz clic aquí y conoce nuestra.
         </div>
         <div>
             <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 25px;"
-               href="https://www.ancla.la/productos/hogar/cofre-diamante-lam-18/">Haz clic AQUÍ</a>
+               href="https://www.ancla.la/productos/hogar/caja-fuerte-2500/">SUPER caja del mes</a>
         </div>
     </div>
 </div>
