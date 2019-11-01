@@ -104,7 +104,7 @@
     <div class="topbar-content">
         <div>
 
-            <img style=" display: inline;max-width: 170px;"
+            <img style=" display: inline;max-width: 280px;"
                  src="https://www.ancla.la/wp-content/uploads/2019/11/img-hello-bar-nov-2019.png" alt="">
 	           Hecho a tu medida.
         </div>
