@@ -19,7 +19,7 @@ if (empty($product) || !$product->is_visible()) {
         if (!$product->managing_stock() && !$product->is_in_stock()) {
             $por = 'Agotado';
         }else{
-            if (get_the_ID() == 34) {
+            if (get_the_ID() == 3331) {
                 $por = '25%';
             }
 
