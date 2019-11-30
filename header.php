@@ -11,6 +11,7 @@
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+	<script src="//code.jivosite.com/widget.js" data-jv-id="qdEPzVyViu" async></script>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,7 +93,7 @@
 
     </style>
 	
-	<script src="//code.jivosite.com/widget.js" data-jv-id="qdEPzVyViu" async></script>
+	
 </head>
 
 <body <?php body_class(); ?>>
