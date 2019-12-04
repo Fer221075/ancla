@@ -109,7 +109,7 @@
 
             <img style=" display: inline;max-width: 200px;"
                  src="https://www.ancla.la/wp-content/uploads/2019/12/img-hello-bar-dic-2019.png" alt="">
-	           ¡Entra y sorpréndete!
+	          &nbsp; ¡Entra y sorpréndete!
         </div>
         <div>
             <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 25px;"
