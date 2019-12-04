@@ -115,6 +115,10 @@
             <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 25px;"
                href="https://www.ancla.la/productos/hogar/cofre-camion-puerta-doble-mecanico/">Sorpresa #1</a>
         </div>
+	 <div>
+            <a style="border-radius:20px; border: 1px solid;color: white !important;    padding: 8px 25px;"
+               href="https://www.ancla.la/productos/hogar/cofre-diamante-lam-18/">Sorpresa #2</a>
+        </div>    
     </div>
 </div>
 <div id="top" class="container top-bar clearfix" style="padding: 0 !important;">
