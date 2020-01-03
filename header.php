@@ -108,18 +108,15 @@
         <div>
 
             <img style=" display: inline;max-width: 200px;"
-                 src="https://www.ancla.la/wp-content/uploads/2019/12/img-hello-bar-dic-2019.png" alt="">
+                 src="https://www.ancla.la/wp-content/uploads/2019/08/img-hello-bar-ago-2019.png" alt="">
 	          &nbsp; ¡Entra y sorpréndete!
         </div>
         <div>
             <a style="border-radius:7px; border: 1px solid;color: white !important; margin: 5px;
                 padding: 5px 5px;"
-               href="https://www.ancla.la/cofre-puerta-doble">Sorpresa #1</a>
+               href="https://www.ancla.la/productos/">Haz clic aquí</a>
         </div>
-	 <div>
-            <a style="border-radius:7px; border: 1px solid;color: white !important;    padding: 5px 5px;"
-               href=" https://www.ancla.la/cofre-diamante-lam-18/">Sorpresa #2</a>
-        </div>    
+	 
     </div>
 </div>
 <div id="top" class="container top-bar clearfix" style="padding: 0 !important;">
