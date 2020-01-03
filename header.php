@@ -107,7 +107,7 @@
     <div class="topbar-content">
         <div>
 
-            <img style=" display: inline;max-width: 200px;"
+            <img style=" display: inline;max-width: 260px;"
                  src="https://www.ancla.la/wp-content/uploads/2019/08/img-hello-bar-ago-2019.png" alt="">
 	          &nbsp; ¡Entra y sorpréndete!
         </div>
