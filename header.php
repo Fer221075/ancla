@@ -108,13 +108,13 @@
         <div>
 
             <img style=" display: inline;max-width: 260px;"
-                 src="https://www.ancla.la/wp-content/uploads/2019/08/img-hello-bar-ago-2019.png" alt="">
-	          &nbsp; ¡Entra y sorpréndete!
+                 src="https://www.ancla.la/wp-content/uploads/2020/01/img-hello-bar-ene-2020.png" alt="">
+	          &nbsp; Aprovecha esta promoción en nuestra web
         </div>
         <div>
             <a style="border-radius:7px; border: 1px solid;color: white !important; margin: 5px;
                 padding: 5px 5px;"
-               href="https://www.ancla.la/productos/">Haz clic aquí</a>
+               href="https://www.ancla.la/productos/">Ver los productos</a>
         </div>
 	 
     </div>
