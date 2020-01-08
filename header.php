@@ -107,7 +107,7 @@
     <div class="topbar-content">
         <div>
 
-            <img style=" display: inline;max-width: 260px;"
+            <img style=" display: inline;max-width: 180px;"
                  src="https://www.ancla.la/wp-content/uploads/2020/01/img-hello-bar-ene-2020.png" alt="">
 	          &nbsp; Aprovecha esta promoción en nuestra web
         </div>
