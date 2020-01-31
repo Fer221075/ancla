@@ -108,13 +108,13 @@
         <div>
 
             <img style=" display: inline;max-width: 180px;"
-                 src="https://www.ancla.la/wp-content/uploads/2020/01/img-hello-bar-ene-2020.png" alt="">
-	          &nbsp; Aprovecha esta promoción en nuestra web
+                 src="https://www.ancla.la/wp-content/uploads/2020/01/img-bar-feb-2020.png" alt="">
+	          &nbsp; 10% de descuento en todos nuestros productos 
         </div>
         <div>
             <a style="border-radius:7px; border: 1px solid;color: white !important; margin: 5px;
                 padding: 5px 5px;"
-               href="https://www.ancla.la/productos/">Ver los productos</a>
+               href="https://www.ancla.la/productos/">¡Compra ya!</a>
         </div>
 	 
     </div>
