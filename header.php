@@ -112,8 +112,8 @@
 	          &nbsp; 10% de descuento en todos nuestros productos 
         </div>
         <div>
-            <a style="border-radius:7px; border: 1px solid;color: white !important; margin: 5px;
-                padding: 5px 5px;"
+            <a style="border-radius:2px; border: 1px solid;color: white !important; margin: 5px;
+                padding: 7px 11px;"
                href="https://www.ancla.la/productos/">¡Compra ya!</a>
         </div>
 	 
