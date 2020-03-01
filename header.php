@@ -109,7 +109,7 @@
 
             <img style=" display: inline;max-width: 180px;"
                  src="https://www.ancla.la/wp-content/uploads/2020/03/img-hello-bar-mar-2020.png" alt="">
-	          &nbsp; Conoce toda la inteligencia y poder de nuestros productos. 
+	          &nbsp; Conoce el poder de nuestros productos. 
         </div>
         <div>
             <a style="border-radius:2px; border: 1px solid;color: white !important; margin: 5px;
