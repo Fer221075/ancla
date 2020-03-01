@@ -108,13 +108,13 @@
         <div>
 
             <img style=" display: inline;max-width: 180px;"
-                 src="https://www.ancla.la/wp-content/uploads/2020/01/img-bar-feb-2020.png" alt="">
-	          &nbsp; 10% de descuento en todos nuestros productos 
+                 src="https://www.ancla.la/wp-content/uploads/2020/03/img-hello-bar-mar-2020.png" alt="">
+	          &nbsp; Conoce toda la inteligencia y poder de nuestros productos. 
         </div>
         <div>
             <a style="border-radius:2px; border: 1px solid;color: white !important; margin: 5px;
                 padding: 7px 11px;"
-               href="https://www.ancla.la/productos/">¡Compra ya!</a>
+               href="https://www.ancla.la/productos/hogar/caja-fuerte-2400-mecanica/">¡Compra ya!</a>
         </div>
 	 
     </div>
