@@ -114,7 +114,7 @@
         <div>
             <a style="border-radius:2px; border: 1px solid;color: white !important; margin: 5px;
                 padding: 7px 11px;"
-               href="https://www.ancla.la/productos/hogar/caja-fuerte-2400-mecanica/">¡Compra ya!</a>
+               href="https://www.ancla.la/caja-fuerte-2400/">¡Compra ya!</a>
         </div>
 	 
     </div>
