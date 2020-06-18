@@ -109,12 +109,12 @@
 
             <img style=" display: inline;max-width: 180px;"
                  src="https://www.ancla.la/wp-content/uploads/2020/03/img-hello-bar-mar-2020.png" alt="">
-	          &nbsp; Conoce el poder de nuestros productos. 
+	          &nbsp; Conoce estos nuevos productos 2020. 
         </div>
         <div>
             <a style="border-radius:2px; border: 1px solid;color: white !important; margin: 5px;
                 padding: 7px 11px;"
-               href="https://www.ancla.la/caja-fuerte-2400/">¡Compra ya!</a>
+               href="https://www.ancla.la/productos/">¡Haz click aqui!</a>
         </div>
 	 
     </div>
