@@ -123,6 +123,6 @@
 
 </script>
 <?php wp_footer(); ?>
-
+<script type="text/javascript" src="https://unpkg.com/adsmodal@latest"></script>
 </body>
 </html>
