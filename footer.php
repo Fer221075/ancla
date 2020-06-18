@@ -116,7 +116,7 @@
         </div>
     </div>
 <?php endif; ?> -->
-<script>
+<! --script>
     document.getElementById('popUpFullClose').addEventListener('click', function () {
         document.getElementById('popUpFull').classList.toggle('open');
     })
