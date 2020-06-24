@@ -20,12 +20,15 @@ if (empty($product) || !$product->is_visible()) {
             $por = 'Agotado';
         }else{
             if (get_the_ID() == 2944) {
-                $por = '25%';
+                $por = '15%';
             }
             if (get_the_ID() == 43) {
                 $por = '10%';
             }
-
+            
+            if (get_the_ID() == 41) {
+                $por = '30%';
+            }
            
         }
 
